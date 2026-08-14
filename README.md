@@ -4,16 +4,16 @@
 
 ---
 
-Автоматически обновляемые прокси и подписки.
+Automatically updated proxies and subscriptions.
 
-Данные проверяются и обновляются **каждые 4 часа**
+Data is tested and updated **every 4 hours**.
 
-## Подписки
+## Subscriptions
 
-### Основные
+### Main
 
-* **Все прокси:** [good_proxies.txt](./good_proxies.txt)
-* **Основная подписка:** [sub.txt](./sub.txt)
+* **All proxies:** [good_proxies.txt](./good_proxies.txt)
+* **Main subscription:** [sub.txt](./sub.txt)
 * **Clash:** [clash.yaml](./clash.yaml)
 
 ### TOP 100
@@ -46,7 +46,7 @@ https://raw.githubusercontent.com/Nomislou/NomislouNodes/main/clash_top500.yaml
 
 ## ⚠️
 
-Работоспособность прокси не гарантируется и может изменяться между обновлениями.
+Proxy functionality is not guaranteed and may change between updates.
 
 ---
 
