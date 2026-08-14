@@ -1,6 +1,6 @@
 # NomislouNodes
 
-[Русский](README_RU.md) | [English]
+[English] | [Русский](README_RU.md)
 
 ---
 
