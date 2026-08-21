@@ -4,7 +4,37 @@ mode: rule
 log-level: info
 
 proxies:
-  - name: "🇺🇸 #1 ✈️🔍 United_States 104.34Mbps"
+  - name: "🇺🇸 #1 ✈️🔍 United_States 149.36Mbps"
+    type: vless
+    server: "23.237.193.66"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "9e512d9b-fa44-4dd1-9d7d-73f1f33f4fa4"
+    tls: true
+    servername: "apkav-1.bosx.net"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "apkav-1.bosx.net"
+  - name: "🇺🇸 #2 ✈️🔍 United_States 123.36Mbps"
+    type: vless
+    server: "23.237.193.66"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "9e512d9b-fa44-4dd1-9d7d-73f1f33f4fa4"
+    tls: true
+    servername: "apkav-1.bosx.net"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/api/connect"
+      headers:
+        Host: "apkav-1.bosx.net"
+  - name: "🇺🇸 #3 ✈️🔍 United_States 111.2Mbps"
     type: vless
     server: "87.99.141.67"
     port: 2087
@@ -20,48 +50,37 @@ proxies:
       short-id: "32cbe1a0"
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇺🇸 #2 ✈️ United_States-CDN 66.09Mbps"
+  - name: "🇺🇸 #4 ✈️ United_States 103.09Mbps"
     type: vless
-    server: "104.17.21.137"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "9e648bb6-25f7-4b16-9949-55ac0952d66b"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "lingering-grass-6728.131-a78.workers.dev"
-  - name: "🇺🇸 #3 ✈️ United_States-CDN 63.5Mbps"
-    type: vless
-    server: "104.24.16.23"
+    server: "spiderpanel-production-44f6.up.railway.app"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "2c122b00-78ed-44af-ae96-61f0786bf8a6"
+    uuid: "794d546b-1938-482e-a337-fee751909ab4"
     tls: true
-    servername: "dark-rain-2989.gzgshsgs.workers.dev"
+    servername: "spiderpanel-production-44f6.up.railway.app"
     client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/ws/794d546b-1938-482e-a337-fee751909ab4"
       headers:
-        Host: "dark-rain-2989.gzgshsgs.workers.dev"
-  - name: "🇺🇸 #4 ✈️🔍 United_States 58.08Mbps"
+        Host: "spiderpanel-production-44f6.up.railway.app"
+  - name: "🇺🇸 #5 ✈️ United_States 100.5Mbps"
     type: vless
-    server: "204.48.20.223"
-    port: 30906
+    server: "spiderpanel-production-44f6.up.railway.app"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "43a13764-23dd-4e01-8b79-cde8a16e13ce"
+    uuid: "794d546b-1938-482e-a337-fee751909ab4"
     tls: true
-    servername: "www.cloudflare.com"
+    servername: "spiderpanel-production-44f6.up.railway.app"
     client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0"
-      short-id: "17a94dc584e3"
-  - name: "🇺🇸 #5 ✈️🔍 United_States 56.83Mbps"
+    network: "ws"
+    ws-opts:
+      path: "/ws/794d546b-1938-482e-a337-fee751909ab4"
+      headers:
+        Host: "spiderpanel-production-44f6.up.railway.app"
+  - name: "🇺🇸 #6 ✈️🔍 United_States 72.78Mbps"
     type: vless
     server: "45.138.100.226"
     port: 2083
@@ -74,35 +93,7 @@ proxies:
     network: "grpc"
     grpc-opts:
       grpc-service-name: "grpc"
-  - name: "🇺🇸 #6 ✈️🔍 United_States 56.35Mbps"
-    type: vless
-    server: "45.138.100.226"
-    port: 2083
-    udp: true
-    skip-cert-verify: false
-    uuid: "0c6b632a-cd96-4b74-9b51-151e3b5697db"
-    tls: true
-    servername: "using.neobo-tooth.ru"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇺🇸 #7 ✈️🔍 United_States 53.89Mbps"
-    type: vless
-    server: "104.21.90.215"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "13da3f61-36bc-4f4f-9b49-4152de570bd3"
-    tls: true
-    servername: "0-M14.AyUTTHayA-1.KDnS.fr"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/awsDCktnglce5OhBQMBK8JLBwh2V"
-      headers:
-        Host: "0-M14.ayutTHAYa-1.kDNS.FR"
-  - name: "🇺🇸 #8 ✈️🔍 United_States 46.66Mbps"
+  - name: "🇺🇸 #7 ✈️🔍 United_States 68.71Mbps"
     type: vless
     server: "172.67.161.109"
     port: 443
@@ -117,55 +108,20 @@ proxies:
       path: "/awsDCktnglce5OhBQMBK8JLBwh2V"
       headers:
         Host: "1-m14.aYUTthaya-1.kdns.fr"
-  - name: "🇺🇸 #9 ✈️🔍 United_States-CDN 45.34Mbps"
+  - name: "🇺🇸 #8 ✈️🔍 United_States 65.47Mbps"
     type: vless
-    server: "172.64.88.168"
-    port: 8880
+    server: "45.138.100.226"
+    port: 2083
     udp: true
     skip-cert-verify: false
-    uuid: "2e55e846-7737-4c07-af67-191e2727513c"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "weathered-sunset-be54.407-d9d.workers.dev"
-  - name: "🇨🇦 #10 ✈️🔍 Canada 44.07Mbps"
-    type: vless
-    server: "216.128.176.166"
-    port: 22819
-    udp: true
-    skip-cert-verify: false
-    uuid: "f60ed982-1ec8-426a-d74e-a675685d6dc8"
-    network: "ws"
-    ws-opts:
-      path: "/f60ed982-1ec8-426a-d74e-a675685d6dc8"
-      headers:
-        Host: "216.128.176.166"
-  - name: "🇨🇦 #11 ✈️🔍 Canada 43.24Mbps"
-    type: vless
-    server: "216.128.176.166"
-    port: 22819
-    udp: true
-    skip-cert-verify: false
-    uuid: "f60ed982-1ec8-426a-d74e-a675685d6dc8"
-    network: "ws"
-    ws-opts:
-      path: "/f60ed982-1ec8-426a-d74e-a675685d6dc8"
-      headers:
-        Host: "216.128.176.166"
-  - name: "🇺🇸 #12 ✈️ United_States-CDN 42.58Mbps"
-    type: vless
-    server: "172.64.94.251"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "f3a30870-eb2e-4ad7-85cb-c0e65d061d5b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "shrill-mouse-dacd.391.workers.dev"
-  - name: "🇨🇦 #13 ✈️🔍 Canada 41.63Mbps"
+    uuid: "0c6b632a-cd96-4b74-9b51-151e3b5697db"
+    tls: true
+    servername: "using.neobo-tooth.ru"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇨🇦 #9 ✈️🔍 Canada 55.59Mbps"
     type: vless
     server: "66.70.179.198"
     port: 2053
@@ -179,43 +135,36 @@ proxies:
     reality-opts:
       public-key: "Xgn5Vcz-gtFFJXJWnGvn22m3Fc2TwoCFLUy_acTQdm8"
       short-id: "5653d14b657a1d0b"
-  - name: "🇺🇸 #14 ✈️🔍 United_States-CDN 41.36Mbps"
+  - name: "🇺🇸 #10 ✈️🔍 United_States-CDN 44.51Mbps"
     type: vless
-    server: "www.gov.ua"
-    port: 8880
+    server: "104.24.16.23"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "767c5a66-bd28-440a-90c8-7ae1101a0172"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "still-voice-1adc.135-275.workers.dev"
-  - name: "🇺🇸 #15 ✈️🔍 United_States 39.96Mbps"
-    type: vless
-    server: "104.21.76.231"
-    port: 2095
-    udp: true
-    skip-cert-verify: false
-    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    uuid: "2c122b00-78ed-44af-ae96-61f0786bf8a6"
+    tls: true
+    servername: "dark-rain-2989.gzgshsgs.workers.dev"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "fuckfangbinxing.pusytroller.gq"
-  - name: "🇺🇸 #16 ✈️ United_States-CDN 39.53Mbps"
+        Host: "dark-rain-2989.gzgshsgs.workers.dev"
+  - name: "🇺🇸 #11 ✈️🔍 United_States 38.12Mbps"
     type: vless
-    server: "www.baipiao.eu.org"
-    port: 8880
+    server: "198.251.78.29"
+    port: 2053
     udp: true
     skip-cert-verify: false
-    uuid: "d593c88a-496b-4889-968c-6af644021467"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "white-disk-79ed.476.workers.dev"
-  - name: "🇺🇸 #17 ✈️ United_States-CDN 39.33Mbps"
+    uuid: "ba12daae-cba5-475b-9289-40a99c0d3f19"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    network: "tcp"
+    reality-opts:
+      public-key: "q-3ozCtN4ylZ-ribiIrhIYzMieCnRUvGfS34d_eWmCs"
+      short-id: "063b573f23a2ee51"
+  - name: "🇺🇸 #12 ✈️🔍 United_States-CDN 37.1Mbps"
     type: vless
     server: "104.18.1.1"
     port: 443
@@ -230,424 +179,7 @@ proxies:
       path: "/"
       headers:
         Host: "workspace.evan00.dpdns.org"
-  - name: "🇺🇸 #18 ✈️🔍 United_States 38.71Mbps"
-    type: vless
-    server: "104.18.41.190"
-    port: 2095
-    udp: true
-    skip-cert-verify: false
-    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "fuckingfangbinxing.pusytroller.cf"
-  - name: "🇺🇸 #19 ✈️🔍 United_States-CDN 37.94Mbps"
-    type: vless
-    server: "104.17.28.89"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "1078d418-b4e0-4668-9018-dc90c2042d61"
-    tls: true
-    servername: "workspace.evan00.dpdns.org"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/fp=randomized"
-      headers:
-        Host: "workspace.evan00.dpdns.org"
-  - name: "🇺🇸 #20 ✈️🔍 United_States-CDN 36.16Mbps"
-    type: vless
-    server: "104.17.28.89"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "1078d418-b4e0-4668-9018-dc90c2042d61"
-    tls: true
-    servername: "workspace.evan00.dpdns.org"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "workspace.evan00.dpdns.org"
-  - name: "🇺🇸 #21 ✈️ United_States-CDN 35.61Mbps"
-    type: vless
-    server: "104.17.28.89"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "1078d418-b4e0-4668-9018-dc90c2042d61"
-    tls: true
-    servername: "workspace.evan00.dpdns.org"
-    client-fingerprint: "randomized"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "workspace.evan00.dpdns.org"
-  - name: "🇺🇸 #22 ✈️🔍 United_States 35.52Mbps"
-    type: vless
-    server: "198.251.78.29"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "ba12daae-cba5-475b-9289-40a99c0d3f19"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    network: "tcp"
-    reality-opts:
-      public-key: "q-3ozCtN4ylZ-ribiIrhIYzMieCnRUvGfS34d_eWmCs"
-      short-id: "063b573f23a2ee51"
-  - name: "🇺🇸 #23 ✈️🔍 United_States-CDN 34.66Mbps"
-    type: vless
-    server: "104.25.220.68"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "9952b71a-6c86-4522-888f-ff9ea9b93536"
-    tls: true
-    servername: "1.hshs8227shhshs.workers.dev"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "1.hshs8227shhshs.workers.dev"
-  - name: "🇺🇸 #24 ✈️ United_States-CDN 34.64Mbps"
-    type: vless
-    server: "www.gov.ua"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "da5ff974-c135-4b57-a0ff-53dd2502e71e"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "long-smoke-b6cb.290-cd1.workers.dev"
-  - name: "🇺🇸 #25 ✈️ United_States-CDN 34.37Mbps"
-    type: vless
-    server: "log.bpminecraft.com"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "1113b881-179c-411c-b29b-53dae8faaf0a"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "raspy-sun-3de0.338.workers.dev"
-  - name: "🇺🇸 #26 ✈️🔍 United_States 33.98Mbps"
-    type: vless
-    server: "69.48.201.136"
-    port: 30016
-    udp: true
-    skip-cert-verify: false
-    uuid: "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a"
-    network: "ws"
-    ws-opts:
-      path: "/usserver"
-      headers:
-        Host: "uspanel.unixzone.us"
-  - name: "🇺🇸 #27 ✈️🔍 United_States-CDN 33.55Mbps"
-    type: vless
-    server: "104.16.43.192"
-    port: 2083
-    udp: true
-    skip-cert-verify: false
-    uuid: "88e32d76-b49f-44ee-a90a-1ad01d542d55"
-    tls: true
-    servername: "ez-2cB1f5.sabZIpolObAMAHi9.WORkerS.deV"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/eyJqdW5rIjoiOWc3WUROOHZXemEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560"
-      headers:
-        Host: "ez-2cb1f5.sabzipolobamahi9.workers.dev"
-  - name: "🇺🇸 #28 ✈️🔍 United_States-CDN 33.01Mbps"
-    type: vless
-    server: "172.66.140.62"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "160ca353-676d-4b7f-a041-0289e388b865"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "proud-cloud-7bdd.208-a52.workers.dev"
-  - name: "🇺🇸 #29 ✈️🔍 United_States 32.75Mbps"
-    type: vless
-    server: "69.48.201.136"
-    port: 30016
-    udp: true
-    skip-cert-verify: false
-    uuid: "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a"
-    network: "ws"
-    ws-opts:
-      path: "/usserver"
-      headers:
-        Host: "uspanel.unixzone.us"
-  - name: "🇺🇸 #30 ✈️🔍 United_States 29.05Mbps"
-    type: vless
-    server: "77.110.115.8"
-    port: 25565
-    udp: true
-    skip-cert-verify: false
-    uuid: "086422b2-3347-45f8-b527-d9e1be25dc56"
-    tls: true
-    servername: "yandex.ru"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    reality-opts:
-      public-key: "pBd5IOD_sCDpIDqgi6EtZ6DAAMGns9n2C3qPH0i3Tno"
-      short-id: "52"
-    grpc-opts:
-      grpc-service-name: "UpdateService"
-  - name: "🇺🇸 #31 ✈️ United_States-CDN 28.35Mbps"
-    type: vless
-    server: "log.bpminecraft.com"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "1cefdbfd-6032-43d5-ac13-f58b4498e2f7"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "royal-salad-175d.306.workers.dev"
-  - name: "🇺🇸 #32 ✈️🔍 United_States 28.31Mbps"
-    type: vless
-    server: "77.110.115.8"
-    port: 25565
-    udp: true
-    skip-cert-verify: false
-    uuid: "086422b2-3347-45f8-b527-d9e1be25dc56"
-    tls: true
-    servername: "yandex.ru"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    reality-opts:
-      public-key: "pBd5IOD_sCDpIDqgi6EtZ6DAAMGns9n2C3qPH0i3Tno"
-      short-id: "52"
-    grpc-opts:
-      grpc-service-name: "UpdateService"
-  - name: "🇺🇸 #33 ✈️🔍 United_States-CDN 26.49Mbps"
-    type: vless
-    server: "104.16.8.66"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "1560c0b2-3cb8-45a3-988b-7103b031a815"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net "
-      headers:
-        Host: "delicate-wood-49a8.214-451.workers.dev"
-  - name: "🇺🇸 #34 ✈️🔍 United_States-CDN 26.39Mbps"
-    type: vless
-    server: "162.159.140.78"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "f35fb51f-8d34-49ec-80cb-7d04ffc1a69b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net "
-      headers:
-        Host: "damp-sky-9aaa.224-8b4.workers.dev"
-  - name: "🇺🇸 #35 ✈️🔍 United_States-CDN 26.33Mbps"
-    type: vless
-    server: "172.64.88.251"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "87a5d3eb-afd4-4193-9787-c54ef7c26c8c"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net "
-      headers:
-        Host: "patient-cake-39c7.44-e7a.workers.dev"
-  - name: "🇺🇸 #36 ✈️🔍 United_States-CDN 26.11Mbps"
-    type: vless
-    server: "still-voice-1adc.135-275.workers.dev"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "767c5a66-bd28-440a-90c8-7ae1101a0172"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "still-voice-1adc.135-275.workers.dev"
-  - name: "🇺🇸 #37 ✈️🔍 United_States-CDN 24.69Mbps"
-    type: vless
-    server: "www.baipiao.eu.org"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "1113b881-179c-411c-b29b-53dae8faaf0a"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "raspy-sun-3de0.338.workers.dev"
-  - name: "🇺🇸 #38 ✈️🔍 United_States 23.96Mbps"
-    type: vless
-    server: "216.227.161.95"
-    port: 7443
-    udp: true
-    skip-cert-verify: false
-    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
-    tls: true
-    servername: "media3.abvphelp.cc"
-    client-fingerprint: "firefox"
-    network: "grpc"
-    reality-opts:
-      public-key: "uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM"
-      short-id: "48d5cf47"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇺🇸 #39 ✈️🔍 United_States-CDN 23.8Mbps"
-    type: vless
-    server: "104.27.82.154"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "b0962bf7-0b03-4353-9be1-131b78ad71d0"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "weathered-truth-581a.383.workers.dev"
-  - name: "🇺🇸 #40 ✈️ United_States-CDN 23.48Mbps"
-    type: vless
-    server: "104.17.26.45"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "bfa3aaaf-41d3-4ec4-8453-e9827d7e7b30"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "crimson-mode-f8de.432-9e1.workers.dev"
-  - name: "🇺🇸 #41 ✈️🔍 United_States-CDN 22.58Mbps"
-    type: vless
-    server: "muddy-queen-cdda.181-cf9.workers.dev"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "8995976a-1c81-4b44-a414-d3bc71058a21"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "muddy-queen-cdda.181-cf9.workers.dev"
-  - name: "🇺🇸 #42 ✈️🔍 United_States 22.58Mbps"
-    type: vless
-    server: "216.227.161.95"
-    port: 7443
-    udp: true
-    skip-cert-verify: false
-    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
-    tls: true
-    servername: "media3.abvphelp.cc"
-    client-fingerprint: "firefox"
-    network: "grpc"
-    reality-opts:
-      public-key: "uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM"
-      short-id: "48d5cf47"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇺🇸 #43 ✈️ United_States-CDN 20.95Mbps"
-    type: vless
-    server: "104.16.107.139"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "bf380279-cbd5-4e55-96d1-f5a652aaf6b3"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "mute-dust-f0c4.456-8ae.workers.dev"
-  - name: "🇺🇸 #44 ✈️🔍 United_States-CDN 20.09Mbps"
-    type: vless
-    server: "172.64.94.251"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "f3a30870-eb2e-4ad7-85cb-c0e65d061d5b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "shrill-mouse-dacd.391.workers.dev"
-  - name: "🇺🇸 #45 ✈️🔍 United_States-CDN 19.91Mbps"
-    type: vless
-    server: "www.baipiao.eu.org"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "d593c88a-496b-4889-968c-6af644021467"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "white-disk-79ed.476.workers.dev"
-  - name: "🇺🇸 #46 ✈️ United_States-CDN 19.88Mbps"
-    type: vless
-    server: "log.bpminecraft.com"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "1cefdbfd-6032-43d5-ac13-f58b4498e2f7"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "royal-salad-175d.306.workers.dev"
-  - name: "🇺🇸 #47 ✈️🔍 United_States-CDN 19.68Mbps"
-    type: vless
-    server: "104.17.21.137"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "9e648bb6-25f7-4b16-9949-55ac0952d66b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "lingering-grass-6728.131-a78.workers.dev"
-  - name: "🇺🇸 #48 ✈️ United_States-CDN 19.37Mbps"
-    type: vless
-    server: "lingering-grass-6728.131-a78.workers.dev"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "9e648bb6-25f7-4b16-9949-55ac0952d66b"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "lingering-grass-6728.131-a78.workers.dev"
-  - name: "🇺🇸 #49 ✈️🔍 United_States-CDN 19.22Mbps"
-    type: vless
-    server: "www.zsu.gov.ua"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "bfa3aaaf-41d3-4ec4-8453-e9827d7e7b30"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "crimson-mode-f8de.432-9e1.workers.dev"
-  - name: "🇺🇸 #50 ✈️🔍 United_States-CDN 18.69Mbps"
+  - name: "🇺🇸 #13 ✈️🔍 United_States-CDN 36.56Mbps"
     type: vless
     server: "104.17.58.113"
     port: 8880
@@ -659,118 +191,19 @@ proxies:
       path: "/pyip=ProxyIP.US.CMLiussss.net"
       headers:
         Host: "dry-violet-d6e0.38-431.workers.dev"
-  - name: "🇺🇸 #51 ✈️🔍 United_States-CDN 18.2Mbps"
+  - name: "🇺🇸 #14 ✈️🔍 United_States 32.69Mbps"
     type: vless
-    server: "104.17.21.137"
-    port: 8880
+    server: "uspanel.unixzone.us"
+    port: 30016
     udp: true
     skip-cert-verify: false
-    uuid: "9e648bb6-25f7-4b16-9949-55ac0952d66b"
+    uuid: "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net "
+      path: "/usserver"
       headers:
-        Host: "lingering-grass-6728.131-a78.workers.dev"
-  - name: "🇺🇸 #52 ✈️🔍 United_States-CDN 17.88Mbps"
-    type: vless
-    server: "themeforest.net"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "f22856f8-66f0-4655-ba86-5385971e1302"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "throbbing-mountain-45e9.314-df3.workers.dev"
-  - name: "🇺🇸 #53 ✈️🔍 United_States-CDN 17.87Mbps"
-    type: vless
-    server: "log.bpminecraft.com"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "1cefdbfd-6032-43d5-ac13-f58b4498e2f7"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "royal-salad-175d.306.workers.dev"
-  - name: "🇺🇸 #54 ✈️ United_States-CDN 17.62Mbps"
-    type: vless
-    server: "icy-snowflake-1f56.147-1ea.workers.dev"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "4f54572a-b852-4da3-8823-0ddccc60b5d8"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "icy-snowflake-1f56.147-1ea.workers.dev"
-  - name: "🇺🇸 #55 ✈️🔍 United_States-CDN 17.41Mbps"
-    type: vless
-    server: "104.17.21.137"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "9e648bb6-25f7-4b16-9949-55ac0952d66b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "lingering-grass-6728.131-a78.workers.dev"
-  - name: "🇺🇸 #56 ✈️🔍 United_States-CDN 16.06Mbps"
-    type: vless
-    server: "104.18.152.148"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "7ab19632-89f0-4507-ad21-872d254a4a20"
-    tls: true
-    servername: "03agsdvc2c3n8737nu5787h6e0nip9.pages.dev"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/vl/v3o3EBebHZRJKd9OgwXZ?ed=2560"
-      headers:
-        Host: "03agsdvc2c3n8737nu5787h6e0nip9.pages.dev"
-  - name: "🇺🇸 #57 ✈️🔍 United_States-CDN 15.98Mbps"
-    type: vless
-    server: "104.24.152.211"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "def8ed1e-e07b-40e0-9bc0-7a2ba2cedd56"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "lucky-haze-724d.330-8c5.workers.dev"
-  - name: "🇺🇸 #58 ✈️🔍 United_States-CDN 15.77Mbps"
-    type: vless
-    server: "104.17.144.29"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "77d68177-7331-4816-b5e9-23ec39a2ae3b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "divine-rice-3224.464.workers.dev"
-  - name: "🇺🇸 #59 ✈️ United_States-CDN 15.54Mbps"
-    type: vless
-    server: "104.24.152.211"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "def8ed1e-e07b-40e0-9bc0-7a2ba2cedd56"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "lucky-haze-724d.330-8c5.workers.dev"
-  - name: "🇺🇸 #60 ✈️🔍 United_States-CDN 15.5Mbps"
+        Host: "uspanel.unixzone.us"
+  - name: "🇺🇸 #15 ✈️🔍 United_States-CDN 31.04Mbps"
     type: vless
     server: "104.17.28.89"
     port: 443
@@ -785,7 +218,174 @@ proxies:
       path: "/"
       headers:
         Host: "workspace.evan00.dpdns.org"
-  - name: "🇺🇸 #61 ✈️🔍 United_States-CDN 14.96Mbps"
+  - name: "🇺🇸 #16 ✈️🔍 United_States 30.18Mbps"
+    type: vless
+    server: "69.48.201.136"
+    port: 30016
+    udp: true
+    skip-cert-verify: false
+    uuid: "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a"
+    network: "ws"
+    ws-opts:
+      path: "/usserver"
+      headers:
+        Host: "uspanel.unixzone.us"
+  - name: "🇺🇸 #17 ✈️🔍 United_States-CDN 27.14Mbps"
+    type: vless
+    server: "104.18.1.1"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "1078d418-b4e0-4668-9018-dc90c2042d61"
+    tls: true
+    servername: "workspace.evan00.dpdns.org"
+    client-fingerprint: "ios"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "workspace.evan00.dpdns.org"
+  - name: "🇺🇸 #18 ✈️🔍 United_States 23.03Mbps"
+    type: vless
+    server: "38.58.180.136"
+    port: 3116
+    udp: true
+    skip-cert-verify: false
+    uuid: "5efabea4-f6d4-91fd-b8f0-17e004c89c60"
+    network: "ws"
+    ws-opts:
+      path: "/@s5gydl "
+      headers:
+        Host: "node67.lunes.host"
+  - name: "🇺🇸 #19 ✈️🔍 United_States 21.71Mbps"
+    type: vless
+    server: "38.58.180.136"
+    port: 3116
+    udp: true
+    skip-cert-verify: false
+    uuid: "5efabea4-f6d4-91fd-b8f0-17e004c89c60"
+    network: "ws"
+    ws-opts:
+      path: "/@s5gydl"
+      headers:
+        Host: "node67.lunes.host"
+  - name: "🇺🇸 #20 ✈️🔍 United_States 21.68Mbps"
+    type: vless
+    server: "216.227.161.95"
+    port: 7443
+    udp: true
+    skip-cert-verify: false
+    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
+    tls: true
+    servername: "media3.abvphelp.cc"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM"
+      short-id: "48d5cf47"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇺🇸 #21 ✈️🔍 United_States 21.44Mbps"
+    type: vless
+    server: "216.227.161.95"
+    port: 7443
+    udp: true
+    skip-cert-verify: false
+    uuid: "218fd696-e3a2-4c33-b397-a5f13a82969e"
+    tls: true
+    servername: "media3.abvphelp.cc"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM"
+      short-id: "48d5cf47"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇺🇸 #22 ✈️🔍 United_States 21.26Mbps"
+    type: vless
+    server: "172.64.152.241"
+    port: 2095
+    udp: true
+    skip-cert-verify: false
+    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fuckingfangbinxing.pusytroller.cf"
+  - name: "🇺🇸 #23 ✈️🔍 United_States-CDN 20.77Mbps"
+    type: vless
+    server: "188.114.97.110"
+    port: 2087
+    udp: true
+    skip-cert-verify: false
+    uuid: "73bcd72f-9545-4cb8-8daf-7d004501880d"
+    tls: true
+    servername: "wzknb.pages.dev"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/proxyip=179.255.104.87,179.255.116.198,179.255.101.56,142.248.218.6,142.248.218.4,45.76.79.239,179.255.152.163,208.68.180.240"
+      headers:
+        Host: "wzknb.pages.dev"
+  - name: "🇺🇸 #24 ✈️ United_States-CDN 20.65Mbps"
+    type: vless
+    server: "fragrant-credit-c4cf.148-e68.workers.dev"
+    port: 8880
+    udp: true
+    skip-cert-verify: false
+    uuid: "94977b19-6720-48a6-92fd-00238757ea30"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fragrant-credit-c4cf.148-e68.workers.dev"
+  - name: "🇺🇸 #25 ✈️🔍 United_States-CDN 20.48Mbps"
+    type: vless
+    server: "104.24.152.211"
+    port: 8880
+    udp: true
+    skip-cert-verify: false
+    uuid: "7b8ff2bf-29c0-4a4f-8925-9f9ef6e486f5"
+    network: "ws"
+    ws-opts:
+      path: "/pyip=ProxyIP.US.CMLiussss.net"
+      headers:
+        Host: "long-math-be5a.233-98b.workers.dev"
+  - name: "🇺🇸 #26 ✈️🔍 United_States 20.36Mbps"
+    type: trojan
+    server: "128.14.148.84"
+    port: 5531
+    udp: true
+    skip-cert-verify: false
+    password: "fg20mtCFHy"
+    sni: "ycgsc.southbyte.xyz"
+    network: "tcp"
+  - name: "🇺🇸 #27 ✈️ United_States-CDN 19.58Mbps"
+    type: vless
+    server: "icy-snowflake-1f56.147-1ea.workers.dev"
+    port: 8880
+    udp: true
+    skip-cert-verify: false
+    uuid: "4f54572a-b852-4da3-8823-0ddccc60b5d8"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "icy-snowflake-1f56.147-1ea.workers.dev"
+  - name: "🇺🇸 #28 ✈️🔍 United_States 19.48Mbps"
+    type: vless
+    server: "104.21.74.214"
+    port: 2095
+    udp: true
+    skip-cert-verify: false
+    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fangbinxingnmsl.pusytroller.gq"
+  - name: "🇺🇸 #29 ✈️🔍 United_States-CDN 19.09Mbps"
     type: vless
     server: "muddy-queen-cdda.181-cf9.workers.dev"
     port: 8880
@@ -797,115 +397,247 @@ proxies:
       path: "/"
       headers:
         Host: "muddy-queen-cdda.181-cf9.workers.dev"
-  - name: "🇺🇸 #62 ✈️🔍 United_States-CDN 14.82Mbps"
-    type: vless
-    server: "172.64.88.168"
-    port: 8880
+  - name: "🇺🇸 #30 ✈️🔍 United_States 18.54Mbps"
+    type: trojan
+    server: "34.94.125.227"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "2e55e846-7737-4c07-af67-191e2727513c"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "weathered-sunset-be54.407-d9d.workers.dev"
-  - name: "🇺🇸 #63 ✈️🔍 United_States-CDN 13.84Mbps"
-    type: vless
-    server: "194.59.5.46"
-    port: 2096
+    password: "M7v%w11Se*"
+    sni: "mxlo.wsone.icu"
+    network: "tcp"
+  - name: "🇺🇸 #31 ✈️🔍 United_States 17.47Mbps"
+    type: trojan
+    server: "34.94.125.227"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
+    password: "M7v%w11Se*"
+    sni: "mxlo.wsone.icu"
+    network: "tcp"
+  - name: "🇺🇸 #32 ✈️🔍 United_States-CDN 16.24Mbps"
+    type: vless
+    server: "ed8d.wdz.de5.net"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "0b06f318-ab9d-4de7-8779-360bd5f7ea67"
     tls: true
-    servername: "wild-sky-f384.alvlirm3737.workers.dev"
+    servername: "ed8d.wdz.de5.net"
     client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/proxyip=172.86.93.55,194.99.20.245,46.101.165.85,46.101.181.132,209.38.201.199,165.22.89.207,207.154.242.240,64.188.83.202"
+      path: "/"
       headers:
-        Host: "wild-sky-f384.alvlirm3737.workers.dev"
-  - name: "🇺🇸 #64 ✈️ United_States-CDN 13.44Mbps"
+        Host: "ed8d.wdz.de5.net"
+  - name: "🇮🇪 #33 ✈️🔍 Ireland 15.95Mbps"
+    type: trojan
+    server: "18.201.28.146"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    password: "AE62539071"
+    sni: "helped-haddock.rooster465.autos"
+    network: "tcp"
+  - name: "🇮🇪 #34 ✈️🔍 Ireland 15.93Mbps"
+    type: trojan
+    server: "18.201.28.146"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    password: "AE62539071"
+    sni: "helped-haddock.rooster465.autos"
+    network: "tcp"
+  - name: "🇺🇸 #35 ✈️ United_States-CDN 15.9Mbps"
     type: vless
-    server: "mute-dust-f0c4.456-8ae.workers.dev"
+    server: "fragrant-credit-c4cf.148-e68.workers.dev"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "bf380279-cbd5-4e55-96d1-f5a652aaf6b3"
+    uuid: "94977b19-6720-48a6-92fd-00238757ea30"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
+      path: "/"
       headers:
-        Host: "mute-dust-f0c4.456-8ae.workers.dev"
-  - name: "🇺🇸 #65 ✈️🔍 United_States-CDN 13.33Mbps"
+        Host: "fragrant-credit-c4cf.148-e68.workers.dev"
+  - name: "🇬🇧 #36 ✈️🔍 United_Kingdom 15.76Mbps"
     type: vless
-    server: "188.114.97.8"
+    server: "57.129.132.223"
+    port: 80
+    udp: true
+    skip-cert-verify: false
+    uuid: "dbb78c94-9f87-4d7d-b945-2000b60352fd"
+    network: "ws"
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "---@VPNine1---@VPNine1---@VPNine1---@VPNine1---@VPNine1"
+  - name: "🇺🇸 #37 ✈️ United_States-CDN 15.72Mbps"
+    type: vless
+    server: "muddy-queen-cdda.181-cf9.workers.dev"
+    port: 8880
+    udp: true
+    skip-cert-verify: false
+    uuid: "8995976a-1c81-4b44-a414-d3bc71058a21"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "muddy-queen-cdda.181-cf9.workers.dev"
+  - name: "🇺🇸 #38 ✈️🔍 United_States-CDN 15.69Mbps"
+    type: vless
+    server: "ed8d.wdz.de5.net"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "0b06f318-ab9d-4de7-8779-360bd5f7ea67"
+    tls: true
+    servername: "ed8d.wdz.de5.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "ed8d.wdz.de5.net"
+  - name: "🇬🇧 #39 ✈️🔍 United_Kingdom 15.36Mbps"
+    type: vless
+    server: "57.129.132.223"
+    port: 80
+    udp: true
+    skip-cert-verify: false
+    uuid: "9e20b04d-5a81-4e16-b421-01e502f0aac6"
+    network: "ws"
+    ws-opts:
+      path: "/vless/"
+      headers:
+        Host: "google.com"
+  - name: "🇺🇸 #40 ✈️🔍 United_States-CDN 15.36Mbps"
+    type: trojan
+    server: "45.205.0.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    password: "mitivpn"
+    sni: "333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+  - name: "🇬🇧 #41 ✈️🔍 United_Kingdom 15.26Mbps"
+    type: vless
+    server: "51.89.194.151"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "34b7efee-3c88-440f-9495-92c12a0de50e"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    network: "tcp"
+    reality-opts:
+      public-key: "v0-nm8GGINN0mEHP5kgcgWrl_TFDcr2ZS8yLLW8c93M"
+      short-id: "5b83742cfc81b064"
+  - name: "🇺🇸 #42 ✈️ United_States-CDN 14.91Mbps"
+    type: vless
+    server: "ed8d.wdz.de5.net"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "0b06f318-ab9d-4de7-8779-360bd5f7ea67"
+    tls: true
+    servername: "ed8d.wdz.de5.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ed8d.wdz.de5.net"
+  - name: "🇩🇪 #43 ✈️🔍 Germany 13.94Mbps"
+    type: vless
+    server: "45.155.70.123"
     port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66"
+    uuid: "f82332b2-dc8c-eac4-ac12-f276e37e278a"
     tls: true
-    servername: "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
+    servername: "s1.test.anti-zapret.com"
     client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
-      headers:
-        Host: "crimson-leaf-7e45.hzhduuebfjdcb.workers.dev"
-  - name: "🇺🇸 #66 ✈️🔍 United_States-CDN 13.27Mbps"
-    type: vless
-    server: "104.16.8.66"
-    port: 8880
+    network: "tcp"
+    reality-opts:
+      public-key: "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY"
+      short-id: "58fbcddfaae3ade9"
+  - name: "🇺🇸 #44 ✈️ United_States-CDN 13.8Mbps"
+    type: trojan
+    server: "213.182.199.137"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "2145ee90-d933-4975-b4fe-8fa5365937f0"
+    password: "MiTiVPN"
+    sni: "66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
       headers:
-        Host: "long-breeze-5552.250-271.workers.dev"
-  - name: "🇺🇸 #67 ✈️🔍 United_States-CDN 12.6Mbps"
+        Host: "66-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+  - name: "🇩🇪 #45 ✈️🔍 Germany 13.42Mbps"
     type: vless
-    server: "194.59.5.46"
-    port: 2096
-    udp: true
-    skip-cert-verify: false
-    uuid: "8525fe74-67e6-4a55-8a26-95f227bd1384"
-    tls: true
-    servername: "wild-sky-f384.alvlirm3737.workers.dev"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/proxyip=172.86.93.55,194.99.20.245,46.101.165.85,46.101.181.132,209.38.201.199,165.22.89.207,207.154.242.240,64.188.83.202"
-      headers:
-        Host: "wild-sky-f384.alvlirm3737.workers.dev"
-  - name: "🇺🇸 #68 ✈️🔍 United_States-CDN 11.88Mbps"
-    type: vless
-    server: "162.159.156.214"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "4f74ff26-25af-41d6-9d39-be46fe8ff1a8"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "steep-resonance-1ffb.274.workers.dev"
-  - name: "🇺🇸 #69 ✈️🔍 United_States-CDN 11.19Mbps"
-    type: vless
-    server: "188.114.97.8"
+    server: "s1.test.anti-zapret.com"
     port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66"
+    uuid: "f82332b2-dc8c-eac4-ac12-f276e37e278a"
     tls: true
-    servername: "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv"
+    servername: "s1.test.anti-zapret.com"
     client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY"
+      short-id: "58fbcddfaae3ade9"
+  - name: "🇩🇪 #46 ✈️🔍 Germany 13.4Mbps"
+    type: vless
+    server: "144.31.87.16"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
+    tls: true
+    servername: "pinterest.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "EDeWEPBq0QDOPp73PNVlaV2EWaEBWhgBcNy3MROgZ00"
+      short-id: "04b38b6b152a1b0b"
+  - name: "🇮🇹 #47 🔍 Italy 12.65Mbps"
+    type: vless
+    server: "204.216.216.23"
+    port: 10086
+    udp: true
+    skip-cert-verify: false
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    network: "tcp"
+  - name: "🇮🇹 #48 🔍 Italy 12.26Mbps"
+    type: vless
+    server: "204.216.216.23"
+    port: 10086
+    udp: true
+    skip-cert-verify: false
+    uuid: "9f0285ee-20ca-4953-bcdb-86a920652923"
+    network: "tcp"
+  - name: "🇺🇸 #49 ✈️🔍 United_States-CDN 11.49Mbps"
+    type: trojan
+    server: "188.114.97.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    password: "MITIVPN"
+    sni: "39995895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
     network: "ws"
     ws-opts:
-      path: "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
       headers:
-        Host: "crimson-leaf-7e45.hzhduuebfjdcb.workers.dev"
-  - name: "🇺🇸 #70 ✈️🔍 United_States-CDN 10.8Mbps"
+        Host: "8387463833-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+  - name: "🇺🇸 #50 ✈️🔍 United_States-CDN 11.28Mbps"
     type: trojan
     server: "188.114.97.6"
     port: 443
@@ -918,19 +650,7 @@ proxies:
       path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
       headers:
         Host: "3865895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
-  - name: "🇺🇸 #71 ✈️ United_States-CDN 10.69Mbps"
-    type: vless
-    server: "www.baipiao.eu.org"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "dec6b197-3211-46f0-bca8-71dfca535709"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "patient-bread-62cc.473-002.workers.dev"
-  - name: "🇺🇸 #72 ✈️ United_States-CDN 8.53Mbps"
+  - name: "🇺🇸 #51 ✈️🔍 United_States-CDN 9.0Mbps"
     type: vless
     server: "skk.moe"
     port: 8880
@@ -942,19 +662,7 @@ proxies:
       path: "/pyip=ProxyIP.JP.CMLiussss.net"
       headers:
         Host: "crimson-bread-c38e.295.workers.dev"
-  - name: "🇺🇸 #73 ✈️ United_States-CDN 8.21Mbps"
-    type: vless
-    server: "www.baipiao.eu.org"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "ea29d6f1-3567-4d45-b8c2-e42f162caef4"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "mute-dawn-f27b.375.workers.dev"
-  - name: "🇺🇸 #74 ✈️🔍 United_States-CDN 7.98Mbps"
+  - name: "🇺🇸 #52 ✈️🔍 United_States-CDN 8.37Mbps"
     type: vless
     server: "8.6.112.6"
     port: 2087
@@ -969,223 +677,402 @@ proxies:
       path: "/?ed=2560"
       headers:
         Host: "fx3l5i2wdfxln0.fx6hsv0.ccwu.cc"
-  - name: "🇺🇸 #75 ✈️🔍 United_States-CDN 7.93Mbps"
+  - name: "🇺🇸 #53 ✈️🔍 United_States-CDN 8.32Mbps"
     type: vless
-    server: "104.17.58.113"
+    server: "104.17.170.132"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "14e0ab2e-fb3e-4fd1-a6d9-62eeae62976b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "jolly-shape-3ce6.392.workers.dev"
-  - name: "🇺🇸 #76 ✈️🔍 United_States-CDN 7.93Mbps"
-    type: vless
-    server: "www.baipiao.eu.org"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "ea29d6f1-3567-4d45-b8c2-e42f162caef4"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "mute-dawn-f27b.375.workers.dev"
-  - name: "🇺🇸 #77 ✈️🔍 United_States-CDN 7.83Mbps"
-    type: vless
-    server: "104.17.58.113"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "14e0ab2e-fb3e-4fd1-a6d9-62eeae62976b"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "jolly-shape-3ce6.392.workers.dev"
-  - name: "🇺🇸 #78 ✈️ United_States-CDN 7.44Mbps"
-    type: vless
-    server: "104.24.152.211"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "7b8ff2bf-29c0-4a4f-8925-9f9ef6e486f5"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.US.CMLiussss.net"
-      headers:
-        Host: "long-math-be5a.233-98b.workers.dev"
-  - name: "🇺🇸 #79 ✈️ United_States-CDN 7.19Mbps"
-    type: vless
-    server: "162.159.140.78"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "c18fd69e-92ba-446e-981b-213dbb551593"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "billowing-wind-5b29.133-323.workers.dev"
-  - name: "🇺🇸 #80 ✈️ United_States-CDN 7.17Mbps"
-    type: vless
-    server: "104.18.11.118"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "17b2ed22-5fd0-47ad-b5f0-658379379ced"
+    uuid: "49a9aa25-443b-4fab-9a85-066dd5396c57"
     network: "ws"
     ws-opts:
       path: "/pyip=ProxyIP.KR.CMLiussss.net"
       headers:
-        Host: "black-wildflower-dd92.72-1e8.workers.dev"
-  - name: "🇺🇸 #81 ✈️🔍 United_States-CDN 7.02Mbps"
+        Host: "mute-river-6aee.421-bd7.workers.dev"
+  - name: "🇺🇸 #54 ✈️ United_States-CDN 8.25Mbps"
     type: vless
-    server: "104.17.144.29"
-    port: 8880
+    server: "cf.9999669.xyz"
+    port: 2087
     udp: true
     skip-cert-verify: false
-    uuid: "85e14d59-02ea-4642-a317-50f1e1691660"
+    uuid: "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    tls: true
+    servername: "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      path: "/?ed=2560"
       headers:
-        Host: "icy-hat-20f3.328-99f.workers.dev"
-  - name: "🇺🇸 #82 ✈️🔍 United_States-CDN 6.86Mbps"
+        Host: "faxf32gkfzoxqv.fx6hsv0.ccwu.cc"
+  - name: "🇺🇸 #55 ✈️🔍 United_States-CDN 7.82Mbps"
+    type: trojan
+    server: "188.114.97.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    password: "MiTiVPN"
+    sni: "3865895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "3865895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+  - name: "🇺🇸 #56 ✈️🔍 United_States-CDN 7.69Mbps"
+    type: trojan
+    server: "188.114.97.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    password: "MiTiVPN"
+    sni: "3865895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+    network: "ws"
+    ws-opts:
+      path: "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN"
+      headers:
+        Host: "8383833-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle"
+  - name: "🇺🇸 #57 ✈️🔍 United_States-CDN 7.68Mbps"
     type: vless
-    server: "www.baipiao.eu.org"
+    server: "mfa.gov.ua"
+    port: 2087
+    udp: true
+    skip-cert-verify: false
+    uuid: "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    tls: true
+    servername: "fx3l5i2wdfxln0.fx6hsv0.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "fx3l5i2wdfxln0.fx6hsv0.ccwu.cc"
+  - name: "🇺🇸 #58 ✈️🔍 United_States-CDN 7.59Mbps"
+    type: vless
+    server: "www.shopify.com"
+    port: 2087
+    udp: true
+    skip-cert-verify: false
+    uuid: "77777777-8a3e-6666-b6d1-a9c5f0e8b3a2"
+    tls: true
+    servername: "fx3h2kf8xn.fx6hsv0.ccwu.cc"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "fx3h2kf8xn.fx6hsv0.ccwu.cc"
+  - name: "🇺🇸 #59 ✈️🔍 United_States-CDN 7.56Mbps"
+    type: vless
+    server: "162.159.156.214"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "dec6b197-3211-46f0-bca8-71dfca535709"
+    uuid: "d9c01a13-cb60-4c48-9fbc-ba1d3a8b5bfb"
     network: "ws"
     ws-opts:
       path: "/pyip=ProxyIP.JP.CMLiussss.net"
       headers:
-        Host: "patient-bread-62cc.473-002.workers.dev"
-  - name: "🇺🇸 #83 ✈️🔍 United_States-CDN 6.75Mbps"
-    type: vless
-    server: "104.17.26.45"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "2e9012a2-7f8c-4233-b78b-5228a9a4951b"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "icy-breeze-126c.211-eb3.workers.dev"
-  - name: "🇺🇸 #84 ✈️ United_States-CDN 6.53Mbps"
-    type: vless
-    server: "104.17.144.29"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "85e14d59-02ea-4642-a317-50f1e1691660"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
-      headers:
-        Host: "icy-hat-20f3.328-99f.workers.dev"
-  - name: "🇺🇸 #85 ✈️🔍 United_States-CDN 6.48Mbps"
-    type: vless
-    server: "104.18.11.118"
-    port: 8880
-    udp: true
-    skip-cert-verify: false
-    uuid: "17b2ed22-5fd0-47ad-b5f0-658379379ced"
-    network: "ws"
-    ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
-      headers:
-        Host: "black-wildflower-dd92.72-1e8.workers.dev"
-  - name: "🇺🇸 #86 ✈️🔍 United_States-CDN 6.42Mbps"
+        Host: "little-silence-1ee8.449.workers.dev"
+  - name: "🇺🇸 #60 ✈️ United_States-CDN 7.54Mbps"
     type: vless
     server: "172.64.88.251"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "87a5d3eb-afd4-4193-9787-c54ef7c26c8c"
+    uuid: "efb0a3fe-af52-45c5-b397-1a6866d88d67"
     network: "ws"
     ws-opts:
       path: "/pyip=ProxyIP.KR.CMLiussss.net"
       headers:
-        Host: "patient-cake-39c7.44-e7a.workers.dev"
-  - name: "🇺🇸 #87 ✈️🔍 United_States-CDN 6.4Mbps"
+        Host: "tight-recipe-11ad.252-068.workers.dev"
+  - name: "🇺🇸 #61 ✈️ United_States-CDN 7.54Mbps"
     type: vless
-    server: "172.64.88.251"
-    port: 8880
+    server: "104.16.79.73"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "87a5d3eb-afd4-4193-9787-c54ef7c26c8c"
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/ "
+      path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512"
       headers:
-        Host: "patient-cake-39c7.44-e7a.workers.dev"
-  - name: "🇺🇸 #88 ✈️🔍 United_States-CDN 6.31Mbps"
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #62 ✈️ United_States-CDN 6.86Mbps"
     type: vless
-    server: "104.24.152.211"
+    server: "172.64.88.168"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "a7b8b48e-1000-46f5-a974-f6606d94f3b4"
+    uuid: "b4883d27-3151-4adf-92b1-841c0dccd1ea"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
       headers:
-        Host: "misty-hill-4b94.146-c18.workers.dev"
-  - name: "🇺🇸 #89 ✈️ United_States-CDN 6.27Mbps"
+        Host: "damp-surf-aacf.296-8ed.workers.dev"
+  - name: "🇺🇸 #63 ✈️🔍 United_States-CDN 6.66Mbps"
     type: vless
-    server: "104.27.82.154"
+    server: "www.ipget.net"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "94ed4a58-dcf4-43cb-afc1-f158e14ec42d"
+    uuid: "bbecfa92-4f64-4eb8-82e6-388394d909fe"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/pyip=ProxyIP.JP.CMLiussss.net"
       headers:
-        Host: "gentle-surf-cc74.345-604.workers.dev"
-  - name: "🇺🇸 #90 ✈️🔍 United_States-CDN 6.03Mbps"
+        Host: "empty-poetry-07b6.477-e0d.workers.dev"
+  - name: "🇺🇸 #64 ✈️🔍 United_States-CDN 6.64Mbps"
     type: vless
-    server: "104.27.82.154"
+    server: "104.17.170.132"
     port: 8880
     udp: true
     skip-cert-verify: false
-    uuid: "94ed4a58-dcf4-43cb-afc1-f158e14ec42d"
+    uuid: "49a9aa25-443b-4fab-9a85-066dd5396c57"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/pyip=ProxyIP.KR.CMLiussss.net"
       headers:
-        Host: "gentle-surf-cc74.345-604.workers.dev"
-  - name: "🇺🇸 #91 ✈️ United_States-CDN 5.98Mbps"
+        Host: "mute-river-6aee.421-bd7.workers.dev"
+  - name: "🇺🇸 #65 ✈️🔍 United_States-CDN 6.58Mbps"
     type: vless
-    server: "104.16.106.213"
-    port: 8880
+    server: "172.67.185.178"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "3e7bb66e-d7c6-4711-aa05-e4ab0ec58c6d"
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "shrill-cell-cca7.158-6fa.workers.dev"
-  - name: "🇺🇸 #92 ✈️ United_States-CDN 5.97Mbps"
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #66 ✈️ United_States-CDN 6.23Mbps"
     type: vless
-    server: "172.67.207.26"
-    port: 8880
+    server: "104.18.28.234"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "90f0ae37-5a8f-4649-98ad-ac5323840f93"
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/sg-melbi"
       headers:
-        Host: "silent-king-06b6.297-842.workers.dev"
-  - name: "🇺🇸 #93 ✈️ United_States-CDN 5.93Mbps"
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #67 ✈️🔍 United_States-CDN 6.11Mbps"
+    type: vless
+    server: "104.21.74.214"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #68 ✈️ United_States-CDN 6.08Mbps"
+    type: vless
+    server: "104.16.79.73"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "musiclovers85?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #69 ✈️🔍 United_States-CDN 6.05Mbps"
+    type: vless
+    server: "104.18.28.234"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #70 ✈️🔍 United_States-CDN 6.02Mbps"
+    type: vless
+    server: "104.21.74.214"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #71 ✈️🔍 United_States-CDN 6.0Mbps"
+    type: vless
+    server: "159.112.235.52"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #72 ✈️🔍 United_States-CDN 5.97Mbps"
+    type: vless
+    server: "170.114.46.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+    tls: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇺🇸 #73 ✈️🔍 United_States-CDN 5.97Mbps"
+    type: vless
+    server: "185.193.30.94"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/musiclovers85"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #74 ✈️🔍 United_States-CDN 5.91Mbps"
+    type: vless
+    server: "172.66.44.97"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #75 ✈️🔍 United_States-CDN 5.88Mbps"
+    type: vless
+    server: "172.64.150.28"
+    port: 2082
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    network: "ws"
+    ws-opts:
+      path: "/fp"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #76 ✈️ United_States-CDN 5.86Mbps"
+    type: vless
+    server: "188.114.99.0"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #77 ✈️🔍 United_States-CDN 5.85Mbps"
+    type: vless
+    server: "188.114.99.0"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #78 ✈️🔍 United_States-CDN 5.82Mbps"
+    type: vless
+    server: "104.16.79.73"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #79 ✈️ United_States-CDN 5.81Mbps"
+    type: vless
+    server: "170.114.46.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+    tls: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇺🇸 #80 ✈️ United_States-CDN 5.8Mbps"
+    type: vless
+    server: "188.114.97.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "unsafe"
+    network: "ws"
+    ws-opts:
+      path: "/ed=2560"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #81 ✈️🔍 United_States-CDN 5.8Mbps"
     type: vless
     server: "104.16.171.98"
     port: 443
@@ -1200,412 +1087,624 @@ proxies:
       path: "/"
       headers:
         Host: "hhlfy.twiladaphne.ndjp.net"
-  - name: "🇺🇸 #94 ✈️🔍 United_States-CDN 5.9Mbps"
+  - name: "🇺🇸 #82 ✈️🔍 United_States-CDN 5.76Mbps"
     type: vless
-    server: "104.17.58.113"
-    port: 8880
+    server: "170.114.46.6"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494"
+    uuid: "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+    tls: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/sg-amz"
       headers:
-        Host: "small-cake-e99b.390-a20.workers.dev"
-  - name: "🇺🇸 #95 ✈️ United_States-CDN 5.83Mbps"
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇺🇸 #83 ✈️ United_States-CDN 5.75Mbps"
     type: vless
-    server: "162.159.140.78"
-    port: 8880
+    server: "104.18.1.1"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "f35fb51f-8d34-49ec-80cb-7d04ffc1a69b"
+    uuid: "1078d418-b4e0-4668-9018-dc90c2042d61"
+    tls: true
+    servername: "workspace.evan00.dpdns.org"
+    client-fingerprint: "ios"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/"
       headers:
-        Host: "damp-sky-9aaa.224-8b4.workers.dev"
-  - name: "🇺🇸 #96 ✈️🔍 United_States-CDN 5.77Mbps"
+        Host: "workspace.evan00.dpdns.org"
+  - name: "🇺🇸 #84 ✈️🔍 United_States-CDN 5.72Mbps"
     type: vless
-    server: "log.bpminecraft.com"
-    port: 8880
+    server: "170.114.46.6"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "d702b5e4-412d-4859-a528-3fc0b91f6fc0"
+    uuid: "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+    tls: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=proxyip.sg.cmliussss.net"
+      path: "/sg-amz"
       headers:
-        Host: "wild-math-3ef2.439.workers.dev"
-  - name: "🇺🇸 #97 ✈️🔍 United_States-CDN 5.71Mbps"
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇺🇸 #85 ✈️ United_States-CDN 5.69Mbps"
     type: vless
-    server: "104.27.82.154"
-    port: 8880
+    server: "172.67.185.178"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "94ed4a58-dcf4-43cb-afc1-f158e14ec42d"
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/"
       headers:
-        Host: "gentle-surf-cc74.345-604.workers.dev"
-  - name: "🇺🇸 #98 ✈️🔍 United_States-CDN 5.62Mbps"
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #86 ✈️🔍 United_States-CDN 5.68Mbps"
     type: vless
-    server: "104.27.82.154"
-    port: 8880
+    server: "208.103.161.32"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "94ed4a58-dcf4-43cb-afc1-f158e14ec42d"
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/sg-melbi"
       headers:
-        Host: "gentle-surf-cc74.345-604.workers.dev"
-  - name: "🇺🇸 #99 ✈️🔍 United_States-CDN 5.24Mbps"
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #87 ✈️ United_States-CDN 5.64Mbps"
     type: vless
-    server: "104.17.58.113"
-    port: 8880
+    server: "104.16.6.70"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494"
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.SG.CMLiussss.net"
+      path: "/"
       headers:
-        Host: "small-cake-e99b.390-a20.workers.dev"
-  - name: "🇺🇸 #100 ✈️ United_States-CDN 4.72Mbps"
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #88 ✈️ United_States-CDN 5.63Mbps"
     type: vless
-    server: "172.64.88.251"
-    port: 8880
+    server: "162.159.12.41"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "87a5d3eb-afd4-4193-9787-c54ef7c26c8c"
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
     network: "ws"
     ws-opts:
-      path: "/pyip=ProxyIP.KR.CMLiussss.net"
+      path: "/"
       headers:
-        Host: "patient-cake-39c7.44-e7a.workers.dev"
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #89 ✈️🔍 United_States-CDN 5.61Mbps"
+    type: vless
+    server: "188.114.99.0"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-melbi"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #90 ✈️🔍 United_States-CDN 5.61Mbps"
+    type: vless
+    server: "162.159.12.41"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #91 🔍 United_States-CDN 4.93Mbps"
+    type: vless
+    server: "170.114.46.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "6680846a-8a57-4dfd-9a0e-63209cfc8535"
+    tls: true
+    servername: "support.zoom.us.yxls.eu.cc"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/sg-amz"
+      headers:
+        Host: "support.zoom.us.yxls.eu.cc"
+  - name: "🇺🇸 #92 ✈️🔍 United_States-CDN 4.71Mbps"
+    type: vless
+    server: "104.16.79.73"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2048"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #93 ✈️🔍 United_States-CDN 4.52Mbps"
+    type: vless
+    server: "104.16.79.73"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?TELEGRAM-Cnetvpn?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #94 ✈️🔍 United_States-CDN 4.3Mbps"
+    type: vless
+    server: "172.64.150.28"
+    port: 2082
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    network: "ws"
+    ws-opts:
+      path: "/fp"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #95 ✈️🔍 United_States-CDN 4.28Mbps"
+    type: vless
+    server: "104.18.34.124"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #96 ✈️🔍 United_States-CDN 4.25Mbps"
+    type: vless
+    server: "188.114.97.6"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    tls: true
+    servername: "hhlfy.twiladaphne.ndjp.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #97 ✈️🔍 United_States-CDN 4.09Mbps"
+    type: vless
+    server: "172.64.150.28"
+    port: 2082
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    network: "ws"
+    ws-opts:
+      path: "/fp"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #98 ✈️🔍 United_States-CDN 3.71Mbps"
+    type: vless
+    server: "172.64.150.28"
+    port: 2082
+    udp: true
+    skip-cert-verify: false
+    uuid: "e5cc16a6-ea42-46b2-82ae-ad2157e1641b"
+    network: "ws"
+    ws-opts:
+      path: "/fp"
+      headers:
+        Host: "hhlfy.twiladaphne.ndjp.net"
+  - name: "🇺🇸 #99 ✈️🔍 United_States-CDN 3.66Mbps"
+    type: vless
+    server: "159.112.235.52"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
+  - name: "🇺🇸 #100 ✈️ United_States-CDN 3.49Mbps"
+    type: vless
+    server: "104.16.79.73"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "83afd88f-200f-4d89-bfc7-66eff160c1d8"
+    tls: true
+    servername: "josni.hoyes.cloudns.ch"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/?TELEGRAM-Cnetvpn?ed=512"
+      headers:
+        Host: "josni.hoyes.cloudns.ch"
 
 proxy-groups:
   - name: "🚀 PROXY"
     type: select
     proxies:
       - "⚡ AUTO"
-      - "🇺🇸 #1 ✈️🔍 United_States 104.34Mbps"
-      - "🇺🇸 #2 ✈️ United_States-CDN 66.09Mbps"
-      - "🇺🇸 #3 ✈️ United_States-CDN 63.5Mbps"
-      - "🇺🇸 #4 ✈️🔍 United_States 58.08Mbps"
-      - "🇺🇸 #5 ✈️🔍 United_States 56.83Mbps"
-      - "🇺🇸 #6 ✈️🔍 United_States 56.35Mbps"
-      - "🇺🇸 #7 ✈️🔍 United_States 53.89Mbps"
-      - "🇺🇸 #8 ✈️🔍 United_States 46.66Mbps"
-      - "🇺🇸 #9 ✈️🔍 United_States-CDN 45.34Mbps"
-      - "🇨🇦 #10 ✈️🔍 Canada 44.07Mbps"
-      - "🇨🇦 #11 ✈️🔍 Canada 43.24Mbps"
-      - "🇺🇸 #12 ✈️ United_States-CDN 42.58Mbps"
-      - "🇨🇦 #13 ✈️🔍 Canada 41.63Mbps"
-      - "🇺🇸 #14 ✈️🔍 United_States-CDN 41.36Mbps"
-      - "🇺🇸 #15 ✈️🔍 United_States 39.96Mbps"
-      - "🇺🇸 #16 ✈️ United_States-CDN 39.53Mbps"
-      - "🇺🇸 #17 ✈️ United_States-CDN 39.33Mbps"
-      - "🇺🇸 #18 ✈️🔍 United_States 38.71Mbps"
-      - "🇺🇸 #19 ✈️🔍 United_States-CDN 37.94Mbps"
-      - "🇺🇸 #20 ✈️🔍 United_States-CDN 36.16Mbps"
-      - "🇺🇸 #21 ✈️ United_States-CDN 35.61Mbps"
-      - "🇺🇸 #22 ✈️🔍 United_States 35.52Mbps"
-      - "🇺🇸 #23 ✈️🔍 United_States-CDN 34.66Mbps"
-      - "🇺🇸 #24 ✈️ United_States-CDN 34.64Mbps"
-      - "🇺🇸 #25 ✈️ United_States-CDN 34.37Mbps"
-      - "🇺🇸 #26 ✈️🔍 United_States 33.98Mbps"
-      - "🇺🇸 #27 ✈️🔍 United_States-CDN 33.55Mbps"
-      - "🇺🇸 #28 ✈️🔍 United_States-CDN 33.01Mbps"
-      - "🇺🇸 #29 ✈️🔍 United_States 32.75Mbps"
-      - "🇺🇸 #30 ✈️🔍 United_States 29.05Mbps"
-      - "🇺🇸 #31 ✈️ United_States-CDN 28.35Mbps"
-      - "🇺🇸 #32 ✈️🔍 United_States 28.31Mbps"
-      - "🇺🇸 #33 ✈️🔍 United_States-CDN 26.49Mbps"
-      - "🇺🇸 #34 ✈️🔍 United_States-CDN 26.39Mbps"
-      - "🇺🇸 #35 ✈️🔍 United_States-CDN 26.33Mbps"
-      - "🇺🇸 #36 ✈️🔍 United_States-CDN 26.11Mbps"
-      - "🇺🇸 #37 ✈️🔍 United_States-CDN 24.69Mbps"
-      - "🇺🇸 #38 ✈️🔍 United_States 23.96Mbps"
-      - "🇺🇸 #39 ✈️🔍 United_States-CDN 23.8Mbps"
-      - "🇺🇸 #40 ✈️ United_States-CDN 23.48Mbps"
-      - "🇺🇸 #41 ✈️🔍 United_States-CDN 22.58Mbps"
-      - "🇺🇸 #42 ✈️🔍 United_States 22.58Mbps"
-      - "🇺🇸 #43 ✈️ United_States-CDN 20.95Mbps"
-      - "🇺🇸 #44 ✈️🔍 United_States-CDN 20.09Mbps"
-      - "🇺🇸 #45 ✈️🔍 United_States-CDN 19.91Mbps"
-      - "🇺🇸 #46 ✈️ United_States-CDN 19.88Mbps"
-      - "🇺🇸 #47 ✈️🔍 United_States-CDN 19.68Mbps"
-      - "🇺🇸 #48 ✈️ United_States-CDN 19.37Mbps"
-      - "🇺🇸 #49 ✈️🔍 United_States-CDN 19.22Mbps"
-      - "🇺🇸 #50 ✈️🔍 United_States-CDN 18.69Mbps"
-      - "🇺🇸 #51 ✈️🔍 United_States-CDN 18.2Mbps"
-      - "🇺🇸 #52 ✈️🔍 United_States-CDN 17.88Mbps"
-      - "🇺🇸 #53 ✈️🔍 United_States-CDN 17.87Mbps"
-      - "🇺🇸 #54 ✈️ United_States-CDN 17.62Mbps"
-      - "🇺🇸 #55 ✈️🔍 United_States-CDN 17.41Mbps"
-      - "🇺🇸 #56 ✈️🔍 United_States-CDN 16.06Mbps"
-      - "🇺🇸 #57 ✈️🔍 United_States-CDN 15.98Mbps"
-      - "🇺🇸 #58 ✈️🔍 United_States-CDN 15.77Mbps"
-      - "🇺🇸 #59 ✈️ United_States-CDN 15.54Mbps"
-      - "🇺🇸 #60 ✈️🔍 United_States-CDN 15.5Mbps"
-      - "🇺🇸 #61 ✈️🔍 United_States-CDN 14.96Mbps"
-      - "🇺🇸 #62 ✈️🔍 United_States-CDN 14.82Mbps"
-      - "🇺🇸 #63 ✈️🔍 United_States-CDN 13.84Mbps"
-      - "🇺🇸 #64 ✈️ United_States-CDN 13.44Mbps"
-      - "🇺🇸 #65 ✈️🔍 United_States-CDN 13.33Mbps"
-      - "🇺🇸 #66 ✈️🔍 United_States-CDN 13.27Mbps"
-      - "🇺🇸 #67 ✈️🔍 United_States-CDN 12.6Mbps"
-      - "🇺🇸 #68 ✈️🔍 United_States-CDN 11.88Mbps"
-      - "🇺🇸 #69 ✈️🔍 United_States-CDN 11.19Mbps"
-      - "🇺🇸 #70 ✈️🔍 United_States-CDN 10.8Mbps"
-      - "🇺🇸 #71 ✈️ United_States-CDN 10.69Mbps"
-      - "🇺🇸 #72 ✈️ United_States-CDN 8.53Mbps"
-      - "🇺🇸 #73 ✈️ United_States-CDN 8.21Mbps"
-      - "🇺🇸 #74 ✈️🔍 United_States-CDN 7.98Mbps"
-      - "🇺🇸 #75 ✈️🔍 United_States-CDN 7.93Mbps"
-      - "🇺🇸 #76 ✈️🔍 United_States-CDN 7.93Mbps"
-      - "🇺🇸 #77 ✈️🔍 United_States-CDN 7.83Mbps"
-      - "🇺🇸 #78 ✈️ United_States-CDN 7.44Mbps"
-      - "🇺🇸 #79 ✈️ United_States-CDN 7.19Mbps"
-      - "🇺🇸 #80 ✈️ United_States-CDN 7.17Mbps"
-      - "🇺🇸 #81 ✈️🔍 United_States-CDN 7.02Mbps"
-      - "🇺🇸 #82 ✈️🔍 United_States-CDN 6.86Mbps"
-      - "🇺🇸 #83 ✈️🔍 United_States-CDN 6.75Mbps"
-      - "🇺🇸 #84 ✈️ United_States-CDN 6.53Mbps"
-      - "🇺🇸 #85 ✈️🔍 United_States-CDN 6.48Mbps"
-      - "🇺🇸 #86 ✈️🔍 United_States-CDN 6.42Mbps"
-      - "🇺🇸 #87 ✈️🔍 United_States-CDN 6.4Mbps"
-      - "🇺🇸 #88 ✈️🔍 United_States-CDN 6.31Mbps"
-      - "🇺🇸 #89 ✈️ United_States-CDN 6.27Mbps"
-      - "🇺🇸 #90 ✈️🔍 United_States-CDN 6.03Mbps"
-      - "🇺🇸 #91 ✈️ United_States-CDN 5.98Mbps"
-      - "🇺🇸 #92 ✈️ United_States-CDN 5.97Mbps"
-      - "🇺🇸 #93 ✈️ United_States-CDN 5.93Mbps"
-      - "🇺🇸 #94 ✈️🔍 United_States-CDN 5.9Mbps"
-      - "🇺🇸 #95 ✈️ United_States-CDN 5.83Mbps"
-      - "🇺🇸 #96 ✈️🔍 United_States-CDN 5.77Mbps"
-      - "🇺🇸 #97 ✈️🔍 United_States-CDN 5.71Mbps"
-      - "🇺🇸 #98 ✈️🔍 United_States-CDN 5.62Mbps"
-      - "🇺🇸 #99 ✈️🔍 United_States-CDN 5.24Mbps"
-      - "🇺🇸 #100 ✈️ United_States-CDN 4.72Mbps"
+      - "🇺🇸 #1 ✈️🔍 United_States 149.36Mbps"
+      - "🇺🇸 #2 ✈️🔍 United_States 123.36Mbps"
+      - "🇺🇸 #3 ✈️🔍 United_States 111.2Mbps"
+      - "🇺🇸 #4 ✈️ United_States 103.09Mbps"
+      - "🇺🇸 #5 ✈️ United_States 100.5Mbps"
+      - "🇺🇸 #6 ✈️🔍 United_States 72.78Mbps"
+      - "🇺🇸 #7 ✈️🔍 United_States 68.71Mbps"
+      - "🇺🇸 #8 ✈️🔍 United_States 65.47Mbps"
+      - "🇨🇦 #9 ✈️🔍 Canada 55.59Mbps"
+      - "🇺🇸 #10 ✈️🔍 United_States-CDN 44.51Mbps"
+      - "🇺🇸 #11 ✈️🔍 United_States 38.12Mbps"
+      - "🇺🇸 #12 ✈️🔍 United_States-CDN 37.1Mbps"
+      - "🇺🇸 #13 ✈️🔍 United_States-CDN 36.56Mbps"
+      - "🇺🇸 #14 ✈️🔍 United_States 32.69Mbps"
+      - "🇺🇸 #15 ✈️🔍 United_States-CDN 31.04Mbps"
+      - "🇺🇸 #16 ✈️🔍 United_States 30.18Mbps"
+      - "🇺🇸 #17 ✈️🔍 United_States-CDN 27.14Mbps"
+      - "🇺🇸 #18 ✈️🔍 United_States 23.03Mbps"
+      - "🇺🇸 #19 ✈️🔍 United_States 21.71Mbps"
+      - "🇺🇸 #20 ✈️🔍 United_States 21.68Mbps"
+      - "🇺🇸 #21 ✈️🔍 United_States 21.44Mbps"
+      - "🇺🇸 #22 ✈️🔍 United_States 21.26Mbps"
+      - "🇺🇸 #23 ✈️🔍 United_States-CDN 20.77Mbps"
+      - "🇺🇸 #24 ✈️ United_States-CDN 20.65Mbps"
+      - "🇺🇸 #25 ✈️🔍 United_States-CDN 20.48Mbps"
+      - "🇺🇸 #26 ✈️🔍 United_States 20.36Mbps"
+      - "🇺🇸 #27 ✈️ United_States-CDN 19.58Mbps"
+      - "🇺🇸 #28 ✈️🔍 United_States 19.48Mbps"
+      - "🇺🇸 #29 ✈️🔍 United_States-CDN 19.09Mbps"
+      - "🇺🇸 #30 ✈️🔍 United_States 18.54Mbps"
+      - "🇺🇸 #31 ✈️🔍 United_States 17.47Mbps"
+      - "🇺🇸 #32 ✈️🔍 United_States-CDN 16.24Mbps"
+      - "🇮🇪 #33 ✈️🔍 Ireland 15.95Mbps"
+      - "🇮🇪 #34 ✈️🔍 Ireland 15.93Mbps"
+      - "🇺🇸 #35 ✈️ United_States-CDN 15.9Mbps"
+      - "🇬🇧 #36 ✈️🔍 United_Kingdom 15.76Mbps"
+      - "🇺🇸 #37 ✈️ United_States-CDN 15.72Mbps"
+      - "🇺🇸 #38 ✈️🔍 United_States-CDN 15.69Mbps"
+      - "🇬🇧 #39 ✈️🔍 United_Kingdom 15.36Mbps"
+      - "🇺🇸 #40 ✈️🔍 United_States-CDN 15.36Mbps"
+      - "🇬🇧 #41 ✈️🔍 United_Kingdom 15.26Mbps"
+      - "🇺🇸 #42 ✈️ United_States-CDN 14.91Mbps"
+      - "🇩🇪 #43 ✈️🔍 Germany 13.94Mbps"
+      - "🇺🇸 #44 ✈️ United_States-CDN 13.8Mbps"
+      - "🇩🇪 #45 ✈️🔍 Germany 13.42Mbps"
+      - "🇩🇪 #46 ✈️🔍 Germany 13.4Mbps"
+      - "🇮🇹 #47 🔍 Italy 12.65Mbps"
+      - "🇮🇹 #48 🔍 Italy 12.26Mbps"
+      - "🇺🇸 #49 ✈️🔍 United_States-CDN 11.49Mbps"
+      - "🇺🇸 #50 ✈️🔍 United_States-CDN 11.28Mbps"
+      - "🇺🇸 #51 ✈️🔍 United_States-CDN 9.0Mbps"
+      - "🇺🇸 #52 ✈️🔍 United_States-CDN 8.37Mbps"
+      - "🇺🇸 #53 ✈️🔍 United_States-CDN 8.32Mbps"
+      - "🇺🇸 #54 ✈️ United_States-CDN 8.25Mbps"
+      - "🇺🇸 #55 ✈️🔍 United_States-CDN 7.82Mbps"
+      - "🇺🇸 #56 ✈️🔍 United_States-CDN 7.69Mbps"
+      - "🇺🇸 #57 ✈️🔍 United_States-CDN 7.68Mbps"
+      - "🇺🇸 #58 ✈️🔍 United_States-CDN 7.59Mbps"
+      - "🇺🇸 #59 ✈️🔍 United_States-CDN 7.56Mbps"
+      - "🇺🇸 #60 ✈️ United_States-CDN 7.54Mbps"
+      - "🇺🇸 #61 ✈️ United_States-CDN 7.54Mbps"
+      - "🇺🇸 #62 ✈️ United_States-CDN 6.86Mbps"
+      - "🇺🇸 #63 ✈️🔍 United_States-CDN 6.66Mbps"
+      - "🇺🇸 #64 ✈️🔍 United_States-CDN 6.64Mbps"
+      - "🇺🇸 #65 ✈️🔍 United_States-CDN 6.58Mbps"
+      - "🇺🇸 #66 ✈️ United_States-CDN 6.23Mbps"
+      - "🇺🇸 #67 ✈️🔍 United_States-CDN 6.11Mbps"
+      - "🇺🇸 #68 ✈️ United_States-CDN 6.08Mbps"
+      - "🇺🇸 #69 ✈️🔍 United_States-CDN 6.05Mbps"
+      - "🇺🇸 #70 ✈️🔍 United_States-CDN 6.02Mbps"
+      - "🇺🇸 #71 ✈️🔍 United_States-CDN 6.0Mbps"
+      - "🇺🇸 #72 ✈️🔍 United_States-CDN 5.97Mbps"
+      - "🇺🇸 #73 ✈️🔍 United_States-CDN 5.97Mbps"
+      - "🇺🇸 #74 ✈️🔍 United_States-CDN 5.91Mbps"
+      - "🇺🇸 #75 ✈️🔍 United_States-CDN 5.88Mbps"
+      - "🇺🇸 #76 ✈️ United_States-CDN 5.86Mbps"
+      - "🇺🇸 #77 ✈️🔍 United_States-CDN 5.85Mbps"
+      - "🇺🇸 #78 ✈️🔍 United_States-CDN 5.82Mbps"
+      - "🇺🇸 #79 ✈️ United_States-CDN 5.81Mbps"
+      - "🇺🇸 #80 ✈️ United_States-CDN 5.8Mbps"
+      - "🇺🇸 #81 ✈️🔍 United_States-CDN 5.8Mbps"
+      - "🇺🇸 #82 ✈️🔍 United_States-CDN 5.76Mbps"
+      - "🇺🇸 #83 ✈️ United_States-CDN 5.75Mbps"
+      - "🇺🇸 #84 ✈️🔍 United_States-CDN 5.72Mbps"
+      - "🇺🇸 #85 ✈️ United_States-CDN 5.69Mbps"
+      - "🇺🇸 #86 ✈️🔍 United_States-CDN 5.68Mbps"
+      - "🇺🇸 #87 ✈️ United_States-CDN 5.64Mbps"
+      - "🇺🇸 #88 ✈️ United_States-CDN 5.63Mbps"
+      - "🇺🇸 #89 ✈️🔍 United_States-CDN 5.61Mbps"
+      - "🇺🇸 #90 ✈️🔍 United_States-CDN 5.61Mbps"
+      - "🇺🇸 #91 🔍 United_States-CDN 4.93Mbps"
+      - "🇺🇸 #92 ✈️🔍 United_States-CDN 4.71Mbps"
+      - "🇺🇸 #93 ✈️🔍 United_States-CDN 4.52Mbps"
+      - "🇺🇸 #94 ✈️🔍 United_States-CDN 4.3Mbps"
+      - "🇺🇸 #95 ✈️🔍 United_States-CDN 4.28Mbps"
+      - "🇺🇸 #96 ✈️🔍 United_States-CDN 4.25Mbps"
+      - "🇺🇸 #97 ✈️🔍 United_States-CDN 4.09Mbps"
+      - "🇺🇸 #98 ✈️🔍 United_States-CDN 3.71Mbps"
+      - "🇺🇸 #99 ✈️🔍 United_States-CDN 3.66Mbps"
+      - "🇺🇸 #100 ✈️ United_States-CDN 3.49Mbps"
   - name: "⚡ AUTO"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇺🇸 #1 ✈️🔍 United_States 104.34Mbps"
-      - "🇺🇸 #2 ✈️ United_States-CDN 66.09Mbps"
-      - "🇺🇸 #3 ✈️ United_States-CDN 63.5Mbps"
-      - "🇺🇸 #4 ✈️🔍 United_States 58.08Mbps"
-      - "🇺🇸 #5 ✈️🔍 United_States 56.83Mbps"
-      - "🇺🇸 #6 ✈️🔍 United_States 56.35Mbps"
-      - "🇺🇸 #7 ✈️🔍 United_States 53.89Mbps"
-      - "🇺🇸 #8 ✈️🔍 United_States 46.66Mbps"
-      - "🇺🇸 #9 ✈️🔍 United_States-CDN 45.34Mbps"
-      - "🇨🇦 #10 ✈️🔍 Canada 44.07Mbps"
-      - "🇨🇦 #11 ✈️🔍 Canada 43.24Mbps"
-      - "🇺🇸 #12 ✈️ United_States-CDN 42.58Mbps"
-      - "🇨🇦 #13 ✈️🔍 Canada 41.63Mbps"
-      - "🇺🇸 #14 ✈️🔍 United_States-CDN 41.36Mbps"
-      - "🇺🇸 #15 ✈️🔍 United_States 39.96Mbps"
-      - "🇺🇸 #16 ✈️ United_States-CDN 39.53Mbps"
-      - "🇺🇸 #17 ✈️ United_States-CDN 39.33Mbps"
-      - "🇺🇸 #18 ✈️🔍 United_States 38.71Mbps"
-      - "🇺🇸 #19 ✈️🔍 United_States-CDN 37.94Mbps"
-      - "🇺🇸 #20 ✈️🔍 United_States-CDN 36.16Mbps"
-      - "🇺🇸 #21 ✈️ United_States-CDN 35.61Mbps"
-      - "🇺🇸 #22 ✈️🔍 United_States 35.52Mbps"
-      - "🇺🇸 #23 ✈️🔍 United_States-CDN 34.66Mbps"
-      - "🇺🇸 #24 ✈️ United_States-CDN 34.64Mbps"
-      - "🇺🇸 #25 ✈️ United_States-CDN 34.37Mbps"
-      - "🇺🇸 #26 ✈️🔍 United_States 33.98Mbps"
-      - "🇺🇸 #27 ✈️🔍 United_States-CDN 33.55Mbps"
-      - "🇺🇸 #28 ✈️🔍 United_States-CDN 33.01Mbps"
-      - "🇺🇸 #29 ✈️🔍 United_States 32.75Mbps"
-      - "🇺🇸 #30 ✈️🔍 United_States 29.05Mbps"
-      - "🇺🇸 #31 ✈️ United_States-CDN 28.35Mbps"
-      - "🇺🇸 #32 ✈️🔍 United_States 28.31Mbps"
-      - "🇺🇸 #33 ✈️🔍 United_States-CDN 26.49Mbps"
-      - "🇺🇸 #34 ✈️🔍 United_States-CDN 26.39Mbps"
-      - "🇺🇸 #35 ✈️🔍 United_States-CDN 26.33Mbps"
-      - "🇺🇸 #36 ✈️🔍 United_States-CDN 26.11Mbps"
-      - "🇺🇸 #37 ✈️🔍 United_States-CDN 24.69Mbps"
-      - "🇺🇸 #38 ✈️🔍 United_States 23.96Mbps"
-      - "🇺🇸 #39 ✈️🔍 United_States-CDN 23.8Mbps"
-      - "🇺🇸 #40 ✈️ United_States-CDN 23.48Mbps"
-      - "🇺🇸 #41 ✈️🔍 United_States-CDN 22.58Mbps"
-      - "🇺🇸 #42 ✈️🔍 United_States 22.58Mbps"
-      - "🇺🇸 #43 ✈️ United_States-CDN 20.95Mbps"
-      - "🇺🇸 #44 ✈️🔍 United_States-CDN 20.09Mbps"
-      - "🇺🇸 #45 ✈️🔍 United_States-CDN 19.91Mbps"
-      - "🇺🇸 #46 ✈️ United_States-CDN 19.88Mbps"
-      - "🇺🇸 #47 ✈️🔍 United_States-CDN 19.68Mbps"
-      - "🇺🇸 #48 ✈️ United_States-CDN 19.37Mbps"
-      - "🇺🇸 #49 ✈️🔍 United_States-CDN 19.22Mbps"
-      - "🇺🇸 #50 ✈️🔍 United_States-CDN 18.69Mbps"
-      - "🇺🇸 #51 ✈️🔍 United_States-CDN 18.2Mbps"
-      - "🇺🇸 #52 ✈️🔍 United_States-CDN 17.88Mbps"
-      - "🇺🇸 #53 ✈️🔍 United_States-CDN 17.87Mbps"
-      - "🇺🇸 #54 ✈️ United_States-CDN 17.62Mbps"
-      - "🇺🇸 #55 ✈️🔍 United_States-CDN 17.41Mbps"
-      - "🇺🇸 #56 ✈️🔍 United_States-CDN 16.06Mbps"
-      - "🇺🇸 #57 ✈️🔍 United_States-CDN 15.98Mbps"
-      - "🇺🇸 #58 ✈️🔍 United_States-CDN 15.77Mbps"
-      - "🇺🇸 #59 ✈️ United_States-CDN 15.54Mbps"
-      - "🇺🇸 #60 ✈️🔍 United_States-CDN 15.5Mbps"
-      - "🇺🇸 #61 ✈️🔍 United_States-CDN 14.96Mbps"
-      - "🇺🇸 #62 ✈️🔍 United_States-CDN 14.82Mbps"
-      - "🇺🇸 #63 ✈️🔍 United_States-CDN 13.84Mbps"
-      - "🇺🇸 #64 ✈️ United_States-CDN 13.44Mbps"
-      - "🇺🇸 #65 ✈️🔍 United_States-CDN 13.33Mbps"
-      - "🇺🇸 #66 ✈️🔍 United_States-CDN 13.27Mbps"
-      - "🇺🇸 #67 ✈️🔍 United_States-CDN 12.6Mbps"
-      - "🇺🇸 #68 ✈️🔍 United_States-CDN 11.88Mbps"
-      - "🇺🇸 #69 ✈️🔍 United_States-CDN 11.19Mbps"
-      - "🇺🇸 #70 ✈️🔍 United_States-CDN 10.8Mbps"
-      - "🇺🇸 #71 ✈️ United_States-CDN 10.69Mbps"
-      - "🇺🇸 #72 ✈️ United_States-CDN 8.53Mbps"
-      - "🇺🇸 #73 ✈️ United_States-CDN 8.21Mbps"
-      - "🇺🇸 #74 ✈️🔍 United_States-CDN 7.98Mbps"
-      - "🇺🇸 #75 ✈️🔍 United_States-CDN 7.93Mbps"
-      - "🇺🇸 #76 ✈️🔍 United_States-CDN 7.93Mbps"
-      - "🇺🇸 #77 ✈️🔍 United_States-CDN 7.83Mbps"
-      - "🇺🇸 #78 ✈️ United_States-CDN 7.44Mbps"
-      - "🇺🇸 #79 ✈️ United_States-CDN 7.19Mbps"
-      - "🇺🇸 #80 ✈️ United_States-CDN 7.17Mbps"
-      - "🇺🇸 #81 ✈️🔍 United_States-CDN 7.02Mbps"
-      - "🇺🇸 #82 ✈️🔍 United_States-CDN 6.86Mbps"
-      - "🇺🇸 #83 ✈️🔍 United_States-CDN 6.75Mbps"
-      - "🇺🇸 #84 ✈️ United_States-CDN 6.53Mbps"
-      - "🇺🇸 #85 ✈️🔍 United_States-CDN 6.48Mbps"
-      - "🇺🇸 #86 ✈️🔍 United_States-CDN 6.42Mbps"
-      - "🇺🇸 #87 ✈️🔍 United_States-CDN 6.4Mbps"
-      - "🇺🇸 #88 ✈️🔍 United_States-CDN 6.31Mbps"
-      - "🇺🇸 #89 ✈️ United_States-CDN 6.27Mbps"
-      - "🇺🇸 #90 ✈️🔍 United_States-CDN 6.03Mbps"
-      - "🇺🇸 #91 ✈️ United_States-CDN 5.98Mbps"
-      - "🇺🇸 #92 ✈️ United_States-CDN 5.97Mbps"
-      - "🇺🇸 #93 ✈️ United_States-CDN 5.93Mbps"
-      - "🇺🇸 #94 ✈️🔍 United_States-CDN 5.9Mbps"
-      - "🇺🇸 #95 ✈️ United_States-CDN 5.83Mbps"
-      - "🇺🇸 #96 ✈️🔍 United_States-CDN 5.77Mbps"
-      - "🇺🇸 #97 ✈️🔍 United_States-CDN 5.71Mbps"
-      - "🇺🇸 #98 ✈️🔍 United_States-CDN 5.62Mbps"
-      - "🇺🇸 #99 ✈️🔍 United_States-CDN 5.24Mbps"
-      - "🇺🇸 #100 ✈️ United_States-CDN 4.72Mbps"
+      - "🇺🇸 #1 ✈️🔍 United_States 149.36Mbps"
+      - "🇺🇸 #2 ✈️🔍 United_States 123.36Mbps"
+      - "🇺🇸 #3 ✈️🔍 United_States 111.2Mbps"
+      - "🇺🇸 #4 ✈️ United_States 103.09Mbps"
+      - "🇺🇸 #5 ✈️ United_States 100.5Mbps"
+      - "🇺🇸 #6 ✈️🔍 United_States 72.78Mbps"
+      - "🇺🇸 #7 ✈️🔍 United_States 68.71Mbps"
+      - "🇺🇸 #8 ✈️🔍 United_States 65.47Mbps"
+      - "🇨🇦 #9 ✈️🔍 Canada 55.59Mbps"
+      - "🇺🇸 #10 ✈️🔍 United_States-CDN 44.51Mbps"
+      - "🇺🇸 #11 ✈️🔍 United_States 38.12Mbps"
+      - "🇺🇸 #12 ✈️🔍 United_States-CDN 37.1Mbps"
+      - "🇺🇸 #13 ✈️🔍 United_States-CDN 36.56Mbps"
+      - "🇺🇸 #14 ✈️🔍 United_States 32.69Mbps"
+      - "🇺🇸 #15 ✈️🔍 United_States-CDN 31.04Mbps"
+      - "🇺🇸 #16 ✈️🔍 United_States 30.18Mbps"
+      - "🇺🇸 #17 ✈️🔍 United_States-CDN 27.14Mbps"
+      - "🇺🇸 #18 ✈️🔍 United_States 23.03Mbps"
+      - "🇺🇸 #19 ✈️🔍 United_States 21.71Mbps"
+      - "🇺🇸 #20 ✈️🔍 United_States 21.68Mbps"
+      - "🇺🇸 #21 ✈️🔍 United_States 21.44Mbps"
+      - "🇺🇸 #22 ✈️🔍 United_States 21.26Mbps"
+      - "🇺🇸 #23 ✈️🔍 United_States-CDN 20.77Mbps"
+      - "🇺🇸 #24 ✈️ United_States-CDN 20.65Mbps"
+      - "🇺🇸 #25 ✈️🔍 United_States-CDN 20.48Mbps"
+      - "🇺🇸 #26 ✈️🔍 United_States 20.36Mbps"
+      - "🇺🇸 #27 ✈️ United_States-CDN 19.58Mbps"
+      - "🇺🇸 #28 ✈️🔍 United_States 19.48Mbps"
+      - "🇺🇸 #29 ✈️🔍 United_States-CDN 19.09Mbps"
+      - "🇺🇸 #30 ✈️🔍 United_States 18.54Mbps"
+      - "🇺🇸 #31 ✈️🔍 United_States 17.47Mbps"
+      - "🇺🇸 #32 ✈️🔍 United_States-CDN 16.24Mbps"
+      - "🇮🇪 #33 ✈️🔍 Ireland 15.95Mbps"
+      - "🇮🇪 #34 ✈️🔍 Ireland 15.93Mbps"
+      - "🇺🇸 #35 ✈️ United_States-CDN 15.9Mbps"
+      - "🇬🇧 #36 ✈️🔍 United_Kingdom 15.76Mbps"
+      - "🇺🇸 #37 ✈️ United_States-CDN 15.72Mbps"
+      - "🇺🇸 #38 ✈️🔍 United_States-CDN 15.69Mbps"
+      - "🇬🇧 #39 ✈️🔍 United_Kingdom 15.36Mbps"
+      - "🇺🇸 #40 ✈️🔍 United_States-CDN 15.36Mbps"
+      - "🇬🇧 #41 ✈️🔍 United_Kingdom 15.26Mbps"
+      - "🇺🇸 #42 ✈️ United_States-CDN 14.91Mbps"
+      - "🇩🇪 #43 ✈️🔍 Germany 13.94Mbps"
+      - "🇺🇸 #44 ✈️ United_States-CDN 13.8Mbps"
+      - "🇩🇪 #45 ✈️🔍 Germany 13.42Mbps"
+      - "🇩🇪 #46 ✈️🔍 Germany 13.4Mbps"
+      - "🇮🇹 #47 🔍 Italy 12.65Mbps"
+      - "🇮🇹 #48 🔍 Italy 12.26Mbps"
+      - "🇺🇸 #49 ✈️🔍 United_States-CDN 11.49Mbps"
+      - "🇺🇸 #50 ✈️🔍 United_States-CDN 11.28Mbps"
+      - "🇺🇸 #51 ✈️🔍 United_States-CDN 9.0Mbps"
+      - "🇺🇸 #52 ✈️🔍 United_States-CDN 8.37Mbps"
+      - "🇺🇸 #53 ✈️🔍 United_States-CDN 8.32Mbps"
+      - "🇺🇸 #54 ✈️ United_States-CDN 8.25Mbps"
+      - "🇺🇸 #55 ✈️🔍 United_States-CDN 7.82Mbps"
+      - "🇺🇸 #56 ✈️🔍 United_States-CDN 7.69Mbps"
+      - "🇺🇸 #57 ✈️🔍 United_States-CDN 7.68Mbps"
+      - "🇺🇸 #58 ✈️🔍 United_States-CDN 7.59Mbps"
+      - "🇺🇸 #59 ✈️🔍 United_States-CDN 7.56Mbps"
+      - "🇺🇸 #60 ✈️ United_States-CDN 7.54Mbps"
+      - "🇺🇸 #61 ✈️ United_States-CDN 7.54Mbps"
+      - "🇺🇸 #62 ✈️ United_States-CDN 6.86Mbps"
+      - "🇺🇸 #63 ✈️🔍 United_States-CDN 6.66Mbps"
+      - "🇺🇸 #64 ✈️🔍 United_States-CDN 6.64Mbps"
+      - "🇺🇸 #65 ✈️🔍 United_States-CDN 6.58Mbps"
+      - "🇺🇸 #66 ✈️ United_States-CDN 6.23Mbps"
+      - "🇺🇸 #67 ✈️🔍 United_States-CDN 6.11Mbps"
+      - "🇺🇸 #68 ✈️ United_States-CDN 6.08Mbps"
+      - "🇺🇸 #69 ✈️🔍 United_States-CDN 6.05Mbps"
+      - "🇺🇸 #70 ✈️🔍 United_States-CDN 6.02Mbps"
+      - "🇺🇸 #71 ✈️🔍 United_States-CDN 6.0Mbps"
+      - "🇺🇸 #72 ✈️🔍 United_States-CDN 5.97Mbps"
+      - "🇺🇸 #73 ✈️🔍 United_States-CDN 5.97Mbps"
+      - "🇺🇸 #74 ✈️🔍 United_States-CDN 5.91Mbps"
+      - "🇺🇸 #75 ✈️🔍 United_States-CDN 5.88Mbps"
+      - "🇺🇸 #76 ✈️ United_States-CDN 5.86Mbps"
+      - "🇺🇸 #77 ✈️🔍 United_States-CDN 5.85Mbps"
+      - "🇺🇸 #78 ✈️🔍 United_States-CDN 5.82Mbps"
+      - "🇺🇸 #79 ✈️ United_States-CDN 5.81Mbps"
+      - "🇺🇸 #80 ✈️ United_States-CDN 5.8Mbps"
+      - "🇺🇸 #81 ✈️🔍 United_States-CDN 5.8Mbps"
+      - "🇺🇸 #82 ✈️🔍 United_States-CDN 5.76Mbps"
+      - "🇺🇸 #83 ✈️ United_States-CDN 5.75Mbps"
+      - "🇺🇸 #84 ✈️🔍 United_States-CDN 5.72Mbps"
+      - "🇺🇸 #85 ✈️ United_States-CDN 5.69Mbps"
+      - "🇺🇸 #86 ✈️🔍 United_States-CDN 5.68Mbps"
+      - "🇺🇸 #87 ✈️ United_States-CDN 5.64Mbps"
+      - "🇺🇸 #88 ✈️ United_States-CDN 5.63Mbps"
+      - "🇺🇸 #89 ✈️🔍 United_States-CDN 5.61Mbps"
+      - "🇺🇸 #90 ✈️🔍 United_States-CDN 5.61Mbps"
+      - "🇺🇸 #91 🔍 United_States-CDN 4.93Mbps"
+      - "🇺🇸 #92 ✈️🔍 United_States-CDN 4.71Mbps"
+      - "🇺🇸 #93 ✈️🔍 United_States-CDN 4.52Mbps"
+      - "🇺🇸 #94 ✈️🔍 United_States-CDN 4.3Mbps"
+      - "🇺🇸 #95 ✈️🔍 United_States-CDN 4.28Mbps"
+      - "🇺🇸 #96 ✈️🔍 United_States-CDN 4.25Mbps"
+      - "🇺🇸 #97 ✈️🔍 United_States-CDN 4.09Mbps"
+      - "🇺🇸 #98 ✈️🔍 United_States-CDN 3.71Mbps"
+      - "🇺🇸 #99 ✈️🔍 United_States-CDN 3.66Mbps"
+      - "🇺🇸 #100 ✈️ United_States-CDN 3.49Mbps"
   - name: "📍 United_States"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇺🇸 #1 ✈️🔍 United_States 104.34Mbps"
-      - "🇺🇸 #2 ✈️ United_States-CDN 66.09Mbps"
-      - "🇺🇸 #3 ✈️ United_States-CDN 63.5Mbps"
-      - "🇺🇸 #4 ✈️🔍 United_States 58.08Mbps"
-      - "🇺🇸 #5 ✈️🔍 United_States 56.83Mbps"
-      - "🇺🇸 #6 ✈️🔍 United_States 56.35Mbps"
-      - "🇺🇸 #7 ✈️🔍 United_States 53.89Mbps"
-      - "🇺🇸 #8 ✈️🔍 United_States 46.66Mbps"
-      - "🇺🇸 #9 ✈️🔍 United_States-CDN 45.34Mbps"
-      - "🇺🇸 #12 ✈️ United_States-CDN 42.58Mbps"
-      - "🇺🇸 #14 ✈️🔍 United_States-CDN 41.36Mbps"
-      - "🇺🇸 #15 ✈️🔍 United_States 39.96Mbps"
-      - "🇺🇸 #16 ✈️ United_States-CDN 39.53Mbps"
-      - "🇺🇸 #17 ✈️ United_States-CDN 39.33Mbps"
-      - "🇺🇸 #18 ✈️🔍 United_States 38.71Mbps"
-      - "🇺🇸 #19 ✈️🔍 United_States-CDN 37.94Mbps"
-      - "🇺🇸 #20 ✈️🔍 United_States-CDN 36.16Mbps"
-      - "🇺🇸 #21 ✈️ United_States-CDN 35.61Mbps"
-      - "🇺🇸 #22 ✈️🔍 United_States 35.52Mbps"
-      - "🇺🇸 #23 ✈️🔍 United_States-CDN 34.66Mbps"
-      - "🇺🇸 #24 ✈️ United_States-CDN 34.64Mbps"
-      - "🇺🇸 #25 ✈️ United_States-CDN 34.37Mbps"
-      - "🇺🇸 #26 ✈️🔍 United_States 33.98Mbps"
-      - "🇺🇸 #27 ✈️🔍 United_States-CDN 33.55Mbps"
-      - "🇺🇸 #28 ✈️🔍 United_States-CDN 33.01Mbps"
-      - "🇺🇸 #29 ✈️🔍 United_States 32.75Mbps"
-      - "🇺🇸 #30 ✈️🔍 United_States 29.05Mbps"
-      - "🇺🇸 #31 ✈️ United_States-CDN 28.35Mbps"
-      - "🇺🇸 #32 ✈️🔍 United_States 28.31Mbps"
-      - "🇺🇸 #33 ✈️🔍 United_States-CDN 26.49Mbps"
-      - "🇺🇸 #34 ✈️🔍 United_States-CDN 26.39Mbps"
-      - "🇺🇸 #35 ✈️🔍 United_States-CDN 26.33Mbps"
-      - "🇺🇸 #36 ✈️🔍 United_States-CDN 26.11Mbps"
-      - "🇺🇸 #37 ✈️🔍 United_States-CDN 24.69Mbps"
-      - "🇺🇸 #38 ✈️🔍 United_States 23.96Mbps"
-      - "🇺🇸 #39 ✈️🔍 United_States-CDN 23.8Mbps"
-      - "🇺🇸 #40 ✈️ United_States-CDN 23.48Mbps"
-      - "🇺🇸 #41 ✈️🔍 United_States-CDN 22.58Mbps"
-      - "🇺🇸 #42 ✈️🔍 United_States 22.58Mbps"
-      - "🇺🇸 #43 ✈️ United_States-CDN 20.95Mbps"
-      - "🇺🇸 #44 ✈️🔍 United_States-CDN 20.09Mbps"
-      - "🇺🇸 #45 ✈️🔍 United_States-CDN 19.91Mbps"
-      - "🇺🇸 #46 ✈️ United_States-CDN 19.88Mbps"
-      - "🇺🇸 #47 ✈️🔍 United_States-CDN 19.68Mbps"
-      - "🇺🇸 #48 ✈️ United_States-CDN 19.37Mbps"
-      - "🇺🇸 #49 ✈️🔍 United_States-CDN 19.22Mbps"
-      - "🇺🇸 #50 ✈️🔍 United_States-CDN 18.69Mbps"
-      - "🇺🇸 #51 ✈️🔍 United_States-CDN 18.2Mbps"
-      - "🇺🇸 #52 ✈️🔍 United_States-CDN 17.88Mbps"
-      - "🇺🇸 #53 ✈️🔍 United_States-CDN 17.87Mbps"
-      - "🇺🇸 #54 ✈️ United_States-CDN 17.62Mbps"
-      - "🇺🇸 #55 ✈️🔍 United_States-CDN 17.41Mbps"
-      - "🇺🇸 #56 ✈️🔍 United_States-CDN 16.06Mbps"
-      - "🇺🇸 #57 ✈️🔍 United_States-CDN 15.98Mbps"
-      - "🇺🇸 #58 ✈️🔍 United_States-CDN 15.77Mbps"
-      - "🇺🇸 #59 ✈️ United_States-CDN 15.54Mbps"
-      - "🇺🇸 #60 ✈️🔍 United_States-CDN 15.5Mbps"
-      - "🇺🇸 #61 ✈️🔍 United_States-CDN 14.96Mbps"
-      - "🇺🇸 #62 ✈️🔍 United_States-CDN 14.82Mbps"
-      - "🇺🇸 #63 ✈️🔍 United_States-CDN 13.84Mbps"
-      - "🇺🇸 #64 ✈️ United_States-CDN 13.44Mbps"
-      - "🇺🇸 #65 ✈️🔍 United_States-CDN 13.33Mbps"
-      - "🇺🇸 #66 ✈️🔍 United_States-CDN 13.27Mbps"
-      - "🇺🇸 #67 ✈️🔍 United_States-CDN 12.6Mbps"
-      - "🇺🇸 #68 ✈️🔍 United_States-CDN 11.88Mbps"
-      - "🇺🇸 #69 ✈️🔍 United_States-CDN 11.19Mbps"
-      - "🇺🇸 #70 ✈️🔍 United_States-CDN 10.8Mbps"
-      - "🇺🇸 #71 ✈️ United_States-CDN 10.69Mbps"
-      - "🇺🇸 #72 ✈️ United_States-CDN 8.53Mbps"
-      - "🇺🇸 #73 ✈️ United_States-CDN 8.21Mbps"
-      - "🇺🇸 #74 ✈️🔍 United_States-CDN 7.98Mbps"
-      - "🇺🇸 #75 ✈️🔍 United_States-CDN 7.93Mbps"
-      - "🇺🇸 #76 ✈️🔍 United_States-CDN 7.93Mbps"
-      - "🇺🇸 #77 ✈️🔍 United_States-CDN 7.83Mbps"
-      - "🇺🇸 #78 ✈️ United_States-CDN 7.44Mbps"
-      - "🇺🇸 #79 ✈️ United_States-CDN 7.19Mbps"
-      - "🇺🇸 #80 ✈️ United_States-CDN 7.17Mbps"
-      - "🇺🇸 #81 ✈️🔍 United_States-CDN 7.02Mbps"
-      - "🇺🇸 #82 ✈️🔍 United_States-CDN 6.86Mbps"
-      - "🇺🇸 #83 ✈️🔍 United_States-CDN 6.75Mbps"
-      - "🇺🇸 #84 ✈️ United_States-CDN 6.53Mbps"
-      - "🇺🇸 #85 ✈️🔍 United_States-CDN 6.48Mbps"
-      - "🇺🇸 #86 ✈️🔍 United_States-CDN 6.42Mbps"
-      - "🇺🇸 #87 ✈️🔍 United_States-CDN 6.4Mbps"
-      - "🇺🇸 #88 ✈️🔍 United_States-CDN 6.31Mbps"
-      - "🇺🇸 #89 ✈️ United_States-CDN 6.27Mbps"
-      - "🇺🇸 #90 ✈️🔍 United_States-CDN 6.03Mbps"
-      - "🇺🇸 #91 ✈️ United_States-CDN 5.98Mbps"
-      - "🇺🇸 #92 ✈️ United_States-CDN 5.97Mbps"
-      - "🇺🇸 #93 ✈️ United_States-CDN 5.93Mbps"
-      - "🇺🇸 #94 ✈️🔍 United_States-CDN 5.9Mbps"
-      - "🇺🇸 #95 ✈️ United_States-CDN 5.83Mbps"
-      - "🇺🇸 #96 ✈️🔍 United_States-CDN 5.77Mbps"
-      - "🇺🇸 #97 ✈️🔍 United_States-CDN 5.71Mbps"
-      - "🇺🇸 #98 ✈️🔍 United_States-CDN 5.62Mbps"
-      - "🇺🇸 #99 ✈️🔍 United_States-CDN 5.24Mbps"
-      - "🇺🇸 #100 ✈️ United_States-CDN 4.72Mbps"
+      - "🇺🇸 #1 ✈️🔍 United_States 149.36Mbps"
+      - "🇺🇸 #2 ✈️🔍 United_States 123.36Mbps"
+      - "🇺🇸 #3 ✈️🔍 United_States 111.2Mbps"
+      - "🇺🇸 #4 ✈️ United_States 103.09Mbps"
+      - "🇺🇸 #5 ✈️ United_States 100.5Mbps"
+      - "🇺🇸 #6 ✈️🔍 United_States 72.78Mbps"
+      - "🇺🇸 #7 ✈️🔍 United_States 68.71Mbps"
+      - "🇺🇸 #8 ✈️🔍 United_States 65.47Mbps"
+      - "🇺🇸 #10 ✈️🔍 United_States-CDN 44.51Mbps"
+      - "🇺🇸 #11 ✈️🔍 United_States 38.12Mbps"
+      - "🇺🇸 #12 ✈️🔍 United_States-CDN 37.1Mbps"
+      - "🇺🇸 #13 ✈️🔍 United_States-CDN 36.56Mbps"
+      - "🇺🇸 #14 ✈️🔍 United_States 32.69Mbps"
+      - "🇺🇸 #15 ✈️🔍 United_States-CDN 31.04Mbps"
+      - "🇺🇸 #16 ✈️🔍 United_States 30.18Mbps"
+      - "🇺🇸 #17 ✈️🔍 United_States-CDN 27.14Mbps"
+      - "🇺🇸 #18 ✈️🔍 United_States 23.03Mbps"
+      - "🇺🇸 #19 ✈️🔍 United_States 21.71Mbps"
+      - "🇺🇸 #20 ✈️🔍 United_States 21.68Mbps"
+      - "🇺🇸 #21 ✈️🔍 United_States 21.44Mbps"
+      - "🇺🇸 #22 ✈️🔍 United_States 21.26Mbps"
+      - "🇺🇸 #23 ✈️🔍 United_States-CDN 20.77Mbps"
+      - "🇺🇸 #24 ✈️ United_States-CDN 20.65Mbps"
+      - "🇺🇸 #25 ✈️🔍 United_States-CDN 20.48Mbps"
+      - "🇺🇸 #26 ✈️🔍 United_States 20.36Mbps"
+      - "🇺🇸 #27 ✈️ United_States-CDN 19.58Mbps"
+      - "🇺🇸 #28 ✈️🔍 United_States 19.48Mbps"
+      - "🇺🇸 #29 ✈️🔍 United_States-CDN 19.09Mbps"
+      - "🇺🇸 #30 ✈️🔍 United_States 18.54Mbps"
+      - "🇺🇸 #31 ✈️🔍 United_States 17.47Mbps"
+      - "🇺🇸 #32 ✈️🔍 United_States-CDN 16.24Mbps"
+      - "🇺🇸 #35 ✈️ United_States-CDN 15.9Mbps"
+      - "🇺🇸 #37 ✈️ United_States-CDN 15.72Mbps"
+      - "🇺🇸 #38 ✈️🔍 United_States-CDN 15.69Mbps"
+      - "🇺🇸 #40 ✈️🔍 United_States-CDN 15.36Mbps"
+      - "🇺🇸 #42 ✈️ United_States-CDN 14.91Mbps"
+      - "🇺🇸 #44 ✈️ United_States-CDN 13.8Mbps"
+      - "🇺🇸 #49 ✈️🔍 United_States-CDN 11.49Mbps"
+      - "🇺🇸 #50 ✈️🔍 United_States-CDN 11.28Mbps"
+      - "🇺🇸 #51 ✈️🔍 United_States-CDN 9.0Mbps"
+      - "🇺🇸 #52 ✈️🔍 United_States-CDN 8.37Mbps"
+      - "🇺🇸 #53 ✈️🔍 United_States-CDN 8.32Mbps"
+      - "🇺🇸 #54 ✈️ United_States-CDN 8.25Mbps"
+      - "🇺🇸 #55 ✈️🔍 United_States-CDN 7.82Mbps"
+      - "🇺🇸 #56 ✈️🔍 United_States-CDN 7.69Mbps"
+      - "🇺🇸 #57 ✈️🔍 United_States-CDN 7.68Mbps"
+      - "🇺🇸 #58 ✈️🔍 United_States-CDN 7.59Mbps"
+      - "🇺🇸 #59 ✈️🔍 United_States-CDN 7.56Mbps"
+      - "🇺🇸 #60 ✈️ United_States-CDN 7.54Mbps"
+      - "🇺🇸 #61 ✈️ United_States-CDN 7.54Mbps"
+      - "🇺🇸 #62 ✈️ United_States-CDN 6.86Mbps"
+      - "🇺🇸 #63 ✈️🔍 United_States-CDN 6.66Mbps"
+      - "🇺🇸 #64 ✈️🔍 United_States-CDN 6.64Mbps"
+      - "🇺🇸 #65 ✈️🔍 United_States-CDN 6.58Mbps"
+      - "🇺🇸 #66 ✈️ United_States-CDN 6.23Mbps"
+      - "🇺🇸 #67 ✈️🔍 United_States-CDN 6.11Mbps"
+      - "🇺🇸 #68 ✈️ United_States-CDN 6.08Mbps"
+      - "🇺🇸 #69 ✈️🔍 United_States-CDN 6.05Mbps"
+      - "🇺🇸 #70 ✈️🔍 United_States-CDN 6.02Mbps"
+      - "🇺🇸 #71 ✈️🔍 United_States-CDN 6.0Mbps"
+      - "🇺🇸 #72 ✈️🔍 United_States-CDN 5.97Mbps"
+      - "🇺🇸 #73 ✈️🔍 United_States-CDN 5.97Mbps"
+      - "🇺🇸 #74 ✈️🔍 United_States-CDN 5.91Mbps"
+      - "🇺🇸 #75 ✈️🔍 United_States-CDN 5.88Mbps"
+      - "🇺🇸 #76 ✈️ United_States-CDN 5.86Mbps"
+      - "🇺🇸 #77 ✈️🔍 United_States-CDN 5.85Mbps"
+      - "🇺🇸 #78 ✈️🔍 United_States-CDN 5.82Mbps"
+      - "🇺🇸 #79 ✈️ United_States-CDN 5.81Mbps"
+      - "🇺🇸 #80 ✈️ United_States-CDN 5.8Mbps"
+      - "🇺🇸 #81 ✈️🔍 United_States-CDN 5.8Mbps"
+      - "🇺🇸 #82 ✈️🔍 United_States-CDN 5.76Mbps"
+      - "🇺🇸 #83 ✈️ United_States-CDN 5.75Mbps"
+      - "🇺🇸 #84 ✈️🔍 United_States-CDN 5.72Mbps"
+      - "🇺🇸 #85 ✈️ United_States-CDN 5.69Mbps"
+      - "🇺🇸 #86 ✈️🔍 United_States-CDN 5.68Mbps"
+      - "🇺🇸 #87 ✈️ United_States-CDN 5.64Mbps"
+      - "🇺🇸 #88 ✈️ United_States-CDN 5.63Mbps"
+      - "🇺🇸 #89 ✈️🔍 United_States-CDN 5.61Mbps"
+      - "🇺🇸 #90 ✈️🔍 United_States-CDN 5.61Mbps"
+      - "🇺🇸 #91 🔍 United_States-CDN 4.93Mbps"
+      - "🇺🇸 #92 ✈️🔍 United_States-CDN 4.71Mbps"
+      - "🇺🇸 #93 ✈️🔍 United_States-CDN 4.52Mbps"
+      - "🇺🇸 #94 ✈️🔍 United_States-CDN 4.3Mbps"
+      - "🇺🇸 #95 ✈️🔍 United_States-CDN 4.28Mbps"
+      - "🇺🇸 #96 ✈️🔍 United_States-CDN 4.25Mbps"
+      - "🇺🇸 #97 ✈️🔍 United_States-CDN 4.09Mbps"
+      - "🇺🇸 #98 ✈️🔍 United_States-CDN 3.71Mbps"
+      - "🇺🇸 #99 ✈️🔍 United_States-CDN 3.66Mbps"
+      - "🇺🇸 #100 ✈️ United_States-CDN 3.49Mbps"
   - name: "📍 Canada"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇨🇦 #10 ✈️🔍 Canada 44.07Mbps"
-      - "🇨🇦 #11 ✈️🔍 Canada 43.24Mbps"
-      - "🇨🇦 #13 ✈️🔍 Canada 41.63Mbps"
+      - "🇨🇦 #9 ✈️🔍 Canada 55.59Mbps"
+  - name: "📍 Ireland"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇮🇪 #33 ✈️🔍 Ireland 15.95Mbps"
+      - "🇮🇪 #34 ✈️🔍 Ireland 15.93Mbps"
+  - name: "📍 United_Kingdom"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇬🇧 #36 ✈️🔍 United_Kingdom 15.76Mbps"
+      - "🇬🇧 #39 ✈️🔍 United_Kingdom 15.36Mbps"
+      - "🇬🇧 #41 ✈️🔍 United_Kingdom 15.26Mbps"
+  - name: "📍 Germany"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇩🇪 #43 ✈️🔍 Germany 13.94Mbps"
+      - "🇩🇪 #45 ✈️🔍 Germany 13.42Mbps"
+      - "🇩🇪 #46 ✈️🔍 Germany 13.4Mbps"
+  - name: "📍 Italy"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇮🇹 #47 🔍 Italy 12.65Mbps"
+      - "🇮🇹 #48 🔍 Italy 12.26Mbps"
 
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
