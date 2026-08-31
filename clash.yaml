@@ -4,15 +4,19 @@ mode: rule
 log-level: info
 
 proxies:
-  - name: "🇺🇸 #1 ✈️🔍 United_States 36.88Mbps"
+  - name: "🇺🇸 #1 ✈️ United_States-CDN 41.02Mbps"
     type: vless
-    server: "204.44.127.222"
-    port: 37262
+    server: "108.162.198.178"
+    port: 80
     udp: true
     skip-cert-verify: false
-    uuid: "c8c06f90-c267-47a6-a91a-967e58e61db0"
-    network: "tcp"
-  - name: "🇺🇸 #2 ✈️🔍 United_States 15.35Mbps"
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+  - name: "🇺🇸 #2 ✈️🔍 United_States 27.17Mbps"
     type: vless
     server: "204.48.20.223"
     port: 30906
@@ -26,22 +30,51 @@ proxies:
     reality-opts:
       public-key: "HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0"
       short-id: "17a94dc584e3"
-  - name: "🇨🇦 #3 ✈️🔍 Canada 15.32Mbps"
+  - name: "🇺🇸 #3 ✈️🔍 United_States 27.05Mbps"
     type: vless
-    server: "54.39.96.233"
-    port: 8443
+    server: "204.44.127.222"
+    port: 37262
     udp: true
     skip-cert-verify: false
-    uuid: "db3f09ae-23f2-42b8-abee-7b89fb392c5e"
-    tls: true
-    servername: "maple.adaspoloandco.com"
-    client-fingerprint: "qq"
+    uuid: "c8c06f90-c267-47a6-a91a-967e58e61db0"
+    network: "tcp"
+  - name: "🇺🇸 #4 ✈️ United_States-CDN 25.19Mbps"
+    type: vless
+    server: "108.162.198.178"
+    port: 2086
+    udp: true
+    skip-cert-verify: false
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     network: "ws"
     ws-opts:
-      path: "/uploader.php"
+      path: "/"
       headers:
-        Host: "maple.adaspoloandco.com"
-  - name: "🇺🇸 #4 ✈️ United_States-CDN 14.02Mbps"
+        Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+  - name: "🇺🇸 #5 ✈️ United_States-CDN 22.38Mbps"
+    type: vless
+    server: "108.162.198.178"
+    port: 2095
+    udp: true
+    skip-cert-verify: false
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+  - name: "🇺🇸 #6 ✈️ United_States-CDN 21.72Mbps"
+    type: vless
+    server: "108.162.198.178"
+    port: 8880
+    udp: true
+    skip-cert-verify: false
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+  - name: "🇺🇸 #7 ✈️ United_States-CDN 16.98Mbps"
     type: vless
     server: "108.162.198.178"
     port: 8080
@@ -53,7 +86,44 @@ proxies:
       path: "/"
       headers:
         Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-  - name: "🇨🇦 #5 ✈️🔍 Canada 13.82Mbps"
+  - name: "🇺🇸 #8 ✈️🔍 United_States 15.5Mbps"
+    type: vless
+    server: "support.cloudflare.com"
+    port: 2095
+    udp: true
+    skip-cert-verify: false
+    uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "update.asshole.eu.cc"
+  - name: "🇺🇸 #9 ✈️🔍 United_States 14.15Mbps"
+    type: vless
+    server: "45.138.100.226"
+    port: 2083
+    udp: true
+    skip-cert-verify: false
+    uuid: "0c6b632a-cd96-4b74-9b51-151e3b5697db"
+    tls: true
+    servername: "using.neobo-tooth.ru"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇺🇸 #10 ✈️ United_States-CDN 13.2Mbps"
+    type: vless
+    server: "188.114.97.6"
+    port: 2082
+    udp: true
+    skip-cert-verify: false
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+  - name: "🇨🇦 #11 ✈️🔍 Canada 13.08Mbps"
     type: vless
     server: "maple.adaspoloandco.com"
     port: 8443
@@ -68,184 +138,22 @@ proxies:
       path: "/uploader.php"
       headers:
         Host: "maple.adaspoloandco.com"
-  - name: "🇨🇦 #6 ✈️🔍 Canada 13.72Mbps"
+  - name: "🇨🇦 #12 ✈️🔍 Canada 12.06Mbps"
     type: vless
-    server: "66.70.179.198"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "b82a5521-f45f-4d40-92df-86d236eb04f4"
-    tls: true
-    servername: "www.google.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "Xgn5Vcz-gtFFJXJWnGvn22m3Fc2TwoCFLUy_acTQdm8"
-      short-id: "5653d14b657a1d0b"
-  - name: "🇺🇸 #7 ✈️🔍 United_States 13.04Mbps"
-    type: vless
-    server: "45.138.100.226"
-    port: 2083
-    udp: true
-    skip-cert-verify: false
-    uuid: "0c6b632a-cd96-4b74-9b51-151e3b5697db"
-    tls: true
-    servername: "using.neobo-tooth.ru"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇺🇸 #8 ✈️ United_States-CDN 12.62Mbps"
-    type: vless
-    server: "108.162.198.178"
-    port: 2095
-    udp: true
-    skip-cert-verify: false
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-  - name: "🇬🇧 #9 ✈️ United_Kingdom-CDN 12.29Mbps"
-    type: vless
-    server: "188.114.97.6"
-    port: 2086
-    udp: true
-    skip-cert-verify: false
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-  - name: "🇬🇧 #10 ✈️🔍 United_Kingdom 12.01Mbps"
-    type: vless
-    server: "46.250.250.149"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "8e16742a-78d5-4327-9052-f86a9ce50f49"
-    tls: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
-    network: "tcp"
-    reality-opts:
-      public-key: "SIBS0hevQuPeJiBQUoN5MYq8Gs_ZWyBlkHK6miz__kM"
-      short-id: "90decc62dab9873f"
-  - name: "🇺🇸 #11 ✈️ United_States-CDN 11.26Mbps"
-    type: vless
-    server: "108.162.198.178"
-    port: 80
-    udp: true
-    skip-cert-verify: false
-    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-  - name: "🇸🇬 #12 ✈️🔍 Singapore 11.1Mbps"
-    type: vless
-    server: "172.66.40.229"
-    port: 2096
-    udp: true
-    skip-cert-verify: false
-    uuid: "0aeb1da4-2362-4aaa-97f3-26d0f84423b5"
-    tls: true
-    servername: "8.sahanwickramasinghe.me"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "8.sahanwickramasinghe.me"
-  - name: "🇸🇬 #13 🔍 Singapore 10.8Mbps"
-    type: vless
-    server: "104.17.71.206"
+    server: "54.39.96.233"
     port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "542fd687-5160-4f80-9223-56678567dd29"
+    uuid: "db3f09ae-23f2-42b8-abee-7b89fb392c5e"
     tls: true
-    servername: "8.sahanwickramasinghe.me"
-    client-fingerprint: "firefox"
+    servername: "maple.adaspoloandco.com"
+    client-fingerprint: "qq"
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/uploader.php"
       headers:
-        Host: "8.sahanwickramasinghe.me"
-  - name: "🇫🇷 #14 ✈️🔍 France 8.66Mbps"
-    type: vless
-    server: "213.130.137.100"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #15 ✈️🔍 France 8.63Mbps"
-    type: vless
-    server: "213.130.137.100"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #16 ✈️🔍 France 8.6Mbps"
-    type: vless
-    server: "213.130.137.100"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇬🇧 #17 ✈️🔍 United_Kingdom 8.56Mbps"
-    type: vless
-    server: "78.129.221.66"
-    port: 446
-    udp: true
-    skip-cert-verify: false
-    uuid: "10000025-9365-7424-f000-93edfcf6a020"
-    tls: true
-    servername: "louisvuitton.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "9LFDlpt6d56wFwxchaKvyLQHGj3lw3ku1g3X8H9JjEI"
-      short-id: "91e6c6797f49ed84"
-  - name: "🇫🇷 #18 ✈️🔍 France 8.52Mbps"
-    type: vless
-    server: "213.130.137.150"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #19 ✈️🔍 France 8.5Mbps"
+        Host: "maple.adaspoloandco.com"
+  - name: "🇫🇷 #13 ✈️🔍 France 11.63Mbps"
     type: vless
     server: "213.130.137.130"
     port: 443
@@ -259,164 +167,50 @@ proxies:
     reality-opts:
       public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
       short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #20 ✈️🔍 France 8.35Mbps"
+  - name: "🇬🇧 #14 ✈️🔍 United_Kingdom 11.45Mbps"
     type: vless
-    server: "213.130.137.150"
+    server: "78.129.237.23"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    uuid: "10000025-9365-7667-f000-0943b428a020"
     tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #21 ✈️🔍 France 8.33Mbps"
-    type: vless
-    server: "213.130.137.10"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #22 🔍 France 8.18Mbps"
-    type: vless
-    server: "213.130.137.30"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #23 ✈️🔍 France 8.15Mbps"
-    type: vless
-    server: "213.130.137.10"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #24 ✈️🔍 France 8.12Mbps"
-    type: vless
-    server: "213.130.137.140"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #25 ✈️🔍 France 8.09Mbps"
-    type: vless
-    server: "panel.freesavesafe.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #26 ✈️🔍 France 8.08Mbps"
-    type: vless
-    server: "213.130.137.40"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇳🇱 #27 ✈️🔍 The_Netherlands 7.93Mbps"
-    type: vless
-    server: "hys42.wba-pn.ru"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "f0d24eb0-a88a-455f-92b8-3a99c38dfb0c"
-    tls: true
-    servername: "hys42.wba-pn.ru"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "hys42.wba-pn.ru"
-  - name: "🇳🇱 #28 ✈️🔍 The_Netherlands 7.91Mbps"
-    type: vless
-    server: "hys41.wba-pn.ru"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "8e8e4592-6088-4d00-b061-ef5456d0eb9c"
-    tls: true
-    servername: "hys41.wba-pn.ru"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "hys41.wba-pn.ru"
-  - name: "🇩🇪 #29 ✈️🔍 Germany 7.87Mbps"
-    type: vless
-    server: "144.31.87.16"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
-    tls: true
-    servername: "yandex.ru"
+    servername: "strapi.io"
     client-fingerprint: "chrome"
     network: "tcp"
     reality-opts:
-      public-key: "l5eAOSPQMEyzEPvWGAKvCkcPpsJvR3DJfYo6elw1UTE"
-      short-id: "3b802dad547b0847"
-  - name: "🇳🇱 #30 ✈️🔍 The_Netherlands 7.85Mbps"
+      public-key: "cWVHOLypYFtzpvgldlZ5h1fhOTptEC-ZQI7pFb7ok0c"
+      short-id: "5e11872495085a8f"
+  - name: "🇫🇷 #15 ✈️🔍 France 11.34Mbps"
     type: vless
-    server: "hys42.wba-pn.ru"
+    server: "213.130.137.190"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "f0d24eb0-a88a-455f-92b8-3a99c38dfb0c"
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
     tls: true
-    servername: "hys42.wba-pn.ru"
-    client-fingerprint: "chrome"
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #16 ✈️🔍 France 11.31Mbps"
+    type: vless
+    server: "ziro.skin"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "f028a8c0-6763-4558-aee3-2563db9d7825"
+    tls: true
+    servername: "ziro.skin"
+    client-fingerprint: "qq"
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/xxvclws"
       headers:
-        Host: "hys42.wba-pn.ru"
-  - name: "🇫🇷 #31 ✈️🔍 France 7.82Mbps"
+        Host: "ziro.skin"
+  - name: "🇫🇷 #17 ✈️🔍 France 10.98Mbps"
     type: vless
     server: "213.130.137.20"
     port: 443
@@ -430,9 +224,23 @@ proxies:
     reality-opts:
       public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
       short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #32 ✈️🔍 France 7.8Mbps"
+  - name: "🇬🇧 #18 ✈️🔍 United_Kingdom 10.93Mbps"
     type: vless
-    server: "213.130.137.160"
+    server: "51.89.194.151"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "34b7efee-3c88-440f-9495-92c12a0de50e"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "v0-nm8GGINN0mEHP5kgcgWrl_TFDcr2ZS8yLLW8c93M"
+      short-id: "5b83742cfc81b064"
+  - name: "🇫🇷 #19 ✈️🔍 France 10.93Mbps"
+    type: vless
+    server: "213.130.137.10"
     port: 443
     udp: true
     skip-cert-verify: false
@@ -444,51 +252,260 @@ proxies:
     reality-opts:
       public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
       short-id: "812609fa663c57fb"
-  - name: "🇳🇱 #33 ✈️🔍 The_Netherlands 7.8Mbps"
+  - name: "🇫🇷 #20 ✈️🔍 France 10.82Mbps"
     type: vless
-    server: "hys41.wba-pn.ru"
+    server: "213.130.137.10"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "8e8e4592-6088-4d00-b061-ef5456d0eb9c"
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
     tls: true
-    servername: "hys41.wba-pn.ru"
-    client-fingerprint: "qq"
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #21 ✈️🔍 France 10.73Mbps"
+    type: vless
+    server: "213.130.137.100"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #22 ✈️🔍 France 10.73Mbps"
+    type: vless
+    server: "213.130.137.150"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #23 ✈️🔍 France 10.69Mbps"
+    type: vless
+    server: "213.130.137.200"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #24 ✈️🔍 France 10.68Mbps"
+    type: vless
+    server: "213.130.137.30"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #25 ✈️🔍 France 10.63Mbps"
+    type: vless
+    server: "213.130.137.100"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #26 ✈️🔍 France 10.56Mbps"
+    type: vless
+    server: "panel.freesavesafe.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #27 ✈️🔍 France 10.54Mbps"
+    type: vless
+    server: "213.130.137.150"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #28 ✈️🔍 France 10.49Mbps"
+    type: vless
+    server: "213.130.137.100"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #29 ✈️🔍 France 10.45Mbps"
+    type: vless
+    server: "213.130.137.20"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇺🇸 #30 ✈️ United_States-CDN 10.34Mbps"
+    type: vless
+    server: "188.114.97.6"
+    port: 2086
+    udp: true
+    skip-cert-verify: false
+    uuid: "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "hys41.wba-pn.ru"
-  - name: "🇺🇸 #34 ✈️🔍 United_States 7.77Mbps"
+        Host: "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+  - name: "🇬🇧 #31 ✈️🔍 United_Kingdom 10.24Mbps"
     type: vless
-    server: "194.55.189.249"
-    port: 40443
+    server: "78.129.221.66"
+    port: 446
     udp: true
     skip-cert-verify: false
-    uuid: "8212a50b-25bf-4739-bba1-aaffb5ffc84c"
+    uuid: "10000025-9365-7424-f000-93edfcf6a020"
     tls: true
-    servername: "deepl.com"
+    servername: "louisvuitton.com"
     client-fingerprint: "chrome"
     network: "tcp"
     reality-opts:
-      public-key: "KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo"
-      short-id: "aae8"
-  - name: "🇳🇱 #35 ✈️🔍 The_Netherlands 7.77Mbps"
+      public-key: "9LFDlpt6d56wFwxchaKvyLQHGj3lw3ku1g3X8H9JjEI"
+      short-id: "91e6c6797f49ed84"
+  - name: "🇬🇧 #32 ✈️🔍 United_Kingdom 10.22Mbps"
     type: vless
-    server: "72.56.117.75"
+    server: "82.152.220.141"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "8e8e4592-6088-4d00-b061-ef5456d0eb9c"
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
     tls: true
-    servername: "hys41.wba-pn.ru"
+    servername: "api-v2.savesafe.run"
+    client-fingerprint: "chrome"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇳🇱 #33 ✈️🔍 The_Netherlands 10.19Mbps"
+    type: vless
+    server: "hys42.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "f0d24eb0-a88a-455f-92b8-3a99c38dfb0c"
+    tls: true
+    servername: "hys42.wba-pn.ru"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hys42.wba-pn.ru"
+  - name: "🇪🇸 #34 ✈️🔍 Spain 10.11Mbps"
+    type: vless
+    server: "212.227.235.66"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "6fbdbd3c-7696-4b9a-9a10-bcecc26e0f6f"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
+      short-id: "866af6e56606f2bc"
+  - name: "🇳🇱 #35 ✈️🔍 The_Netherlands 10.05Mbps"
+    type: vless
+    server: "147.45.226.155"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
+    tls: true
+    servername: "wsnl24.wba-pn.ru"
     client-fingerprint: "firefox"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "hys41.wba-pn.ru"
-  - name: "🇳🇱 #36 ✈️🔍 The_Netherlands 7.68Mbps"
+        Host: "wsnl24.wba-pn.ru"
+  - name: "🇳🇱 #36 ✈️🔍 The_Netherlands 10.04Mbps"
+    type: vless
+    server: "46.19.69.201"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "053440e6-fc8d-48d9-bb4f-2675e367f64f"
+    tls: true
+    servername: "wsnl7.wba-pn.ru"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "wsnl7.wba-pn.ru"
+  - name: "🇫🇷 #37 ✈️🔍 France 9.97Mbps"
+    type: vless
+    server: "213.136.92.67"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "af348651-1624-4710-b55f-0307a22d891f"
+    tls: true
+    servername: "status.play.google.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo"
+      short-id: "5030"
+  - name: "🇳🇱 #38 ✈️🔍 The_Netherlands 9.9Mbps"
     type: vless
     server: "5.129.224.93"
     port: 443
@@ -503,60 +520,37 @@ proxies:
       path: "/"
       headers:
         Host: "hys42.wba-pn.ru"
-  - name: "🇫🇷 #37 ✈️🔍 France 7.65Mbps"
+  - name: "🇳🇱 #39 ✈️🔍 The_Netherlands 9.79Mbps"
     type: vless
-    server: "213.130.137.20"
+    server: "hys42.wba-pn.ru"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    uuid: "f0d24eb0-a88a-455f-92b8-3a99c38dfb0c"
     tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇳🇱 #38 ✈️🔍 The_Netherlands 7.61Mbps"
-    type: vless
-    server: "95.85.228.30"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "e1299012-3d27-4b7f-99d5-25ccb7c63220"
-    tls: true
-    servername: "www.google.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE"
-  - name: "🇮🇹 #39 ✈️ Italy 7.54Mbps"
-    type: vless
-    server: "151.241.215.109"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "699ce9a1-abbb-4525-988e-b940381352e8"
+    servername: "hys42.wba-pn.ru"
+    client-fingerprint: "qq"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "151.241.215.109"
-  - name: "🇫🇮 #40 ✈️🔍 Finland 7.53Mbps"
+        Host: "hys42.wba-pn.ru"
+  - name: "🇳🇱 #40 ✈️🔍 The_Netherlands 9.68Mbps"
     type: vless
-    server: "85.192.49.141"
-    port: 443
+    server: "147.45.226.155"
+    port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "85cc845e-644c-4148-8288-f0c03c83c1ec"
+    uuid: "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
     tls: true
-    servername: "fi.quattro-tech.ru"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
-      short-id: "43dcff53849b81e6"
-  - name: "🇦🇹 #41 ✈️🔍 Austria 7.49Mbps"
+    servername: "wsnl24.wba-pn.ru"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "wsnl24.wba-pn.ru"
+  - name: "🇦🇹 #41 ✈️🔍 Austria 9.68Mbps"
     type: vless
     server: "152.53.1.40"
     port: 443
@@ -570,175 +564,30 @@ proxies:
     reality-opts:
       public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
       short-id: "43dcff53849b81e6"
-  - name: "🇳🇱 #42 ✈️🔍 The_Netherlands 7.45Mbps"
+  - name: "🇩🇪 #42 Germany 9.68Mbps"
     type: vless
-    server: "64.188.59.203"
+    server: "139.28.241.77"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "ae2009b9-76cb-4d18-8612-7515b2b84398"
+    uuid: "5d5c40b1-102c-4343-94cc-d5b794dbd0c6"
+    network: "tcp"
+  - name: "🇳🇱 #43 ✈️🔍 The_Netherlands 9.67Mbps"
+    type: vless
+    server: "72.56.117.75"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "8e8e4592-6088-4d00-b061-ef5456d0eb9c"
     tls: true
-    servername: "tg1.wba-pn.ru"
+    servername: "hys41.wba-pn.ru"
     client-fingerprint: "firefox"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "tg1.wba-pn.ru"
-  - name: "🇳🇴 #43 ✈️🔍 Norway 7.44Mbps"
-    type: vless
-    server: "46.29.238.139"
-    port: 40443
-    udp: true
-    skip-cert-verify: false
-    uuid: "8384341b-cd89-4a21-a022-cc4bd4e648ca"
-    tls: true
-    servername: "deepl.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "7i4Y7v80NVAIi_4_9roDkqcXmexIHli87dfZuFaQMUI"
-      short-id: "68da"
-  - name: "🇩🇪 #44 ✈️ Germany 7.42Mbps"
-    type: vless
-    server: "de-193-58.neobo-tooth.ru"
-    port: 2096
-    udp: true
-    skip-cert-verify: false
-    uuid: "b6c29ae7-4748-4049-b642-b695c0d2c776"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "de-193-58.neobo-tooth.ru"
-  - name: "🇳🇱 #45 ✈️🔍 The_Netherlands 7.4Mbps"
-    type: vless
-    server: "64.188.59.203"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "ae2009b9-76cb-4d18-8612-7515b2b84398"
-    tls: true
-    servername: "tg1.wba-pn.ru"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "tg1.wba-pn.ru"
-  - name: "🇪🇸 #46 ✈️🔍 Spain 7.34Mbps"
-    type: vless
-    server: "212.227.235.66"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "6fbdbd3c-7696-4b9a-9a10-bcecc26e0f6f"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "XrPOJwmpnq8NeCXu6K68Mp59gQ56Dr4YYboxI70kqzA"
-      short-id: "866af6e56606f2bc"
-  - name: "🇳🇱 #47 ✈️🔍 The_Netherlands 7.32Mbps"
-    type: vless
-    server: "147.45.226.155"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
-    tls: true
-    servername: "wsnl24.wba-pn.ru"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "wsnl24.wba-pn.ru"
-  - name: "🇳🇴 #48 ✈️🔍 Norway 7.31Mbps"
-    type: vless
-    server: "46.29.238.136"
-    port: 40443
-    udp: true
-    skip-cert-verify: false
-    uuid: "374181b9-44bf-44f1-a227-1184f3e9e47b"
-    tls: true
-    servername: "deepl.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "Ic-S89gGVGw1RnKJHOi3CzAmdU8fIdlMZOd4DBV7A3M"
-      short-id: "bbb1"
-  - name: "🇳🇱 #49 ✈️🔍 The_Netherlands 7.26Mbps"
-    type: vless
-    server: "147.45.226.155"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
-    tls: true
-    servername: "wsnl24.wba-pn.ru"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "wsnl24.wba-pn.ru"
-  - name: "🇮🇹 #50 ✈️ Italy 7.22Mbps"
-    type: vless
-    server: "itproxy4.lockdwn.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "e4737ce4-c646-44cc-9067-390e13c2a5f6"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "itproxy4.lockdwn.com"
-  - name: "🇬🇧 #51 ✈️🔍 United_Kingdom 7.21Mbps"
-    type: vless
-    server: "82.152.220.81"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "auth-3.savesafe.run"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇬🇧 #52 ✈️🔍 United_Kingdom 7.19Mbps"
-    type: vless
-    server: "78.129.237.23"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "10000025-9365-7667-f000-0943b428a020"
-    tls: true
-    servername: "strapi.io"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "cWVHOLypYFtzpvgldlZ5h1fhOTptEC-ZQI7pFb7ok0c"
-      short-id: "5e11872495085a8f"
-  - name: "🇵🇱 #53 ✈️🔍 Poland 7.16Mbps"
-    type: vless
-    server: "54.37.136.194"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "7061b26c-0f6c-49b5-be42-af2c011c04bc"
-    tls: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "TtGgrgk1OLMjWBaomJ1JkUOvmtMx7sLJdvvN0bxmZF8"
-      short-id: "bdc1efeb01044e93"
-  - name: "🇬🇧 #54 ✈️🔍 United_Kingdom 7.14Mbps"
+        Host: "hys41.wba-pn.ru"
+  - name: "🇬🇧 #44 ✈️🔍 United_Kingdom 9.66Mbps"
     type: vless
     server: "78.129.237.23"
     port: 443
@@ -752,171 +601,37 @@ proxies:
     reality-opts:
       public-key: "cWVHOLypYFtzpvgldlZ5h1fhOTptEC-ZQI7pFb7ok0c"
       short-id: "5e11872495085a8f"
-  - name: "🇳🇱 #55 ✈️🔍 The_Netherlands 7.11Mbps"
+  - name: "🇳🇱 #45 ✈️🔍 The_Netherlands 9.61Mbps"
     type: vless
-    server: "31.76.76.28"
-    port: 2053
+    server: "72.56.117.75"
+    port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "de5906f3-df38-4463-aa9d-2b01320cc6ea"
+    uuid: "8e8e4592-6088-4d00-b061-ef5456d0eb9c"
     tls: true
-    servername: "dzen.ru"
+    servername: "hys41.wba-pn.ru"
     client-fingerprint: "firefox"
-    network: "grpc"
-    reality-opts:
-      public-key: "c3XEY47JDU92n3eqwZW0PLZOxJPAdAbeXWaCDoZFiXQ"
-      short-id: "096e0d43c8"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇫🇷 #56 ✈️🔍 France 7.1Mbps"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hys41.wba-pn.ru"
+  - name: "🇳🇱 #46 ✈️🔍 The_Netherlands 9.61Mbps"
     type: vless
-    server: "213.136.92.67"
-    port: 443
+    server: "wsnl24.wba-pn.ru"
+    port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "af348651-1624-4710-b55f-0307a22d891f"
+    uuid: "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
     tls: true
-    servername: "status.play.google.com"
+    servername: "wsnl24.wba-pn.ru"
     client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo"
-      short-id: "5030"
-  - name: "🇫🇷 #57 ✈️🔍 France 7.01Mbps"
-    type: vless
-    server: "213.130.137.180"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇩🇪 #58 ✈️🔍 Germany 7.0Mbps"
-    type: vless
-    server: "rubifen.adaspoloandco.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    tls: true
-    servername: "rubifen.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/GOrbEh"
-      headers:
-        Host: "rubifen.adaspoloandco.com"
-  - name: "🇫🇷 #59 ✈️ France 6.94Mbps"
-    type: vless
-    server: "usejh2.neobo-tooth.ru"
-    port: 2096
-    udp: true
-    skip-cert-verify: false
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "usejh2.neobo-tooth.ru"
-  - name: "🇩🇪 #60 🔍 Germany 6.92Mbps"
-    type: vless
-    server: "ov-germany1.09vpn.com"
-    port: 80
-    udp: true
-    skip-cert-verify: false
-    uuid: "7d74eae4-8a06-4306-a923-ad686f30bf26"
-    network: "ws"
-    ws-opts:
-      path: "/vless/"
-      headers:
-        Host: "OV-Germany1.09vpn.com"
-  - name: "🇬🇧 #61 ✈️🔍 United_Kingdom 6.91Mbps"
-    type: vless
-    server: "82.152.220.141"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "api-v2.savesafe.run"
-    client-fingerprint: "chrome"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇷 #62 ✈️🔍 France 6.91Mbps"
-    type: vless
-    server: "213.130.137.190"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇫🇮 #63 ✈️🔍 Finland 6.9Mbps"
-    type: vless
-    server: "185.79.138.71"
-    port: 448
-    udp: true
-    skip-cert-verify: false
-    uuid: "0b0915d7-6800-4580-a44b-77d84f105e6a"
-    tls: true
-    servername: "www.samsung.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8"
-      short-id: "cd21e552537c7c0b"
-  - name: "🇵🇱 #64 ✈️🔍 Poland 6.9Mbps"
-    type: vless
-    server: "94.183.209.59"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "d23cb516-40db-4aa4-8142-6b45ff882f90"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "94.183.209.59"
-  - name: "🇮🇹 #65 ✈️ Italy 6.88Mbps"
-    type: vless
-    server: "itproxy4.lockdwn.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "e4737ce4-c646-44cc-9067-390e13c2a5f6"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "itproxy4.lockdwn.com"
-  - name: "🇳🇱 #66 ✈️🔍 The_Netherlands 6.86Mbps"
-    type: vless
-    server: "wsnl7.wba-pn.ru"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "053440e6-fc8d-48d9-bb4f-2675e367f64f"
-    tls: true
-    servername: "wsnl7.wba-pn.ru"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "wsnl7.wba-pn.ru"
-  - name: "🇳🇱 #67 ✈️🔍 The_Netherlands 6.86Mbps"
+        Host: "wsnl24.wba-pn.ru"
+  - name: "🇳🇱 #47 ✈️🔍 The_Netherlands 9.49Mbps"
     type: vless
     server: "217.60.24.23"
     port: 8443
@@ -932,353 +647,60 @@ proxies:
       short-id: "f747a7a5793b5714"
     grpc-opts:
       grpc-service-name: ""
-  - name: "🇫🇷 #68 ✈️🔍 France 6.86Mbps"
+  - name: "🇳🇱 #48 ✈️🔍 The_Netherlands 9.42Mbps"
     type: vless
-    server: "ziro.skin"
+    server: "95.85.228.30"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "f028a8c0-6763-4558-aee3-2563db9d7825"
+    uuid: "e1299012-3d27-4b7f-99d5-25ccb7c63220"
     tls: true
-    servername: "ziro.skin"
-    client-fingerprint: "qq"
+    servername: "www.google.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE"
+  - name: "🇮🇹 #49 ✈️ Italy 9.36Mbps"
+    type: vless
+    server: "151.241.215.109"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "699ce9a1-abbb-4525-988e-b940381352e8"
     network: "ws"
     ws-opts:
-      path: "/xxvclws"
+      path: "/"
       headers:
-        Host: "ziro.skin"
-  - name: "🇫🇮 #69 ✈️🔍 Finland 6.84Mbps"
+        Host: "151.241.215.109"
+  - name: "🇳🇴 #50 ✈️🔍 Norway 9.29Mbps"
     type: vless
-    server: "95.216.27.15"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "ea48c5b6-7a19-4fea-9902-17004a424452"
-    tls: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "JmAuytyIXW4klA7zqeSYi3EtWR0d4fNJCq4nR0LMQE8"
-      short-id: "07316dd7d0e11c90"
-  - name: "🇳🇱 #70 ✈️🔍 The_Netherlands 6.83Mbps"
-    type: vless
-    server: "147.45.145.127"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "534cbbe2-cc36-4f2d-8fb0-90410e7148c9"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc"
-      short-id: "52a6"
-  - name: "🇺🇸 #71 ✈️🔍 United_States 6.83Mbps"
-    type: vless
-    server: "193.160.32.36"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
-    tls: true
-    servername: "play.google.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "Sh2F8IDDBaFvXPI59IwN-25UR1G0fjXNmuVqwNbTpUk"
-      short-id: "c87bfa39a28a95b9"
-  - name: "🇬🇧 #72 ✈️🔍 United_Kingdom 6.82Mbps"
-    type: vless
-    server: "51.89.194.151"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "34b7efee-3c88-440f-9495-92c12a0de50e"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "v0-nm8GGINN0mEHP5kgcgWrl_TFDcr2ZS8yLLW8c93M"
-      short-id: "5b83742cfc81b064"
-  - name: "🇳🇴 #73 ✈️🔍 Norway 6.81Mbps"
-    type: vless
-    server: "46.29.238.88"
+    server: "46.29.238.136"
     port: 40443
     udp: true
     skip-cert-verify: false
-    uuid: "db320947-adfb-400d-b60b-383b8324bffe"
+    uuid: "374181b9-44bf-44f1-a227-1184f3e9e47b"
     tls: true
     servername: "deepl.com"
     client-fingerprint: "chrome"
     network: "tcp"
     reality-opts:
-      public-key: "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc"
-      short-id: "f7b2"
-  - name: "🇫🇷 #74 ✈️🔍 France 6.79Mbps"
+      public-key: "Ic-S89gGVGw1RnKJHOi3CzAmdU8fIdlMZOd4DBV7A3M"
+      short-id: "bbb1"
+  - name: "🇩🇪 #51 ✈️🔍 Germany 9.2Mbps"
     type: vless
-    server: "213.130.137.90"
+    server: "144.31.87.16"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    uuid: "c40f773e-3b96-417e-b22c-e48cb63ca7d9"
     tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇳🇱 #75 ✈️🔍 The_Netherlands 6.79Mbps"
-    type: vless
-    server: "46.19.69.201"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "053440e6-fc8d-48d9-bb4f-2675e367f64f"
-    tls: true
-    servername: "wsnl7.wba-pn.ru"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "wsnl7.wba-pn.ru"
-  - name: "🇳🇱 #76 ✈️🔍 The_Netherlands 6.79Mbps"
-    type: vless
-    server: "193.23.194.167"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "32349ee8-8551-45fa-a265-8704cec72936"
-    tls: true
-    servername: "neth.lckdwn.ru"
+    servername: "yandex.ru"
     client-fingerprint: "chrome"
     network: "tcp"
-  - name: "🇳🇱 #77 ✈️🔍 The_Netherlands 6.78Mbps"
-    type: vless
-    server: "193.23.194.167"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "32349ee8-8551-45fa-a265-8704cec72936"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "193.23.194.167"
-  - name: "🇫🇷 #78 ✈️🔍 France 6.7Mbps"
-    type: vless
-    server: "213.130.137.180"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "chrome"
-    network: "xhttp"
     reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇳🇱 #79 ✈️🔍 The_Netherlands 6.65Mbps"
-    type: vless
-    server: "wsnl7.wba-pn.ru"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "053440e6-fc8d-48d9-bb4f-2675e367f64f"
-    tls: true
-    servername: "wsnl7.wba-pn.ru"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "wsnl7.wba-pn.ru"
-  - name: "🇩🇪 #80 ✈️🔍 Germany 6.63Mbps"
-    type: vless
-    server: "rubifen.adaspoloandco.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    tls: true
-    servername: "rubifen.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/GOrbEh"
-      headers:
-        Host: "rubifen.adaspoloandco.com"
-  - name: "🇮🇹 #81 ✈️🔍 Italy 6.62Mbps"
-    type: vless
-    server: "milan.adaspoloandco.com"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    tls: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/RoBeRt"
-      headers:
-        Host: "milan.adaspoloandco.com"
-  - name: "🇳🇱 #82 ✈️🔍 The_Netherlands 6.58Mbps"
-    type: vless
-    server: "5.129.214.249"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "a3f59a62-b4ad-4f02-bfce-ef68e63ab6f7"
-    tls: true
-    servername: "nlxy.korgivps.ru"
-    client-fingerprint: "firefox"
-    network: "ws"
-    ws-opts:
-      path: "/api/user"
-      headers:
-        Host: "nlxy.korgivps.ru"
-  - name: "🇵🇱 #83 ✈️🔍 Poland 6.54Mbps"
-    type: vless
-    server: "94.183.209.43"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "5e7ecc47-e424-4653-876e-c7515a2c82b4"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "94.183.209.43"
-  - name: "🇫🇷 #84 ✈️🔍 France 6.51Mbps"
-    type: vless
-    server: "213.130.137.200"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
-    tls: true
-    servername: "panel.freesavesafe.com"
-    client-fingerprint: "firefox"
-    network: "xhttp"
-    reality-opts:
-      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
-      short-id: "812609fa663c57fb"
-  - name: "🇮🇹 #85 ✈️🔍 Italy 6.5Mbps"
-    type: vless
-    server: "milan.adaspoloandco.com"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    tls: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/RoBeRt"
-      headers:
-        Host: "milan.adaspoloandco.com"
-  - name: "🇪🇪 #86 ✈️🔍 Estonia 6.49Mbps"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    tls: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-  - name: "🇳🇱 #87 ✈️🔍 The_Netherlands 6.48Mbps"
-    type: vless
-    server: "45.9.2.171"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "167610e4-bcaf-4074-bc2d-0c08dc4ea294"
-    tls: true
-    servername: "torr.wlrus.cfd"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "🇮🇹 #88 ✈️🔍 Italy 6.47Mbps"
-    type: vless
-    server: "57.131.21.102"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
-    tls: true
-    servername: "milan.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/RoBeRt"
-      headers:
-        Host: "milan.adaspoloandco.com"
-  - name: "🇵🇱 #89 ✈️ Poland 6.46Mbps"
-    type: vless
-    server: "chopin.adaspoloandco.com"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
-    tls: true
-    servername: "chopin.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/download.php"
-      headers:
-        Host: "chopin.adaspoloandco.com"
-  - name: "🇵🇱 #90 ✈️🔍 Poland 6.45Mbps"
-    type: vless
-    server: "94.183.209.59"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "d23cb516-40db-4aa4-8142-6b45ff882f90"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "94.183.209.59"
-  - name: "🇩🇪 #91 ✈️🔍 Germany 6.44Mbps"
-    type: vless
-    server: "144.31.106.40"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "758f49d3-5f5f-47e7-bfa4-4ce96faf800d"
-    tls: true
-    servername: "cdn.shopify.com"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    reality-opts:
-      public-key: "NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU"
-      short-id: "f747a7a5793b5714"
-    grpc-opts:
-      grpc-service-name: ""
-  - name: "🇪🇪 #92 ✈️🔍 Estonia 6.42Mbps"
-    type: vless
-    server: "estproxy4.lockdwn.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "estproxy4.lockdwn.com"
-  - name: "🇩🇪 #93 ✈️🔍 Germany 6.36Mbps"
+      public-key: "l5eAOSPQMEyzEPvWGAKvCkcPpsJvR3DJfYo6elw1UTE"
+      short-id: "3b802dad547b0847"
+  - name: "🇩🇪 #52 ✈️🔍 Germany 9.08Mbps"
     type: vless
     server: "94.183.219.243"
     port: 8443
@@ -1294,97 +716,7 @@ proxies:
       short-id: "f747a7a5793b5714"
     grpc-opts:
       grpc-service-name: ""
-  - name: "🇫🇷 #94 ✈️🔍 France 6.28Mbps"
-    type: vless
-    server: "bab-6.site"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
-    tls: true
-    servername: "bab-6.site"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/vws/"
-      headers:
-        Host: "bab-6.site"
-  - name: "🇩🇪 #95 ✈️🔍 Germany 6.26Mbps"
-    type: vless
-    server: "rubifen.adaspoloandco.com"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
-    tls: true
-    servername: "rubifen.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/GOrbEh"
-      headers:
-        Host: "rubifen.adaspoloandco.com"
-  - name: "🇳🇱 #96 ✈️🔍 The_Netherlands 6.24Mbps"
-    type: vless
-    server: "wsnl24.wba-pn.ru"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc"
-    tls: true
-    servername: "wsnl24.wba-pn.ru"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "wsnl24.wba-pn.ru"
-  - name: "🇵🇱 #97 ✈️ Poland 6.24Mbps"
-    type: vless
-    server: "chopin.adaspoloandco.com"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
-    tls: true
-    servername: "chopin.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/download.php"
-      headers:
-        Host: "chopin.adaspoloandco.com"
-  - name: "🇳🇱 #98 ✈️🔍 Netherlands 6.24Mbps"
-    type: vless
-    server: "199.232.78.159"
-    port: 443
-    udp: true
-    skip-cert-verify: false
-    uuid: "a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0"
-    tls: true
-    servername: "ssl.fastly.com"
-    client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER"
-      headers:
-        Host: "pane3.global.ssl.fastly.net"
-  - name: "🇵🇱 #99 ✈️ Poland 6.22Mbps"
-    type: vless
-    server: "chopin.adaspoloandco.com"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
-    tls: true
-    servername: "chopin.adaspoloandco.com"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/download.php"
-      headers:
-        Host: "chopin.adaspoloandco.com"
-  - name: "🇫🇷 #100 ✈️ France 6.17Mbps"
+  - name: "🇫🇷 #53 ✈️ France 8.98Mbps"
     type: vless
     server: "45.144.28.39"
     port: 2096
@@ -1396,122 +728,144 @@ proxies:
       path: "/"
       headers:
         Host: "usejh2.neobo-tooth.ru"
-  - name: "🇸🇬 #101 ✈️🔍 Singapore 6.16Mbps"
+  - name: "🇳🇱 #54 ✈️🔍 The_Netherlands 8.93Mbps"
     type: vless
-    server: "104.17.70.206"
+    server: "5.129.214.249"
     port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "542fd687-5160-4f80-9223-56678567dd29"
+    uuid: "a3f59a62-b4ad-4f02-bfce-ef68e63ab6f7"
     tls: true
-    servername: "8.sahanwickramasinghe.me"
+    servername: "nlxy.korgivps.ru"
     client-fingerprint: "firefox"
     network: "ws"
     ws-opts:
-      path: "/"
+      path: "/api/user"
       headers:
-        Host: "8.sahanwickramasinghe.me"
-  - name: "🇳🇱 #102 ✈️🔍 The_Netherlands 6.15Mbps"
+        Host: "nlxy.korgivps.ru"
+  - name: "🇫🇷 #55 ✈️🔍 France 8.7Mbps"
     type: vless
-    server: "tg1.wba-pn.ru"
+    server: "213.130.137.50"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "ae2009b9-76cb-4d18-8612-7515b2b84398"
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
     tls: true
-    servername: "tg1.wba-pn.ru"
-    client-fingerprint: "qq"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "tg1.wba-pn.ru"
-  - name: "🇱🇻 #103 ✈️🔍 Latvia 6.07Mbps"
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇮🇹 #56 ✈️ Italy 8.69Mbps"
     type: vless
-    server: "laoye.in-gect.fun"
-    port: 2096
-    udp: true
-    skip-cert-verify: false
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "laoye.in-gect.fun"
-  - name: "🇱🇻 #104 ✈️🔍 Latvia 6.06Mbps"
-    type: vless
-    server: "89.36.161.222"
-    port: 2096
-    udp: true
-    skip-cert-verify: false
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "89.36.161.222"
-  - name: "🇫🇷 #105 ✈️🔍 France 6.05Mbps"
-    type: vless
-    server: "149.202.58.99"
+    server: "itproxy4.lockdwn.com"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    uuid: "e4737ce4-c646-44cc-9067-390e13c2a5f6"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "itproxy4.lockdwn.com"
+  - name: "🇫🇷 #57 ✈️🔍 France 8.68Mbps"
+    type: vless
+    server: "213.130.137.40"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
     tls: true
-    servername: "bab-6.site"
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇳🇱 #58 ✈️🔍 The_Netherlands 8.66Mbps"
+    type: vless
+    server: "147.45.145.127"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "534cbbe2-cc36-4f2d-8fb0-90410e7148c9"
+    tls: true
+    servername: "yahoo.com"
     client-fingerprint: "chrome"
-    network: "ws"
-    ws-opts:
-      path: "/vws/"
-      headers:
-        Host: "bab-6.site"
-  - name: "🇫🇷 #106 ✈️🔍 France 5.96Mbps"
+    network: "tcp"
+    reality-opts:
+      public-key: "tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc"
+      short-id: "52a6"
+  - name: "🇮🇹 #59 ✈️ Italy 8.62Mbps"
     type: vless
-    server: "bab-6.site"
+    server: "itproxy4.lockdwn.com"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
-    tls: true
-    servername: "bab-6.site"
-    client-fingerprint: "chrome"
+    uuid: "e4737ce4-c646-44cc-9067-390e13c2a5f6"
     network: "ws"
     ws-opts:
-      path: "/vws/"
+      path: "/"
       headers:
-        Host: "bab-6.site"
-  - name: "🇫🇷 #107 ✈️ France 5.92Mbps"
+        Host: "itproxy4.lockdwn.com"
+  - name: "🇫🇷 #60 ✈️🔍 France 8.57Mbps"
+    type: vless
+    server: "213.130.137.140"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇳🇴 #61 ✈️🔍 Norway 8.57Mbps"
+    type: vless
+    server: "46.29.238.139"
+    port: 40443
+    udp: true
+    skip-cert-verify: false
+    uuid: "8384341b-cd89-4a21-a022-cc4bd4e648ca"
+    tls: true
+    servername: "deepl.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "7i4Y7v80NVAIi_4_9roDkqcXmexIHli87dfZuFaQMUI"
+      short-id: "68da"
+  - name: "🇬🇧 #62 ✈️🔍 United_Kingdom 8.51Mbps"
+    type: vless
+    server: "46.250.250.149"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "8e16742a-78d5-4327-9052-f86a9ce50f49"
+    tls: true
+    servername: "www.apple.com"
+    client-fingerprint: "firefox"
+    network: "tcp"
+    reality-opts:
+      public-key: "SIBS0hevQuPeJiBQUoN5MYq8Gs_ZWyBlkHK6miz__kM"
+      short-id: "90decc62dab9873f"
+  - name: "🇵🇱 #63 ✈️🔍 Poland 8.5Mbps"
+    type: vless
+    server: "94.183.209.43"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "5e7ecc47-e424-4653-876e-c7515a2c82b4"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "94.183.209.43"
+  - name: "🇫🇷 #64 ✈️ France 8.37Mbps"
     type: vless
     server: "usejh2.neobo-tooth.ru"
-    port: 2083
-    udp: true
-    skip-cert-verify: false
-    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
-    tls: true
-    servername: "usejh2.neobo-tooth.ru"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇫🇷 #108 ✈️🔍 France 5.9Mbps"
-    type: vless
-    server: "45.67.139.38"
-    port: 8443
-    udp: true
-    skip-cert-verify: false
-    uuid: "835337d3-9283-4632-bcae-e1b7ce1526e5"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    network: "grpc"
-    reality-opts:
-      public-key: "c6llaKvDdqaLdQ3ACZnuoC4ZzPu0GOHQA38HLZAJwi4"
-      short-id: "206c64818bd6d03a"
-    grpc-opts:
-      grpc-service-name: "d2dbe01c86"
-  - name: "🇱🇻 #109 ✈️🔍 Latvia 5.84Mbps"
-    type: vless
-    server: "89.36.161.222"
     port: 2096
     udp: true
     skip-cert-verify: false
@@ -1520,8 +874,8 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: "laoye.in-gect.fun"
-  - name: "🇩🇪 #110 ✈️🔍 Germany 5.82Mbps"
+        Host: "usejh2.neobo-tooth.ru"
+  - name: "🇩🇪 #65 ✈️🔍 Germany 8.35Mbps"
     type: vless
     server: "151.242.17.99"
     port: 8443
@@ -1537,7 +891,585 @@ proxies:
       short-id: "bc"
     grpc-opts:
       grpc-service-name: ""
-  - name: "🇵🇱 #111 ✈️🔍 Poland 5.78Mbps"
+  - name: "🇫🇮 #66 ✈️🔍 Finland 8.32Mbps"
+    type: vless
+    server: "85.192.49.141"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "85cc845e-644c-4148-8288-f0c03c83c1ec"
+    tls: true
+    servername: "fi.quattro-tech.ru"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc"
+      short-id: "43dcff53849b81e6"
+  - name: "🇨🇦 #67 ✈️🔍 Canada 8.31Mbps"
+    type: vless
+    server: "66.70.179.198"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "b82a5521-f45f-4d40-92df-86d236eb04f4"
+    tls: true
+    servername: "www.google.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "Xgn5Vcz-gtFFJXJWnGvn22m3Fc2TwoCFLUy_acTQdm8"
+      short-id: "5653d14b657a1d0b"
+  - name: "🇳🇱 #68 ✈️🔍 The_Netherlands 8.3Mbps"
+    type: vless
+    server: "tg1.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "ae2009b9-76cb-4d18-8612-7515b2b84398"
+    tls: true
+    servername: "tg1.wba-pn.ru"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tg1.wba-pn.ru"
+  - name: "🇳🇱 #69 ✈️🔍 The_Netherlands 8.23Mbps"
+    type: vless
+    server: "hys41.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "8e8e4592-6088-4d00-b061-ef5456d0eb9c"
+    tls: true
+    servername: "hys41.wba-pn.ru"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "hys41.wba-pn.ru"
+  - name: "🇳🇴 #70 ✈️🔍 Norway 8.21Mbps"
+    type: vless
+    server: "46.29.238.88"
+    port: 40443
+    udp: true
+    skip-cert-verify: false
+    uuid: "db320947-adfb-400d-b60b-383b8324bffe"
+    tls: true
+    servername: "deepl.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc"
+      short-id: "f7b2"
+  - name: "🇫🇷 #71 🔍 France 8.2Mbps"
+    type: vless
+    server: "213.130.137.180"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "chrome"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇺🇸 #72 ✈️ United_States 8.16Mbps"
+    type: vless
+    server: "193.160.32.36"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "255386a8-aec5-4425-bfe7-ca49b7448deb"
+    tls: true
+    servername: "play.google.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "Sh2F8IDDBaFvXPI59IwN-25UR1G0fjXNmuVqwNbTpUk"
+      short-id: "c87bfa39a28a95b9"
+  - name: "🇳🇱 #73 ✈️🔍 The_Netherlands 8.1Mbps"
+    type: vless
+    server: "tg1.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "ae2009b9-76cb-4d18-8612-7515b2b84398"
+    tls: true
+    servername: "tg1.wba-pn.ru"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tg1.wba-pn.ru"
+  - name: "🇳🇱 #74 ✈️🔍 The_Netherlands 8.05Mbps"
+    type: vless
+    server: "tg1.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "ae2009b9-76cb-4d18-8612-7515b2b84398"
+    tls: true
+    servername: "tg1.wba-pn.ru"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tg1.wba-pn.ru"
+  - name: "🇵🇱 #75 ✈️ Poland 8.04Mbps"
+    type: vless
+    server: "chopin.adaspoloandco.com"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
+    tls: true
+    servername: "chopin.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/download.php"
+      headers:
+        Host: "chopin.adaspoloandco.com"
+  - name: "🇩🇪 #76 ✈️🔍 Germany 8.03Mbps"
+    type: vless
+    server: "rubifen.adaspoloandco.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    tls: true
+    servername: "rubifen.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "🇵🇱 #77 ✈️ Poland 8.02Mbps"
+    type: vless
+    server: "146.59.35.134"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
+    tls: true
+    servername: "chopin.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/download.php"
+      headers:
+        Host: "chopin.adaspoloandco.com"
+  - name: "🇩🇪 #78 ✈️🔍 Germany 7.93Mbps"
+    type: vless
+    server: "rubifen.adaspoloandco.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    tls: true
+    servername: "rubifen.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "🇵🇱 #79 ✈️ Poland 7.87Mbps"
+    type: vless
+    server: "chopin.adaspoloandco.com"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "f798a2c4-c51b-409d-b349-ca8455b36796"
+    tls: true
+    servername: "chopin.adaspoloandco.com"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/download.php"
+      headers:
+        Host: "chopin.adaspoloandco.com"
+  - name: "🇬🇧 #80 ✈️🔍 United_Kingdom 7.77Mbps"
+    type: vless
+    server: "82.152.220.81"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "auth-3.savesafe.run"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇳🇱 #81 ✈️🔍 The_Netherlands 7.7Mbps"
+    type: vless
+    server: "wsnl7.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "053440e6-fc8d-48d9-bb4f-2675e367f64f"
+    tls: true
+    servername: "wsnl7.wba-pn.ru"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "wsnl7.wba-pn.ru"
+  - name: "🇫🇷 #82 ✈️ France 7.7Mbps"
+    type: vless
+    server: "usejh2.neobo-tooth.ru"
+    port: 2083
+    udp: true
+    skip-cert-verify: false
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    tls: true
+    servername: "usejh2.neobo-tooth.ru"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇫🇷 #83 ✈️🔍 France 7.68Mbps"
+    type: vless
+    server: "213.130.137.180"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇵🇱 #84 ✈️ Poland 7.68Mbps"
+    type: vless
+    server: "94.183.209.58"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "78791f9e-fe09-4d4f-88ec-895764bae0d6"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "pl2.lckdwn.ru"
+  - name: "🇫🇮 #85 ✈️🔍 Finland 7.64Mbps"
+    type: vless
+    server: "185.79.138.71"
+    port: 448
+    udp: true
+    skip-cert-verify: false
+    uuid: "0b0915d7-6800-4580-a44b-77d84f105e6a"
+    tls: true
+    servername: "www.samsung.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8"
+      short-id: "cd21e552537c7c0b"
+  - name: "🇳🇱 #86 ✈️🔍 The_Netherlands 7.59Mbps"
+    type: vless
+    server: "31.76.76.28"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "de5906f3-df38-4463-aa9d-2b01320cc6ea"
+    tls: true
+    servername: "dzen.ru"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "c3XEY47JDU92n3eqwZW0PLZOxJPAdAbeXWaCDoZFiXQ"
+      short-id: "096e0d43c8"
+    grpc-opts:
+      grpc-service-name: "grpc"
+  - name: "🇵🇱 #87 ✈️🔍 Poland 7.54Mbps"
+    type: vless
+    server: "94.183.209.59"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "d23cb516-40db-4aa4-8142-6b45ff882f90"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "94.183.209.59"
+  - name: "🇫🇮 #88 ✈️🔍 Finland 7.42Mbps"
+    type: vless
+    server: "95.216.27.15"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "ea48c5b6-7a19-4fea-9902-17004a424452"
+    tls: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "JmAuytyIXW4klA7zqeSYi3EtWR0d4fNJCq4nR0LMQE8"
+      short-id: "07316dd7d0e11c90"
+  - name: "🇫🇷 #89 ✈️🔍 France 7.4Mbps"
+    type: vless
+    server: "bab-6.site"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    tls: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
+  - name: "🇫🇷 #90 ✈️🔍 France 7.4Mbps"
+    type: vless
+    server: "bab-6.site"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    tls: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
+  - name: "🇸🇰 #91 ✈️ Slovakia-CDN 7.29Mbps"
+    type: vless
+    server: "185.112.249.201"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "9b18ccef-b9e0-41d1-8990-9d970569e142"
+    tls: true
+    servername: "web-socket.tgdaosheng.ggff.net"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/proxyip=bpb.yousef.isegaro.com"
+      headers:
+        Host: "web-socket.tgdaosheng.ggff.net"
+  - name: "🇩🇪 #92 ✈️🔍 Germany 7.28Mbps"
+    type: vless
+    server: "rubifen.adaspoloandco.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "cf39fab0-bb85-42cb-9945-2ad69d78e575"
+    tls: true
+    servername: "rubifen.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/GOrbEh"
+      headers:
+        Host: "rubifen.adaspoloandco.com"
+  - name: "🇳🇱 #93 ✈️🔍 The_Netherlands 7.27Mbps"
+    type: vless
+    server: "wsnl7.wba-pn.ru"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "053440e6-fc8d-48d9-bb4f-2675e367f64f"
+    tls: true
+    servername: "wsnl7.wba-pn.ru"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "wsnl7.wba-pn.ru"
+  - name: "🇮🇹 #94 ✈️🔍 Italy 7.27Mbps"
+    type: vless
+    server: "57.131.21.102"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
+    tls: true
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/RoBeRt"
+      headers:
+        Host: "milan.adaspoloandco.com"
+  - name: "🇩🇪 #95 ✈️ Germany 7.27Mbps"
+    type: vless
+    server: "144.31.106.40"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "758f49d3-5f5f-47e7-bfa4-4ce96faf800d"
+    tls: true
+    servername: "cdn.shopify.com"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    reality-opts:
+      public-key: "NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU"
+      short-id: "f747a7a5793b5714"
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇪🇪 #96 ✈️🔍 Estonia 7.27Mbps"
+    type: vless
+    server: "94.183.170.135"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    tls: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "firefox"
+    network: "tcp"
+  - name: "🇳🇱 #97 ✈️🔍 Netherlands 7.11Mbps"
+    type: vless
+    server: "158.178.145.2"
+    port: 62145
+    udp: true
+    skip-cert-verify: false
+    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+    network: "tcp"
+  - name: "🇺🇸 #98 ✈️🔍 United_States 7.06Mbps"
+    type: vless
+    server: "31.76.88.10"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "03c48eca-e0aa-4e18-998c-1f53f1de293c"
+    tls: true
+    servername: "cf5.rumedia-cdn.com"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/cdn/v3/live"
+      headers:
+        Host: "cf5.rumedia-cdn.com"
+  - name: "🇫🇷 #99 ✈️🔍 France 7.03Mbps"
+    type: vless
+    server: "45.67.139.38"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "835337d3-9283-4632-bcae-e1b7ce1526e5"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    reality-opts:
+      public-key: "c6llaKvDdqaLdQ3ACZnuoC4ZzPu0GOHQA38HLZAJwi4"
+      short-id: "206c64818bd6d03a"
+    grpc-opts:
+      grpc-service-name: "d2dbe01c86"
+  - name: "🇫🇷 #100 ✈️🔍 France 6.98Mbps"
+    type: vless
+    server: "213.130.137.90"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇫🇷 #101 ✈️🔍 France 6.94Mbps"
+    type: vless
+    server: "149.202.58.99"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b585dc5e-55bf-4a8b-913a-27c9ccac05c3"
+    tls: true
+    servername: "bab-6.site"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/vws/"
+      headers:
+        Host: "bab-6.site"
+  - name: "🇪🇪 #102 ✈️🔍 Estonia 6.88Mbps"
+    type: vless
+    server: "estproxy4.lockdwn.com"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    tls: true
+    servername: "estproxy4.lockdwn.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+  - name: "🇵🇱 #103 ✈️🔍 Poland 6.88Mbps"
+    type: vless
+    server: "94.183.209.59"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "d23cb516-40db-4aa4-8142-6b45ff882f90"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "94.183.209.59"
+  - name: "🇱🇻 #104 ✈️🔍 Latvia 6.86Mbps"
+    type: vless
+    server: "laoye.in-gect.fun"
+    port: 2096
+    udp: true
+    skip-cert-verify: false
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
+  - name: "🇮🇹 #105 ✈️🔍 Italy 6.85Mbps"
+    type: vless
+    server: "milan.adaspoloandco.com"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
+    tls: true
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/RoBeRt"
+      headers:
+        Host: "milan.adaspoloandco.com"
+  - name: "🇹🇷 #106 ✈️🔍 Türkiye 6.83Mbps"
+    type: vless
+    server: "151.241.226.201"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "52b1aca9-a2ba-4249-9e9f-d488f89c1445"
+    tls: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA"
+      short-id: "c267be657e1539ea"
+  - name: "🇵🇱 #107 ✈️🔍 Poland 6.82Mbps"
     type: vless
     server: "2.26.224.91"
     port: 8443
@@ -1553,94 +1485,35 @@ proxies:
       short-id: "f747a7a5793b5714"
     grpc-opts:
       grpc-service-name: ""
-  - name: "🇪🇪 #112 ✈️🔍 Estonia 5.71Mbps"
+  - name: "🇮🇹 #108 ✈️🔍 Italy 6.67Mbps"
     type: vless
-    server: "94.183.170.135"
+    server: "milan.adaspoloandco.com"
     port: 8443
     udp: true
     skip-cert-verify: false
-    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    uuid: "69ac162b-1643-4acb-9f49-09d8b0fad609"
     tls: true
-    servername: "estproxy4.lockdwn.com"
-    client-fingerprint: "firefox"
-    network: "tcp"
-  - name: "🇬🇧 #113 ✈️🔍 United_Kingdom 5.71Mbps"
+    servername: "milan.adaspoloandco.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/RoBeRt"
+      headers:
+        Host: "milan.adaspoloandco.com"
+  - name: "🇩🇪 #109 ✈️ Germany 6.58Mbps"
     type: vless
-    server: "uk1.cnyvpn.com"
-    port: 2083
-    udp: true
-    skip-cert-verify: false
-    uuid: "60e2a548-96aa-4850-a279-1edab743c39b"
-    tls: true
-    servername: "autotrader.co.uk"
-    client-fingerprint: "firefox"
-    network: "grpc"
-    reality-opts:
-      public-key: "5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0"
-      short-id: "8b71da690c3d5d03"
-    grpc-opts:
-      grpc-service-name: "remnagrpc"
-  - name: "🇫🇮 #114 🔍 Finland 5.64Mbps"
-    type: vless
-    server: "31.76.46.138"
-    port: 20422
-    udp: true
-    skip-cert-verify: false
-    uuid: "d8523317-503e-43ad-b2c3-e5f77d725848"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ"
-      short-id: "90"
-  - name: "🇹🇷 #115 ✈️🔍 Türkiye 5.63Mbps"
-    type: vless
-    server: "151.241.226.201"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "52b1aca9-a2ba-4249-9e9f-d488f89c1445"
-    tls: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    network: "tcp"
-    reality-opts:
-      public-key: "dUFJ3jZPMH9WvjtAnUc9wYhO_IX1czIi-CidF_HdFDA"
-      short-id: "c267be657e1539ea"
-  - name: "🇸🇪 #116 ✈️🔍 Sweden 5.62Mbps"
-    type: vless
-    server: "89.22.229.127"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "716576a9-7575-44f0-a82a-a21f774861f5"
-    tls: true
-    servername: "youtu.be"
-    client-fingerprint: "firefox"
-    network: "grpc"
-    reality-opts:
-      public-key: "7jWdn-_Fec05kPbpSJtHhHb2SFMgtNDI6RgpI1TslgA"
-      short-id: "aa919d61919210ac"
-    grpc-opts:
-      grpc-service-name: "grpc"
-  - name: "🇲🇩 #117 ✈️🔍 Moldova 5.1Mbps"
-    type: vless
-    server: "89.35.14.32"
+    server: "194.48.250.31"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    uuid: "e1299012-3d27-4b7f-99d5-25ccb7c63220"
     tls: true
-    servername: "md3.univesalsrv.com"
-    client-fingerprint: "firefox"
-    network: "grpc"
+    servername: "www.google.com"
+    client-fingerprint: "qq"
+    network: "xhttp"
     reality-opts:
-      public-key: "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ"
-      short-id: "9a72d40f1ff882b3"
-    grpc-opts:
-      grpc-service-name: "stats.v2.PushService"
-  - name: "🇩🇪 #118 ✈️🔍 Germany 4.37Mbps"
+      public-key: "sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE"
+  - name: "🇩🇪 #110 ✈️🔍 Germany 6.53Mbps"
     type: vless
     server: "93.152.217.41"
     port: 40443
@@ -1654,23 +1527,163 @@ proxies:
     reality-opts:
       public-key: "VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA"
       short-id: "5b97"
-  - name: "🇲🇩 #119 ✈️🔍 Moldova 3.7Mbps"
+  - name: "🇱🇻 #111 ✈️🔍 Latvia 6.52Mbps"
     type: vless
-    server: "89.35.14.32"
+    server: "89.36.161.222"
+    port: 2096
+    udp: true
+    skip-cert-verify: false
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "89.36.161.222"
+  - name: "🇫🇮 #112 ✈️🔍 Finland 6.39Mbps"
+    type: vless
+    server: "31.76.46.138"
+    port: 20422
+    udp: true
+    skip-cert-verify: false
+    uuid: "d8523317-503e-43ad-b2c3-e5f77d725848"
+    tls: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "ZUQTvwYk_hDqSrw36uc18MkeEIXIGZZGsf5XWVwdqAQ"
+      short-id: "90"
+  - name: "🇪🇪 #113 ✈️🔍 Estonia 6.32Mbps"
+    type: vless
+    server: "94.183.170.135"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "06c4e938-2954-478f-a870-ca1b163e30e9"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "estproxy4.lockdwn.com"
+  - name: "🇫🇷 #114 ✈️🔍 France 5.98Mbps"
+    type: vless
+    server: "213.130.137.160"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb"
+    tls: true
+    servername: "panel.freesavesafe.com"
+    client-fingerprint: "firefox"
+    network: "xhttp"
+    reality-opts:
+      public-key: "BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8"
+      short-id: "812609fa663c57fb"
+  - name: "🇱🇻 #115 ✈️🔍 Latvia 5.96Mbps"
+    type: vless
+    server: "89.36.161.222"
+    port: 2096
+    udp: true
+    skip-cert-verify: false
+    uuid: "70e20b2e-3b1f-4c25-9a3d-9240570391bb"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "laoye.in-gect.fun"
+  - name: "🇩🇪 #116 ✈️🔍 Germany 5.89Mbps"
+    type: vless
+    server: "155.254.35.117"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "835337d3-9283-4632-bcae-e1b7ce1526e5"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    reality-opts:
+      public-key: "WilePtoxS6aT0T-3pmYQ6VJBhM6GOxr-M82GrIgaBHk"
+      short-id: "71017894fcfb7701"
+    grpc-opts:
+      grpc-service-name: "8993c04f3a"
+  - name: "🇷🇸 #117 ✈️🔍 Serbia 5.8Mbps"
+    type: vless
+    server: "rs1.univesalsrv.com"
     port: 443
     udp: true
     skip-cert-verify: false
     uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
     tls: true
-    servername: "md3.univesalsrv.com"
+    servername: "rs1.univesalsrv.com"
     client-fingerprint: "firefox"
     network: "grpc"
     reality-opts:
-      public-key: "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ"
-      short-id: "9a72d40f1ff882b3"
+      public-key: "upIzyaSbVz2ZK6KfGtXmPl_-sCwn8XLDyFDH5CsL9iY"
+      short-id: "ed0cd5cc2e26e6e7"
     grpc-opts:
-      grpc-service-name: "stats.v2.PushService"
-  - name: "🇧🇬 #120 ✈️🔍 Bulgaria 3.23Mbps"
+      grpc-service-name: "node.v2.ObjectService"
+  - name: "🇲🇩 #118 ✈️🔍 Moldova 5.72Mbps"
+    type: vless
+    server: "89.35.14.33"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "md4.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg"
+      short-id: "8e07337954f9823f"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ApiService"
+  - name: "🇲🇩 #119 ✈️🔍 Moldova 5.17Mbps"
+    type: vless
+    server: "md4.univesalsrv.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "md4.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg"
+      short-id: "8e07337954f9823f"
+    grpc-opts:
+      grpc-service-name: "hub.v1.ApiService"
+  - name: "🇲🇩 #120 ✈️🔍 Moldova 5.05Mbps"
+    type: vless
+    server: "89.35.14.34"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "md5.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "99MRki6b93wC-hhDHe9yq3IXE3KtPGw4RkFAnpI-8gg"
+      short-id: "aa9884f2982b7d3c"
+    grpc-opts:
+      grpc-service-name: "app.v1.PushService"
+  - name: "🇩🇪 #121 ✈️🔍 Germany 4.76Mbps"
+    type: vless
+    server: "de-193-58.neobo-tooth.ru"
+    port: 2096
+    udp: true
+    skip-cert-verify: false
+    uuid: "b6c29ae7-4748-4049-b642-b695c0d2c776"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "de-193-58.neobo-tooth.ru"
+  - name: "🇧🇬 #122 ✈️🔍 Bulgaria 4.58Mbps"
     type: vless
     server: "45.9.156.42"
     port: 443
@@ -1686,7 +1699,116 @@ proxies:
       short-id: "1a3102bb8e51399e"
     grpc-opts:
       grpc-service-name: "gw.v2.RelayService"
-  - name: "🇩🇪 #121 ✈️🔍 Germany 3.19Mbps"
+  - name: "🇺🇸 #123 ✈️🔍 United_States 4.37Mbps"
+    type: vless
+    server: "194.55.189.249"
+    port: 40443
+    udp: true
+    skip-cert-verify: false
+    uuid: "8212a50b-25bf-4739-bba1-aaffb5ffc84c"
+    tls: true
+    servername: "deepl.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo"
+      short-id: "aae8"
+  - name: "🇷🇸 #124 ✈️🔍 Serbia 4.19Mbps"
+    type: vless
+    server: "rs3.univesalsrv.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "rs3.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "gHDoSWGWMVZKWNKONWHw-Cpl0-bdI6GaKusgJIQ-vWQ"
+      short-id: "35d05b666e2c6cdf"
+    grpc-opts:
+      grpc-service-name: "edge.v2.FeedService"
+  - name: "🇷🇸 #125 ✈️🔍 Serbia 3.88Mbps"
+    type: vless
+    server: "rs5.univesalsrv.com"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "rs5.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE"
+      short-id: "4872856d5489c37d"
+    grpc-opts:
+      grpc-service-name: "gw.v1.ObjectService"
+  - name: "🇲🇩 #126 ✈️🔍 Moldova 3.54Mbps"
+    type: vless
+    server: "89.35.14.32"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "md3.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ"
+      short-id: "9a72d40f1ff882b3"
+    grpc-opts:
+      grpc-service-name: "stats.v2.PushService"
+  - name: "🇲🇩 #127 ✈️🔍 Moldova 3.34Mbps"
+    type: vless
+    server: "89.35.14.32"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "md3.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "q38CddDj2g-XNDc0uW1m6S6b8iGY_Bne2RwX7C_FYCQ"
+      short-id: "9a72d40f1ff882b3"
+    grpc-opts:
+      grpc-service-name: "stats.v2.PushService"
+  - name: "🇧🇬 #128 ✈️🔍 Bulgaria 2.4Mbps"
+    type: vless
+    server: "45.9.156.27"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "bg3.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk"
+      short-id: "1be1bd931c98c84a"
+    grpc-opts:
+      grpc-service-name: "home.v1.ApiService"
+  - name: "🇳🇱 #129 🔍 Netherlands 2.29Mbps"
+    type: vless
+    server: "199.232.78.159"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "a1ee277e-93b7-4aa9-86a2-c7ef85a2adb0"
+    tls: true
+    servername: "ssl.fastly.com"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER"
+      headers:
+        Host: "pane3.global.ssl.fastly.net"
+  - name: "🇩🇪 #130 🔍 Germany 1.84Mbps"
     type: vless
     server: "94.156.232.254"
     port: 443
@@ -1701,543 +1823,743 @@ proxies:
       path: "/cdn/v3/live"
       headers:
         Host: "cf6.rumedia-cdn.com"
-  - name: "🇵🇱 #122 ✈️ Poland 3.16Mbps"
+  - name: "🇬🇧 #131 ✈️🔍 United_Kingdom 1.59Mbps"
     type: vless
-    server: "94.183.209.58"
+    server: "149.248.79.235"
+    port: 17301
+    udp: true
+    skip-cert-verify: false
+    uuid: "3571b127-4b3b-4c01-8249-1684daf586b5"
+    tls: true
+    servername: "aws.amazon.com"
+    client-fingerprint: "chrome"
+    network: "grpc"
+    reality-opts:
+      public-key: "nadshlxG0RqC6om__cf9E4F6qolRmHJLcNtReBTr9xY"
+      short-id: "5d"
+    grpc-opts:
+      grpc-service-name: ""
+  - name: "🇳🇱 #132 ✈️🔍 The_Netherlands 1.58Mbps"
+    type: vless
+    server: "193.23.194.167"
     port: 443
     udp: true
     skip-cert-verify: false
-    uuid: "78791f9e-fe09-4d4f-88ec-895764bae0d6"
+    uuid: "32349ee8-8551-45fa-a265-8704cec72936"
     network: "ws"
     ws-opts:
       path: "/"
       headers:
-        Host: "pl2.lckdwn.ru"
-  - name: "🇧🇬 #123 ✈️🔍 Bulgaria 3.05Mbps"
+        Host: "193.23.194.167"
+  - name: "🇬🇧 #133 ✈️🔍 United_Kingdom 1.22Mbps"
     type: vless
-    server: "bg3.univesalsrv.com"
+    server: "uk1.cnyvpn.com"
+    port: 2083
+    udp: true
+    skip-cert-verify: false
+    uuid: "60e2a548-96aa-4850-a279-1edab743c39b"
+    tls: true
+    servername: "autotrader.co.uk"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0"
+      short-id: "8b71da690c3d5d03"
+    grpc-opts:
+      grpc-service-name: "remnagrpc"
+  - name: "🇸🇬 #134 🔍 Singapore 0.91Mbps"
+    type: vless
+    server: "104.17.74.206"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "542fd687-5160-4f80-9223-56678567dd29"
+    tls: true
+    servername: "8.sahanwickramasinghe.me"
+    client-fingerprint: "firefox"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "8.sahanwickramasinghe.me"
+  - name: "🇳🇱 #135 ✈️🔍 The_Netherlands 0.91Mbps"
+    type: vless
+    server: "151.242.2.81"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "0a2dde28-70da-4863-a06f-35d007d94d35"
+    tls: true
+    servername: "cf9.rumedia-cdn.com"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/cdn/v3/live"
+      headers:
+        Host: "cf9.rumedia-cdn.com"
+  - name: "🇵🇱 #136 ✈️🔍 Poland 0.88Mbps"
+    type: vless
+    server: "54.37.136.194"
+    port: 2053
+    udp: true
+    skip-cert-verify: false
+    uuid: "7061b26c-0f6c-49b5-be42-af2c011c04bc"
+    tls: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    network: "tcp"
+    reality-opts:
+      public-key: "TtGgrgk1OLMjWBaomJ1JkUOvmtMx7sLJdvvN0bxmZF8"
+      short-id: "bdc1efeb01044e93"
+  - name: "🇬🇧 #137 ✈️🔍 United_Kingdom 0.85Mbps"
+    type: vless
+    server: "109.176.229.45"
+    port: 2083
+    udp: true
+    skip-cert-verify: false
+    uuid: "60e2a548-96aa-4850-a279-1edab743c39b"
+    tls: true
+    servername: "autotrader.co.uk"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "5_kjhGPcPUiUNJ0Mt4-YoRjphhDz3Hfvx1YCdbBRUA0"
+      short-id: "8b71da690c3d5d03"
+    grpc-opts:
+      grpc-service-name: "remnagrpc"
+  - name: "🇧🇬 #138 ✈️🔍 Bulgaria 0.83Mbps"
+    type: vless
+    server: "bg5.univesalsrv.com"
     port: 443
     udp: true
     skip-cert-verify: false
     uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
     tls: true
-    servername: "bg3.univesalsrv.com"
+    servername: "bg5.univesalsrv.com"
     client-fingerprint: "firefox"
     network: "grpc"
     reality-opts:
-      public-key: "XBfCioniAKXgKYBUVnvBXu80AIaIa4SpAB3w8qeF7Gk"
-      short-id: "1be1bd931c98c84a"
+      public-key: "RDWvDEygSk1eyAQhIK95H9EteFbrS2d9JEjBrco54Bw"
+      short-id: "1a3102bb8e51399e"
     grpc-opts:
-      grpc-service-name: "home.v1.ApiService"
-  - name: "🇳🇱 #124 ✈️🔍 Netherlands 2.99Mbps"
+      grpc-service-name: "gw.v2.RelayService"
+  - name: "🇫🇷 #139 ✈️🔍 France 0.76Mbps"
     type: vless
-    server: "158.178.145.2"
-    port: 62145
+    server: "194.76.154.31"
+    port: 40443
     udp: true
     skip-cert-verify: false
-    uuid: "8fb65472-5957-4f64-ba2d-b5812b2f155a"
-    network: "tcp"
-  - name: "🇬🇧 #125 ✈️🔍 United_Kingdom 2.56Mbps"
-    type: vless
-    server: "46.250.240.80"
-    port: 2053
-    udp: true
-    skip-cert-verify: false
-    uuid: "f2816a01-3555-4e79-9e26-770f050ea55a"
+    uuid: "9f0baff8-bdee-4de9-9515-bcc4932b41fa"
     tls: true
-    servername: "www.apple.com"
-    client-fingerprint: "firefox"
+    servername: "deepl.com"
+    client-fingerprint: "chrome"
     network: "tcp"
     reality-opts:
-      public-key: "bRDaP068YgdwwdQgenUvKTNfPjIB_Dy-lJDFC9ZZEXU"
-      short-id: "632a146bd581641a"
+      public-key: "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ"
+      short-id: "a8ae"
+  - name: "🇧🇬 #140 🔍 Bulgaria 0.74Mbps"
+    type: vless
+    server: "45.9.156.20"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "2f35965a-9a9b-45fd-ba32-987296dfb6be"
+    tls: true
+    servername: "bg1.univesalsrv.com"
+    client-fingerprint: "firefox"
+    network: "grpc"
+    reality-opts:
+      public-key: "vCxac528c27GggqKBDwXVYvnzyI_BIlc7eqRTo8xqEY"
+      short-id: "954891aec4fe0be9"
+    grpc-opts:
+      grpc-service-name: "gw.v1.StreamService"
+  - name: "🇩🇪 #141 ✈️🔍 Germany-CDN 0.54Mbps"
+    type: vless
+    server: "fast.iqiraq.shop"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "5d8fae5f-0427-4da3-99ab-242905fa5c69"
+    tls: true
+    servername: "fast.iqiraq.shop"
+    client-fingerprint: "qq"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fast.iqiraq.shop"
+  - name: "🇳🇱 #142 ✈️🔍 The_Netherlands 0.52Mbps"
+    type: vless
+    server: "193.23.194.167"
+    port: 8443
+    udp: true
+    skip-cert-verify: false
+    uuid: "32349ee8-8551-45fa-a265-8704cec72936"
+    tls: true
+    servername: "neth.lckdwn.ru"
+    client-fingerprint: "chrome"
+    network: "tcp"
+  - name: "🇩🇪 #143 ✈️🔍 Germany-CDN 0.51Mbps"
+    type: vless
+    server: "fast.iqiraq.shop"
+    port: 443
+    udp: true
+    skip-cert-verify: false
+    uuid: "5d8fae5f-0427-4da3-99ab-242905fa5c69"
+    tls: true
+    servername: "fast.iqiraq.shop"
+    client-fingerprint: "chrome"
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "fast.iqiraq.shop"
 
 proxy-groups:
   - name: "🚀 PROXY"
     type: select
     proxies:
       - "⚡ AUTO"
-      - "🇺🇸 #1 ✈️🔍 United_States 36.88Mbps"
-      - "🇺🇸 #2 ✈️🔍 United_States 15.35Mbps"
-      - "🇨🇦 #3 ✈️🔍 Canada 15.32Mbps"
-      - "🇺🇸 #4 ✈️ United_States-CDN 14.02Mbps"
-      - "🇨🇦 #5 ✈️🔍 Canada 13.82Mbps"
-      - "🇨🇦 #6 ✈️🔍 Canada 13.72Mbps"
-      - "🇺🇸 #7 ✈️🔍 United_States 13.04Mbps"
-      - "🇺🇸 #8 ✈️ United_States-CDN 12.62Mbps"
-      - "🇬🇧 #9 ✈️ United_Kingdom-CDN 12.29Mbps"
-      - "🇬🇧 #10 ✈️🔍 United_Kingdom 12.01Mbps"
-      - "🇺🇸 #11 ✈️ United_States-CDN 11.26Mbps"
-      - "🇸🇬 #12 ✈️🔍 Singapore 11.1Mbps"
-      - "🇸🇬 #13 🔍 Singapore 10.8Mbps"
-      - "🇫🇷 #14 ✈️🔍 France 8.66Mbps"
-      - "🇫🇷 #15 ✈️🔍 France 8.63Mbps"
-      - "🇫🇷 #16 ✈️🔍 France 8.6Mbps"
-      - "🇬🇧 #17 ✈️🔍 United_Kingdom 8.56Mbps"
-      - "🇫🇷 #18 ✈️🔍 France 8.52Mbps"
-      - "🇫🇷 #19 ✈️🔍 France 8.5Mbps"
-      - "🇫🇷 #20 ✈️🔍 France 8.35Mbps"
-      - "🇫🇷 #21 ✈️🔍 France 8.33Mbps"
-      - "🇫🇷 #22 🔍 France 8.18Mbps"
-      - "🇫🇷 #23 ✈️🔍 France 8.15Mbps"
-      - "🇫🇷 #24 ✈️🔍 France 8.12Mbps"
-      - "🇫🇷 #25 ✈️🔍 France 8.09Mbps"
-      - "🇫🇷 #26 ✈️🔍 France 8.08Mbps"
-      - "🇳🇱 #27 ✈️🔍 The_Netherlands 7.93Mbps"
-      - "🇳🇱 #28 ✈️🔍 The_Netherlands 7.91Mbps"
-      - "🇩🇪 #29 ✈️🔍 Germany 7.87Mbps"
-      - "🇳🇱 #30 ✈️🔍 The_Netherlands 7.85Mbps"
-      - "🇫🇷 #31 ✈️🔍 France 7.82Mbps"
-      - "🇫🇷 #32 ✈️🔍 France 7.8Mbps"
-      - "🇳🇱 #33 ✈️🔍 The_Netherlands 7.8Mbps"
-      - "🇺🇸 #34 ✈️🔍 United_States 7.77Mbps"
-      - "🇳🇱 #35 ✈️🔍 The_Netherlands 7.77Mbps"
-      - "🇳🇱 #36 ✈️🔍 The_Netherlands 7.68Mbps"
-      - "🇫🇷 #37 ✈️🔍 France 7.65Mbps"
-      - "🇳🇱 #38 ✈️🔍 The_Netherlands 7.61Mbps"
-      - "🇮🇹 #39 ✈️ Italy 7.54Mbps"
-      - "🇫🇮 #40 ✈️🔍 Finland 7.53Mbps"
-      - "🇦🇹 #41 ✈️🔍 Austria 7.49Mbps"
-      - "🇳🇱 #42 ✈️🔍 The_Netherlands 7.45Mbps"
-      - "🇳🇴 #43 ✈️🔍 Norway 7.44Mbps"
-      - "🇩🇪 #44 ✈️ Germany 7.42Mbps"
-      - "🇳🇱 #45 ✈️🔍 The_Netherlands 7.4Mbps"
-      - "🇪🇸 #46 ✈️🔍 Spain 7.34Mbps"
-      - "🇳🇱 #47 ✈️🔍 The_Netherlands 7.32Mbps"
-      - "🇳🇴 #48 ✈️🔍 Norway 7.31Mbps"
-      - "🇳🇱 #49 ✈️🔍 The_Netherlands 7.26Mbps"
-      - "🇮🇹 #50 ✈️ Italy 7.22Mbps"
-      - "🇬🇧 #51 ✈️🔍 United_Kingdom 7.21Mbps"
-      - "🇬🇧 #52 ✈️🔍 United_Kingdom 7.19Mbps"
-      - "🇵🇱 #53 ✈️🔍 Poland 7.16Mbps"
-      - "🇬🇧 #54 ✈️🔍 United_Kingdom 7.14Mbps"
-      - "🇳🇱 #55 ✈️🔍 The_Netherlands 7.11Mbps"
-      - "🇫🇷 #56 ✈️🔍 France 7.1Mbps"
-      - "🇫🇷 #57 ✈️🔍 France 7.01Mbps"
-      - "🇩🇪 #58 ✈️🔍 Germany 7.0Mbps"
-      - "🇫🇷 #59 ✈️ France 6.94Mbps"
-      - "🇩🇪 #60 🔍 Germany 6.92Mbps"
-      - "🇬🇧 #61 ✈️🔍 United_Kingdom 6.91Mbps"
-      - "🇫🇷 #62 ✈️🔍 France 6.91Mbps"
-      - "🇫🇮 #63 ✈️🔍 Finland 6.9Mbps"
-      - "🇵🇱 #64 ✈️🔍 Poland 6.9Mbps"
-      - "🇮🇹 #65 ✈️ Italy 6.88Mbps"
-      - "🇳🇱 #66 ✈️🔍 The_Netherlands 6.86Mbps"
-      - "🇳🇱 #67 ✈️🔍 The_Netherlands 6.86Mbps"
-      - "🇫🇷 #68 ✈️🔍 France 6.86Mbps"
-      - "🇫🇮 #69 ✈️🔍 Finland 6.84Mbps"
-      - "🇳🇱 #70 ✈️🔍 The_Netherlands 6.83Mbps"
-      - "🇺🇸 #71 ✈️🔍 United_States 6.83Mbps"
-      - "🇬🇧 #72 ✈️🔍 United_Kingdom 6.82Mbps"
-      - "🇳🇴 #73 ✈️🔍 Norway 6.81Mbps"
-      - "🇫🇷 #74 ✈️🔍 France 6.79Mbps"
-      - "🇳🇱 #75 ✈️🔍 The_Netherlands 6.79Mbps"
-      - "🇳🇱 #76 ✈️🔍 The_Netherlands 6.79Mbps"
-      - "🇳🇱 #77 ✈️🔍 The_Netherlands 6.78Mbps"
-      - "🇫🇷 #78 ✈️🔍 France 6.7Mbps"
-      - "🇳🇱 #79 ✈️🔍 The_Netherlands 6.65Mbps"
-      - "🇩🇪 #80 ✈️🔍 Germany 6.63Mbps"
-      - "🇮🇹 #81 ✈️🔍 Italy 6.62Mbps"
-      - "🇳🇱 #82 ✈️🔍 The_Netherlands 6.58Mbps"
-      - "🇵🇱 #83 ✈️🔍 Poland 6.54Mbps"
-      - "🇫🇷 #84 ✈️🔍 France 6.51Mbps"
-      - "🇮🇹 #85 ✈️🔍 Italy 6.5Mbps"
-      - "🇪🇪 #86 ✈️🔍 Estonia 6.49Mbps"
-      - "🇳🇱 #87 ✈️🔍 The_Netherlands 6.48Mbps"
-      - "🇮🇹 #88 ✈️🔍 Italy 6.47Mbps"
-      - "🇵🇱 #89 ✈️ Poland 6.46Mbps"
-      - "🇵🇱 #90 ✈️🔍 Poland 6.45Mbps"
-      - "🇩🇪 #91 ✈️🔍 Germany 6.44Mbps"
-      - "🇪🇪 #92 ✈️🔍 Estonia 6.42Mbps"
-      - "🇩🇪 #93 ✈️🔍 Germany 6.36Mbps"
-      - "🇫🇷 #94 ✈️🔍 France 6.28Mbps"
-      - "🇩🇪 #95 ✈️🔍 Germany 6.26Mbps"
-      - "🇳🇱 #96 ✈️🔍 The_Netherlands 6.24Mbps"
-      - "🇵🇱 #97 ✈️ Poland 6.24Mbps"
-      - "🇳🇱 #98 ✈️🔍 Netherlands 6.24Mbps"
-      - "🇵🇱 #99 ✈️ Poland 6.22Mbps"
-      - "🇫🇷 #100 ✈️ France 6.17Mbps"
-      - "🇸🇬 #101 ✈️🔍 Singapore 6.16Mbps"
-      - "🇳🇱 #102 ✈️🔍 The_Netherlands 6.15Mbps"
-      - "🇱🇻 #103 ✈️🔍 Latvia 6.07Mbps"
-      - "🇱🇻 #104 ✈️🔍 Latvia 6.06Mbps"
-      - "🇫🇷 #105 ✈️🔍 France 6.05Mbps"
-      - "🇫🇷 #106 ✈️🔍 France 5.96Mbps"
-      - "🇫🇷 #107 ✈️ France 5.92Mbps"
-      - "🇫🇷 #108 ✈️🔍 France 5.9Mbps"
-      - "🇱🇻 #109 ✈️🔍 Latvia 5.84Mbps"
-      - "🇩🇪 #110 ✈️🔍 Germany 5.82Mbps"
-      - "🇵🇱 #111 ✈️🔍 Poland 5.78Mbps"
-      - "🇪🇪 #112 ✈️🔍 Estonia 5.71Mbps"
-      - "🇬🇧 #113 ✈️🔍 United_Kingdom 5.71Mbps"
-      - "🇫🇮 #114 🔍 Finland 5.64Mbps"
-      - "🇹🇷 #115 ✈️🔍 Türkiye 5.63Mbps"
-      - "🇸🇪 #116 ✈️🔍 Sweden 5.62Mbps"
-      - "🇲🇩 #117 ✈️🔍 Moldova 5.1Mbps"
-      - "🇩🇪 #118 ✈️🔍 Germany 4.37Mbps"
-      - "🇲🇩 #119 ✈️🔍 Moldova 3.7Mbps"
-      - "🇧🇬 #120 ✈️🔍 Bulgaria 3.23Mbps"
-      - "🇩🇪 #121 ✈️🔍 Germany 3.19Mbps"
-      - "🇵🇱 #122 ✈️ Poland 3.16Mbps"
-      - "🇧🇬 #123 ✈️🔍 Bulgaria 3.05Mbps"
-      - "🇳🇱 #124 ✈️🔍 Netherlands 2.99Mbps"
-      - "🇬🇧 #125 ✈️🔍 United_Kingdom 2.56Mbps"
+      - "🇺🇸 #1 ✈️ United_States-CDN 41.02Mbps"
+      - "🇺🇸 #2 ✈️🔍 United_States 27.17Mbps"
+      - "🇺🇸 #3 ✈️🔍 United_States 27.05Mbps"
+      - "🇺🇸 #4 ✈️ United_States-CDN 25.19Mbps"
+      - "🇺🇸 #5 ✈️ United_States-CDN 22.38Mbps"
+      - "🇺🇸 #6 ✈️ United_States-CDN 21.72Mbps"
+      - "🇺🇸 #7 ✈️ United_States-CDN 16.98Mbps"
+      - "🇺🇸 #8 ✈️🔍 United_States 15.5Mbps"
+      - "🇺🇸 #9 ✈️🔍 United_States 14.15Mbps"
+      - "🇺🇸 #10 ✈️ United_States-CDN 13.2Mbps"
+      - "🇨🇦 #11 ✈️🔍 Canada 13.08Mbps"
+      - "🇨🇦 #12 ✈️🔍 Canada 12.06Mbps"
+      - "🇫🇷 #13 ✈️🔍 France 11.63Mbps"
+      - "🇬🇧 #14 ✈️🔍 United_Kingdom 11.45Mbps"
+      - "🇫🇷 #15 ✈️🔍 France 11.34Mbps"
+      - "🇫🇷 #16 ✈️🔍 France 11.31Mbps"
+      - "🇫🇷 #17 ✈️🔍 France 10.98Mbps"
+      - "🇬🇧 #18 ✈️🔍 United_Kingdom 10.93Mbps"
+      - "🇫🇷 #19 ✈️🔍 France 10.93Mbps"
+      - "🇫🇷 #20 ✈️🔍 France 10.82Mbps"
+      - "🇫🇷 #21 ✈️🔍 France 10.73Mbps"
+      - "🇫🇷 #22 ✈️🔍 France 10.73Mbps"
+      - "🇫🇷 #23 ✈️🔍 France 10.69Mbps"
+      - "🇫🇷 #24 ✈️🔍 France 10.68Mbps"
+      - "🇫🇷 #25 ✈️🔍 France 10.63Mbps"
+      - "🇫🇷 #26 ✈️🔍 France 10.56Mbps"
+      - "🇫🇷 #27 ✈️🔍 France 10.54Mbps"
+      - "🇫🇷 #28 ✈️🔍 France 10.49Mbps"
+      - "🇫🇷 #29 ✈️🔍 France 10.45Mbps"
+      - "🇺🇸 #30 ✈️ United_States-CDN 10.34Mbps"
+      - "🇬🇧 #31 ✈️🔍 United_Kingdom 10.24Mbps"
+      - "🇬🇧 #32 ✈️🔍 United_Kingdom 10.22Mbps"
+      - "🇳🇱 #33 ✈️🔍 The_Netherlands 10.19Mbps"
+      - "🇪🇸 #34 ✈️🔍 Spain 10.11Mbps"
+      - "🇳🇱 #35 ✈️🔍 The_Netherlands 10.05Mbps"
+      - "🇳🇱 #36 ✈️🔍 The_Netherlands 10.04Mbps"
+      - "🇫🇷 #37 ✈️🔍 France 9.97Mbps"
+      - "🇳🇱 #38 ✈️🔍 The_Netherlands 9.9Mbps"
+      - "🇳🇱 #39 ✈️🔍 The_Netherlands 9.79Mbps"
+      - "🇳🇱 #40 ✈️🔍 The_Netherlands 9.68Mbps"
+      - "🇦🇹 #41 ✈️🔍 Austria 9.68Mbps"
+      - "🇩🇪 #42 Germany 9.68Mbps"
+      - "🇳🇱 #43 ✈️🔍 The_Netherlands 9.67Mbps"
+      - "🇬🇧 #44 ✈️🔍 United_Kingdom 9.66Mbps"
+      - "🇳🇱 #45 ✈️🔍 The_Netherlands 9.61Mbps"
+      - "🇳🇱 #46 ✈️🔍 The_Netherlands 9.61Mbps"
+      - "🇳🇱 #47 ✈️🔍 The_Netherlands 9.49Mbps"
+      - "🇳🇱 #48 ✈️🔍 The_Netherlands 9.42Mbps"
+      - "🇮🇹 #49 ✈️ Italy 9.36Mbps"
+      - "🇳🇴 #50 ✈️🔍 Norway 9.29Mbps"
+      - "🇩🇪 #51 ✈️🔍 Germany 9.2Mbps"
+      - "🇩🇪 #52 ✈️🔍 Germany 9.08Mbps"
+      - "🇫🇷 #53 ✈️ France 8.98Mbps"
+      - "🇳🇱 #54 ✈️🔍 The_Netherlands 8.93Mbps"
+      - "🇫🇷 #55 ✈️🔍 France 8.7Mbps"
+      - "🇮🇹 #56 ✈️ Italy 8.69Mbps"
+      - "🇫🇷 #57 ✈️🔍 France 8.68Mbps"
+      - "🇳🇱 #58 ✈️🔍 The_Netherlands 8.66Mbps"
+      - "🇮🇹 #59 ✈️ Italy 8.62Mbps"
+      - "🇫🇷 #60 ✈️🔍 France 8.57Mbps"
+      - "🇳🇴 #61 ✈️🔍 Norway 8.57Mbps"
+      - "🇬🇧 #62 ✈️🔍 United_Kingdom 8.51Mbps"
+      - "🇵🇱 #63 ✈️🔍 Poland 8.5Mbps"
+      - "🇫🇷 #64 ✈️ France 8.37Mbps"
+      - "🇩🇪 #65 ✈️🔍 Germany 8.35Mbps"
+      - "🇫🇮 #66 ✈️🔍 Finland 8.32Mbps"
+      - "🇨🇦 #67 ✈️🔍 Canada 8.31Mbps"
+      - "🇳🇱 #68 ✈️🔍 The_Netherlands 8.3Mbps"
+      - "🇳🇱 #69 ✈️🔍 The_Netherlands 8.23Mbps"
+      - "🇳🇴 #70 ✈️🔍 Norway 8.21Mbps"
+      - "🇫🇷 #71 🔍 France 8.2Mbps"
+      - "🇺🇸 #72 ✈️ United_States 8.16Mbps"
+      - "🇳🇱 #73 ✈️🔍 The_Netherlands 8.1Mbps"
+      - "🇳🇱 #74 ✈️🔍 The_Netherlands 8.05Mbps"
+      - "🇵🇱 #75 ✈️ Poland 8.04Mbps"
+      - "🇩🇪 #76 ✈️🔍 Germany 8.03Mbps"
+      - "🇵🇱 #77 ✈️ Poland 8.02Mbps"
+      - "🇩🇪 #78 ✈️🔍 Germany 7.93Mbps"
+      - "🇵🇱 #79 ✈️ Poland 7.87Mbps"
+      - "🇬🇧 #80 ✈️🔍 United_Kingdom 7.77Mbps"
+      - "🇳🇱 #81 ✈️🔍 The_Netherlands 7.7Mbps"
+      - "🇫🇷 #82 ✈️ France 7.7Mbps"
+      - "🇫🇷 #83 ✈️🔍 France 7.68Mbps"
+      - "🇵🇱 #84 ✈️ Poland 7.68Mbps"
+      - "🇫🇮 #85 ✈️🔍 Finland 7.64Mbps"
+      - "🇳🇱 #86 ✈️🔍 The_Netherlands 7.59Mbps"
+      - "🇵🇱 #87 ✈️🔍 Poland 7.54Mbps"
+      - "🇫🇮 #88 ✈️🔍 Finland 7.42Mbps"
+      - "🇫🇷 #89 ✈️🔍 France 7.4Mbps"
+      - "🇫🇷 #90 ✈️🔍 France 7.4Mbps"
+      - "🇸🇰 #91 ✈️ Slovakia-CDN 7.29Mbps"
+      - "🇩🇪 #92 ✈️🔍 Germany 7.28Mbps"
+      - "🇳🇱 #93 ✈️🔍 The_Netherlands 7.27Mbps"
+      - "🇮🇹 #94 ✈️🔍 Italy 7.27Mbps"
+      - "🇩🇪 #95 ✈️ Germany 7.27Mbps"
+      - "🇪🇪 #96 ✈️🔍 Estonia 7.27Mbps"
+      - "🇳🇱 #97 ✈️🔍 Netherlands 7.11Mbps"
+      - "🇺🇸 #98 ✈️🔍 United_States 7.06Mbps"
+      - "🇫🇷 #99 ✈️🔍 France 7.03Mbps"
+      - "🇫🇷 #100 ✈️🔍 France 6.98Mbps"
+      - "🇫🇷 #101 ✈️🔍 France 6.94Mbps"
+      - "🇪🇪 #102 ✈️🔍 Estonia 6.88Mbps"
+      - "🇵🇱 #103 ✈️🔍 Poland 6.88Mbps"
+      - "🇱🇻 #104 ✈️🔍 Latvia 6.86Mbps"
+      - "🇮🇹 #105 ✈️🔍 Italy 6.85Mbps"
+      - "🇹🇷 #106 ✈️🔍 Türkiye 6.83Mbps"
+      - "🇵🇱 #107 ✈️🔍 Poland 6.82Mbps"
+      - "🇮🇹 #108 ✈️🔍 Italy 6.67Mbps"
+      - "🇩🇪 #109 ✈️ Germany 6.58Mbps"
+      - "🇩🇪 #110 ✈️🔍 Germany 6.53Mbps"
+      - "🇱🇻 #111 ✈️🔍 Latvia 6.52Mbps"
+      - "🇫🇮 #112 ✈️🔍 Finland 6.39Mbps"
+      - "🇪🇪 #113 ✈️🔍 Estonia 6.32Mbps"
+      - "🇫🇷 #114 ✈️🔍 France 5.98Mbps"
+      - "🇱🇻 #115 ✈️🔍 Latvia 5.96Mbps"
+      - "🇩🇪 #116 ✈️🔍 Germany 5.89Mbps"
+      - "🇷🇸 #117 ✈️🔍 Serbia 5.8Mbps"
+      - "🇲🇩 #118 ✈️🔍 Moldova 5.72Mbps"
+      - "🇲🇩 #119 ✈️🔍 Moldova 5.17Mbps"
+      - "🇲🇩 #120 ✈️🔍 Moldova 5.05Mbps"
+      - "🇩🇪 #121 ✈️🔍 Germany 4.76Mbps"
+      - "🇧🇬 #122 ✈️🔍 Bulgaria 4.58Mbps"
+      - "🇺🇸 #123 ✈️🔍 United_States 4.37Mbps"
+      - "🇷🇸 #124 ✈️🔍 Serbia 4.19Mbps"
+      - "🇷🇸 #125 ✈️🔍 Serbia 3.88Mbps"
+      - "🇲🇩 #126 ✈️🔍 Moldova 3.54Mbps"
+      - "🇲🇩 #127 ✈️🔍 Moldova 3.34Mbps"
+      - "🇧🇬 #128 ✈️🔍 Bulgaria 2.4Mbps"
+      - "🇳🇱 #129 🔍 Netherlands 2.29Mbps"
+      - "🇩🇪 #130 🔍 Germany 1.84Mbps"
+      - "🇬🇧 #131 ✈️🔍 United_Kingdom 1.59Mbps"
+      - "🇳🇱 #132 ✈️🔍 The_Netherlands 1.58Mbps"
+      - "🇬🇧 #133 ✈️🔍 United_Kingdom 1.22Mbps"
+      - "🇸🇬 #134 🔍 Singapore 0.91Mbps"
+      - "🇳🇱 #135 ✈️🔍 The_Netherlands 0.91Mbps"
+      - "🇵🇱 #136 ✈️🔍 Poland 0.88Mbps"
+      - "🇬🇧 #137 ✈️🔍 United_Kingdom 0.85Mbps"
+      - "🇧🇬 #138 ✈️🔍 Bulgaria 0.83Mbps"
+      - "🇫🇷 #139 ✈️🔍 France 0.76Mbps"
+      - "🇧🇬 #140 🔍 Bulgaria 0.74Mbps"
+      - "🇩🇪 #141 ✈️🔍 Germany-CDN 0.54Mbps"
+      - "🇳🇱 #142 ✈️🔍 The_Netherlands 0.52Mbps"
+      - "🇩🇪 #143 ✈️🔍 Germany-CDN 0.51Mbps"
   - name: "⚡ AUTO"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     tolerance: 50
     proxies:
-      - "🇺🇸 #1 ✈️🔍 United_States 36.88Mbps"
-      - "🇺🇸 #2 ✈️🔍 United_States 15.35Mbps"
-      - "🇨🇦 #3 ✈️🔍 Canada 15.32Mbps"
-      - "🇺🇸 #4 ✈️ United_States-CDN 14.02Mbps"
-      - "🇨🇦 #5 ✈️🔍 Canada 13.82Mbps"
-      - "🇨🇦 #6 ✈️🔍 Canada 13.72Mbps"
-      - "🇺🇸 #7 ✈️🔍 United_States 13.04Mbps"
-      - "🇺🇸 #8 ✈️ United_States-CDN 12.62Mbps"
-      - "🇬🇧 #9 ✈️ United_Kingdom-CDN 12.29Mbps"
-      - "🇬🇧 #10 ✈️🔍 United_Kingdom 12.01Mbps"
-      - "🇺🇸 #11 ✈️ United_States-CDN 11.26Mbps"
-      - "🇸🇬 #12 ✈️🔍 Singapore 11.1Mbps"
-      - "🇸🇬 #13 🔍 Singapore 10.8Mbps"
-      - "🇫🇷 #14 ✈️🔍 France 8.66Mbps"
-      - "🇫🇷 #15 ✈️🔍 France 8.63Mbps"
-      - "🇫🇷 #16 ✈️🔍 France 8.6Mbps"
-      - "🇬🇧 #17 ✈️🔍 United_Kingdom 8.56Mbps"
-      - "🇫🇷 #18 ✈️🔍 France 8.52Mbps"
-      - "🇫🇷 #19 ✈️🔍 France 8.5Mbps"
-      - "🇫🇷 #20 ✈️🔍 France 8.35Mbps"
-      - "🇫🇷 #21 ✈️🔍 France 8.33Mbps"
-      - "🇫🇷 #22 🔍 France 8.18Mbps"
-      - "🇫🇷 #23 ✈️🔍 France 8.15Mbps"
-      - "🇫🇷 #24 ✈️🔍 France 8.12Mbps"
-      - "🇫🇷 #25 ✈️🔍 France 8.09Mbps"
-      - "🇫🇷 #26 ✈️🔍 France 8.08Mbps"
-      - "🇳🇱 #27 ✈️🔍 The_Netherlands 7.93Mbps"
-      - "🇳🇱 #28 ✈️🔍 The_Netherlands 7.91Mbps"
-      - "🇩🇪 #29 ✈️🔍 Germany 7.87Mbps"
-      - "🇳🇱 #30 ✈️🔍 The_Netherlands 7.85Mbps"
-      - "🇫🇷 #31 ✈️🔍 France 7.82Mbps"
-      - "🇫🇷 #32 ✈️🔍 France 7.8Mbps"
-      - "🇳🇱 #33 ✈️🔍 The_Netherlands 7.8Mbps"
-      - "🇺🇸 #34 ✈️🔍 United_States 7.77Mbps"
-      - "🇳🇱 #35 ✈️🔍 The_Netherlands 7.77Mbps"
-      - "🇳🇱 #36 ✈️🔍 The_Netherlands 7.68Mbps"
-      - "🇫🇷 #37 ✈️🔍 France 7.65Mbps"
-      - "🇳🇱 #38 ✈️🔍 The_Netherlands 7.61Mbps"
-      - "🇮🇹 #39 ✈️ Italy 7.54Mbps"
-      - "🇫🇮 #40 ✈️🔍 Finland 7.53Mbps"
-      - "🇦🇹 #41 ✈️🔍 Austria 7.49Mbps"
-      - "🇳🇱 #42 ✈️🔍 The_Netherlands 7.45Mbps"
-      - "🇳🇴 #43 ✈️🔍 Norway 7.44Mbps"
-      - "🇩🇪 #44 ✈️ Germany 7.42Mbps"
-      - "🇳🇱 #45 ✈️🔍 The_Netherlands 7.4Mbps"
-      - "🇪🇸 #46 ✈️🔍 Spain 7.34Mbps"
-      - "🇳🇱 #47 ✈️🔍 The_Netherlands 7.32Mbps"
-      - "🇳🇴 #48 ✈️🔍 Norway 7.31Mbps"
-      - "🇳🇱 #49 ✈️🔍 The_Netherlands 7.26Mbps"
-      - "🇮🇹 #50 ✈️ Italy 7.22Mbps"
-      - "🇬🇧 #51 ✈️🔍 United_Kingdom 7.21Mbps"
-      - "🇬🇧 #52 ✈️🔍 United_Kingdom 7.19Mbps"
-      - "🇵🇱 #53 ✈️🔍 Poland 7.16Mbps"
-      - "🇬🇧 #54 ✈️🔍 United_Kingdom 7.14Mbps"
-      - "🇳🇱 #55 ✈️🔍 The_Netherlands 7.11Mbps"
-      - "🇫🇷 #56 ✈️🔍 France 7.1Mbps"
-      - "🇫🇷 #57 ✈️🔍 France 7.01Mbps"
-      - "🇩🇪 #58 ✈️🔍 Germany 7.0Mbps"
-      - "🇫🇷 #59 ✈️ France 6.94Mbps"
-      - "🇩🇪 #60 🔍 Germany 6.92Mbps"
-      - "🇬🇧 #61 ✈️🔍 United_Kingdom 6.91Mbps"
-      - "🇫🇷 #62 ✈️🔍 France 6.91Mbps"
-      - "🇫🇮 #63 ✈️🔍 Finland 6.9Mbps"
-      - "🇵🇱 #64 ✈️🔍 Poland 6.9Mbps"
-      - "🇮🇹 #65 ✈️ Italy 6.88Mbps"
-      - "🇳🇱 #66 ✈️🔍 The_Netherlands 6.86Mbps"
-      - "🇳🇱 #67 ✈️🔍 The_Netherlands 6.86Mbps"
-      - "🇫🇷 #68 ✈️🔍 France 6.86Mbps"
-      - "🇫🇮 #69 ✈️🔍 Finland 6.84Mbps"
-      - "🇳🇱 #70 ✈️🔍 The_Netherlands 6.83Mbps"
-      - "🇺🇸 #71 ✈️🔍 United_States 6.83Mbps"
-      - "🇬🇧 #72 ✈️🔍 United_Kingdom 6.82Mbps"
-      - "🇳🇴 #73 ✈️🔍 Norway 6.81Mbps"
-      - "🇫🇷 #74 ✈️🔍 France 6.79Mbps"
-      - "🇳🇱 #75 ✈️🔍 The_Netherlands 6.79Mbps"
-      - "🇳🇱 #76 ✈️🔍 The_Netherlands 6.79Mbps"
-      - "🇳🇱 #77 ✈️🔍 The_Netherlands 6.78Mbps"
-      - "🇫🇷 #78 ✈️🔍 France 6.7Mbps"
-      - "🇳🇱 #79 ✈️🔍 The_Netherlands 6.65Mbps"
-      - "🇩🇪 #80 ✈️🔍 Germany 6.63Mbps"
-      - "🇮🇹 #81 ✈️🔍 Italy 6.62Mbps"
-      - "🇳🇱 #82 ✈️🔍 The_Netherlands 6.58Mbps"
-      - "🇵🇱 #83 ✈️🔍 Poland 6.54Mbps"
-      - "🇫🇷 #84 ✈️🔍 France 6.51Mbps"
-      - "🇮🇹 #85 ✈️🔍 Italy 6.5Mbps"
-      - "🇪🇪 #86 ✈️🔍 Estonia 6.49Mbps"
-      - "🇳🇱 #87 ✈️🔍 The_Netherlands 6.48Mbps"
-      - "🇮🇹 #88 ✈️🔍 Italy 6.47Mbps"
-      - "🇵🇱 #89 ✈️ Poland 6.46Mbps"
-      - "🇵🇱 #90 ✈️🔍 Poland 6.45Mbps"
-      - "🇩🇪 #91 ✈️🔍 Germany 6.44Mbps"
-      - "🇪🇪 #92 ✈️🔍 Estonia 6.42Mbps"
-      - "🇩🇪 #93 ✈️🔍 Germany 6.36Mbps"
-      - "🇫🇷 #94 ✈️🔍 France 6.28Mbps"
-      - "🇩🇪 #95 ✈️🔍 Germany 6.26Mbps"
-      - "🇳🇱 #96 ✈️🔍 The_Netherlands 6.24Mbps"
-      - "🇵🇱 #97 ✈️ Poland 6.24Mbps"
-      - "🇳🇱 #98 ✈️🔍 Netherlands 6.24Mbps"
-      - "🇵🇱 #99 ✈️ Poland 6.22Mbps"
-      - "🇫🇷 #100 ✈️ France 6.17Mbps"
-      - "🇸🇬 #101 ✈️🔍 Singapore 6.16Mbps"
-      - "🇳🇱 #102 ✈️🔍 The_Netherlands 6.15Mbps"
-      - "🇱🇻 #103 ✈️🔍 Latvia 6.07Mbps"
-      - "🇱🇻 #104 ✈️🔍 Latvia 6.06Mbps"
-      - "🇫🇷 #105 ✈️🔍 France 6.05Mbps"
-      - "🇫🇷 #106 ✈️🔍 France 5.96Mbps"
-      - "🇫🇷 #107 ✈️ France 5.92Mbps"
-      - "🇫🇷 #108 ✈️🔍 France 5.9Mbps"
-      - "🇱🇻 #109 ✈️🔍 Latvia 5.84Mbps"
-      - "🇩🇪 #110 ✈️🔍 Germany 5.82Mbps"
-      - "🇵🇱 #111 ✈️🔍 Poland 5.78Mbps"
-      - "🇪🇪 #112 ✈️🔍 Estonia 5.71Mbps"
-      - "🇬🇧 #113 ✈️🔍 United_Kingdom 5.71Mbps"
-      - "🇫🇮 #114 🔍 Finland 5.64Mbps"
-      - "🇹🇷 #115 ✈️🔍 Türkiye 5.63Mbps"
-      - "🇸🇪 #116 ✈️🔍 Sweden 5.62Mbps"
-      - "🇲🇩 #117 ✈️🔍 Moldova 5.1Mbps"
-      - "🇩🇪 #118 ✈️🔍 Germany 4.37Mbps"
-      - "🇲🇩 #119 ✈️🔍 Moldova 3.7Mbps"
-      - "🇧🇬 #120 ✈️🔍 Bulgaria 3.23Mbps"
-      - "🇩🇪 #121 ✈️🔍 Germany 3.19Mbps"
-      - "🇵🇱 #122 ✈️ Poland 3.16Mbps"
-      - "🇧🇬 #123 ✈️🔍 Bulgaria 3.05Mbps"
-      - "🇳🇱 #124 ✈️🔍 Netherlands 2.99Mbps"
-      - "🇬🇧 #125 ✈️🔍 United_Kingdom 2.56Mbps"
+      - "🇺🇸 #1 ✈️ United_States-CDN 41.02Mbps"
+      - "🇺🇸 #2 ✈️🔍 United_States 27.17Mbps"
+      - "🇺🇸 #3 ✈️🔍 United_States 27.05Mbps"
+      - "🇺🇸 #4 ✈️ United_States-CDN 25.19Mbps"
+      - "🇺🇸 #5 ✈️ United_States-CDN 22.38Mbps"
+      - "🇺🇸 #6 ✈️ United_States-CDN 21.72Mbps"
+      - "🇺🇸 #7 ✈️ United_States-CDN 16.98Mbps"
+      - "🇺🇸 #8 ✈️🔍 United_States 15.5Mbps"
+      - "🇺🇸 #9 ✈️🔍 United_States 14.15Mbps"
+      - "🇺🇸 #10 ✈️ United_States-CDN 13.2Mbps"
+      - "🇨🇦 #11 ✈️🔍 Canada 13.08Mbps"
+      - "🇨🇦 #12 ✈️🔍 Canada 12.06Mbps"
+      - "🇫🇷 #13 ✈️🔍 France 11.63Mbps"
+      - "🇬🇧 #14 ✈️🔍 United_Kingdom 11.45Mbps"
+      - "🇫🇷 #15 ✈️🔍 France 11.34Mbps"
+      - "🇫🇷 #16 ✈️🔍 France 11.31Mbps"
+      - "🇫🇷 #17 ✈️🔍 France 10.98Mbps"
+      - "🇬🇧 #18 ✈️🔍 United_Kingdom 10.93Mbps"
+      - "🇫🇷 #19 ✈️🔍 France 10.93Mbps"
+      - "🇫🇷 #20 ✈️🔍 France 10.82Mbps"
+      - "🇫🇷 #21 ✈️🔍 France 10.73Mbps"
+      - "🇫🇷 #22 ✈️🔍 France 10.73Mbps"
+      - "🇫🇷 #23 ✈️🔍 France 10.69Mbps"
+      - "🇫🇷 #24 ✈️🔍 France 10.68Mbps"
+      - "🇫🇷 #25 ✈️🔍 France 10.63Mbps"
+      - "🇫🇷 #26 ✈️🔍 France 10.56Mbps"
+      - "🇫🇷 #27 ✈️🔍 France 10.54Mbps"
+      - "🇫🇷 #28 ✈️🔍 France 10.49Mbps"
+      - "🇫🇷 #29 ✈️🔍 France 10.45Mbps"
+      - "🇺🇸 #30 ✈️ United_States-CDN 10.34Mbps"
+      - "🇬🇧 #31 ✈️🔍 United_Kingdom 10.24Mbps"
+      - "🇬🇧 #32 ✈️🔍 United_Kingdom 10.22Mbps"
+      - "🇳🇱 #33 ✈️🔍 The_Netherlands 10.19Mbps"
+      - "🇪🇸 #34 ✈️🔍 Spain 10.11Mbps"
+      - "🇳🇱 #35 ✈️🔍 The_Netherlands 10.05Mbps"
+      - "🇳🇱 #36 ✈️🔍 The_Netherlands 10.04Mbps"
+      - "🇫🇷 #37 ✈️🔍 France 9.97Mbps"
+      - "🇳🇱 #38 ✈️🔍 The_Netherlands 9.9Mbps"
+      - "🇳🇱 #39 ✈️🔍 The_Netherlands 9.79Mbps"
+      - "🇳🇱 #40 ✈️🔍 The_Netherlands 9.68Mbps"
+      - "🇦🇹 #41 ✈️🔍 Austria 9.68Mbps"
+      - "🇩🇪 #42 Germany 9.68Mbps"
+      - "🇳🇱 #43 ✈️🔍 The_Netherlands 9.67Mbps"
+      - "🇬🇧 #44 ✈️🔍 United_Kingdom 9.66Mbps"
+      - "🇳🇱 #45 ✈️🔍 The_Netherlands 9.61Mbps"
+      - "🇳🇱 #46 ✈️🔍 The_Netherlands 9.61Mbps"
+      - "🇳🇱 #47 ✈️🔍 The_Netherlands 9.49Mbps"
+      - "🇳🇱 #48 ✈️🔍 The_Netherlands 9.42Mbps"
+      - "🇮🇹 #49 ✈️ Italy 9.36Mbps"
+      - "🇳🇴 #50 ✈️🔍 Norway 9.29Mbps"
+      - "🇩🇪 #51 ✈️🔍 Germany 9.2Mbps"
+      - "🇩🇪 #52 ✈️🔍 Germany 9.08Mbps"
+      - "🇫🇷 #53 ✈️ France 8.98Mbps"
+      - "🇳🇱 #54 ✈️🔍 The_Netherlands 8.93Mbps"
+      - "🇫🇷 #55 ✈️🔍 France 8.7Mbps"
+      - "🇮🇹 #56 ✈️ Italy 8.69Mbps"
+      - "🇫🇷 #57 ✈️🔍 France 8.68Mbps"
+      - "🇳🇱 #58 ✈️🔍 The_Netherlands 8.66Mbps"
+      - "🇮🇹 #59 ✈️ Italy 8.62Mbps"
+      - "🇫🇷 #60 ✈️🔍 France 8.57Mbps"
+      - "🇳🇴 #61 ✈️🔍 Norway 8.57Mbps"
+      - "🇬🇧 #62 ✈️🔍 United_Kingdom 8.51Mbps"
+      - "🇵🇱 #63 ✈️🔍 Poland 8.5Mbps"
+      - "🇫🇷 #64 ✈️ France 8.37Mbps"
+      - "🇩🇪 #65 ✈️🔍 Germany 8.35Mbps"
+      - "🇫🇮 #66 ✈️🔍 Finland 8.32Mbps"
+      - "🇨🇦 #67 ✈️🔍 Canada 8.31Mbps"
+      - "🇳🇱 #68 ✈️🔍 The_Netherlands 8.3Mbps"
+      - "🇳🇱 #69 ✈️🔍 The_Netherlands 8.23Mbps"
+      - "🇳🇴 #70 ✈️🔍 Norway 8.21Mbps"
+      - "🇫🇷 #71 🔍 France 8.2Mbps"
+      - "🇺🇸 #72 ✈️ United_States 8.16Mbps"
+      - "🇳🇱 #73 ✈️🔍 The_Netherlands 8.1Mbps"
+      - "🇳🇱 #74 ✈️🔍 The_Netherlands 8.05Mbps"
+      - "🇵🇱 #75 ✈️ Poland 8.04Mbps"
+      - "🇩🇪 #76 ✈️🔍 Germany 8.03Mbps"
+      - "🇵🇱 #77 ✈️ Poland 8.02Mbps"
+      - "🇩🇪 #78 ✈️🔍 Germany 7.93Mbps"
+      - "🇵🇱 #79 ✈️ Poland 7.87Mbps"
+      - "🇬🇧 #80 ✈️🔍 United_Kingdom 7.77Mbps"
+      - "🇳🇱 #81 ✈️🔍 The_Netherlands 7.7Mbps"
+      - "🇫🇷 #82 ✈️ France 7.7Mbps"
+      - "🇫🇷 #83 ✈️🔍 France 7.68Mbps"
+      - "🇵🇱 #84 ✈️ Poland 7.68Mbps"
+      - "🇫🇮 #85 ✈️🔍 Finland 7.64Mbps"
+      - "🇳🇱 #86 ✈️🔍 The_Netherlands 7.59Mbps"
+      - "🇵🇱 #87 ✈️🔍 Poland 7.54Mbps"
+      - "🇫🇮 #88 ✈️🔍 Finland 7.42Mbps"
+      - "🇫🇷 #89 ✈️🔍 France 7.4Mbps"
+      - "🇫🇷 #90 ✈️🔍 France 7.4Mbps"
+      - "🇸🇰 #91 ✈️ Slovakia-CDN 7.29Mbps"
+      - "🇩🇪 #92 ✈️🔍 Germany 7.28Mbps"
+      - "🇳🇱 #93 ✈️🔍 The_Netherlands 7.27Mbps"
+      - "🇮🇹 #94 ✈️🔍 Italy 7.27Mbps"
+      - "🇩🇪 #95 ✈️ Germany 7.27Mbps"
+      - "🇪🇪 #96 ✈️🔍 Estonia 7.27Mbps"
+      - "🇳🇱 #97 ✈️🔍 Netherlands 7.11Mbps"
+      - "🇺🇸 #98 ✈️🔍 United_States 7.06Mbps"
+      - "🇫🇷 #99 ✈️🔍 France 7.03Mbps"
+      - "🇫🇷 #100 ✈️🔍 France 6.98Mbps"
+      - "🇫🇷 #101 ✈️🔍 France 6.94Mbps"
+      - "🇪🇪 #102 ✈️🔍 Estonia 6.88Mbps"
+      - "🇵🇱 #103 ✈️🔍 Poland 6.88Mbps"
+      - "🇱🇻 #104 ✈️🔍 Latvia 6.86Mbps"
+      - "🇮🇹 #105 ✈️🔍 Italy 6.85Mbps"
+      - "🇹🇷 #106 ✈️🔍 Türkiye 6.83Mbps"
+      - "🇵🇱 #107 ✈️🔍 Poland 6.82Mbps"
+      - "🇮🇹 #108 ✈️🔍 Italy 6.67Mbps"
+      - "🇩🇪 #109 ✈️ Germany 6.58Mbps"
+      - "🇩🇪 #110 ✈️🔍 Germany 6.53Mbps"
+      - "🇱🇻 #111 ✈️🔍 Latvia 6.52Mbps"
+      - "🇫🇮 #112 ✈️🔍 Finland 6.39Mbps"
+      - "🇪🇪 #113 ✈️🔍 Estonia 6.32Mbps"
+      - "🇫🇷 #114 ✈️🔍 France 5.98Mbps"
+      - "🇱🇻 #115 ✈️🔍 Latvia 5.96Mbps"
+      - "🇩🇪 #116 ✈️🔍 Germany 5.89Mbps"
+      - "🇷🇸 #117 ✈️🔍 Serbia 5.8Mbps"
+      - "🇲🇩 #118 ✈️🔍 Moldova 5.72Mbps"
+      - "🇲🇩 #119 ✈️🔍 Moldova 5.17Mbps"
+      - "🇲🇩 #120 ✈️🔍 Moldova 5.05Mbps"
+      - "🇩🇪 #121 ✈️🔍 Germany 4.76Mbps"
+      - "🇧🇬 #122 ✈️🔍 Bulgaria 4.58Mbps"
+      - "🇺🇸 #123 ✈️🔍 United_States 4.37Mbps"
+      - "🇷🇸 #124 ✈️🔍 Serbia 4.19Mbps"
+      - "🇷🇸 #125 ✈️🔍 Serbia 3.88Mbps"
+      - "🇲🇩 #126 ✈️🔍 Moldova 3.54Mbps"
+      - "🇲🇩 #127 ✈️🔍 Moldova 3.34Mbps"
+      - "🇧🇬 #128 ✈️🔍 Bulgaria 2.4Mbps"
+      - "🇳🇱 #129 🔍 Netherlands 2.29Mbps"
+      - "🇩🇪 #130 🔍 Germany 1.84Mbps"
+      - "🇬🇧 #131 ✈️🔍 United_Kingdom 1.59Mbps"
+      - "🇳🇱 #132 ✈️🔍 The_Netherlands 1.58Mbps"
+      - "🇬🇧 #133 ✈️🔍 United_Kingdom 1.22Mbps"
+      - "🇸🇬 #134 🔍 Singapore 0.91Mbps"
+      - "🇳🇱 #135 ✈️🔍 The_Netherlands 0.91Mbps"
+      - "🇵🇱 #136 ✈️🔍 Poland 0.88Mbps"
+      - "🇬🇧 #137 ✈️🔍 United_Kingdom 0.85Mbps"
+      - "🇧🇬 #138 ✈️🔍 Bulgaria 0.83Mbps"
+      - "🇫🇷 #139 ✈️🔍 France 0.76Mbps"
+      - "🇧🇬 #140 🔍 Bulgaria 0.74Mbps"
+      - "🇩🇪 #141 ✈️🔍 Germany-CDN 0.54Mbps"
+      - "🇳🇱 #142 ✈️🔍 The_Netherlands 0.52Mbps"
+      - "🇩🇪 #143 ✈️🔍 Germany-CDN 0.51Mbps"
   - name: "📍 United_States"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇺🇸 #1 ✈️🔍 United_States 36.88Mbps"
-      - "🇺🇸 #2 ✈️🔍 United_States 15.35Mbps"
-      - "🇺🇸 #4 ✈️ United_States-CDN 14.02Mbps"
-      - "🇺🇸 #7 ✈️🔍 United_States 13.04Mbps"
-      - "🇺🇸 #8 ✈️ United_States-CDN 12.62Mbps"
-      - "🇺🇸 #11 ✈️ United_States-CDN 11.26Mbps"
-      - "🇺🇸 #34 ✈️🔍 United_States 7.77Mbps"
-      - "🇺🇸 #71 ✈️🔍 United_States 6.83Mbps"
+      - "🇺🇸 #1 ✈️ United_States-CDN 41.02Mbps"
+      - "🇺🇸 #2 ✈️🔍 United_States 27.17Mbps"
+      - "🇺🇸 #3 ✈️🔍 United_States 27.05Mbps"
+      - "🇺🇸 #4 ✈️ United_States-CDN 25.19Mbps"
+      - "🇺🇸 #5 ✈️ United_States-CDN 22.38Mbps"
+      - "🇺🇸 #6 ✈️ United_States-CDN 21.72Mbps"
+      - "🇺🇸 #7 ✈️ United_States-CDN 16.98Mbps"
+      - "🇺🇸 #8 ✈️🔍 United_States 15.5Mbps"
+      - "🇺🇸 #9 ✈️🔍 United_States 14.15Mbps"
+      - "🇺🇸 #10 ✈️ United_States-CDN 13.2Mbps"
+      - "🇺🇸 #30 ✈️ United_States-CDN 10.34Mbps"
+      - "🇺🇸 #72 ✈️ United_States 8.16Mbps"
+      - "🇺🇸 #98 ✈️🔍 United_States 7.06Mbps"
+      - "🇺🇸 #123 ✈️🔍 United_States 4.37Mbps"
   - name: "📍 Canada"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇨🇦 #3 ✈️🔍 Canada 15.32Mbps"
-      - "🇨🇦 #5 ✈️🔍 Canada 13.82Mbps"
-      - "🇨🇦 #6 ✈️🔍 Canada 13.72Mbps"
-  - name: "📍 United_Kingdom"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇬🇧 #9 ✈️ United_Kingdom-CDN 12.29Mbps"
-      - "🇬🇧 #10 ✈️🔍 United_Kingdom 12.01Mbps"
-      - "🇬🇧 #17 ✈️🔍 United_Kingdom 8.56Mbps"
-      - "🇬🇧 #51 ✈️🔍 United_Kingdom 7.21Mbps"
-      - "🇬🇧 #52 ✈️🔍 United_Kingdom 7.19Mbps"
-      - "🇬🇧 #54 ✈️🔍 United_Kingdom 7.14Mbps"
-      - "🇬🇧 #61 ✈️🔍 United_Kingdom 6.91Mbps"
-      - "🇬🇧 #72 ✈️🔍 United_Kingdom 6.82Mbps"
-      - "🇬🇧 #113 ✈️🔍 United_Kingdom 5.71Mbps"
-      - "🇬🇧 #125 ✈️🔍 United_Kingdom 2.56Mbps"
-  - name: "📍 Singapore"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇸🇬 #12 ✈️🔍 Singapore 11.1Mbps"
-      - "🇸🇬 #13 🔍 Singapore 10.8Mbps"
-      - "🇸🇬 #101 ✈️🔍 Singapore 6.16Mbps"
+      - "🇨🇦 #11 ✈️🔍 Canada 13.08Mbps"
+      - "🇨🇦 #12 ✈️🔍 Canada 12.06Mbps"
+      - "🇨🇦 #67 ✈️🔍 Canada 8.31Mbps"
   - name: "📍 France"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇫🇷 #14 ✈️🔍 France 8.66Mbps"
-      - "🇫🇷 #15 ✈️🔍 France 8.63Mbps"
-      - "🇫🇷 #16 ✈️🔍 France 8.6Mbps"
-      - "🇫🇷 #18 ✈️🔍 France 8.52Mbps"
-      - "🇫🇷 #19 ✈️🔍 France 8.5Mbps"
-      - "🇫🇷 #20 ✈️🔍 France 8.35Mbps"
-      - "🇫🇷 #21 ✈️🔍 France 8.33Mbps"
-      - "🇫🇷 #22 🔍 France 8.18Mbps"
-      - "🇫🇷 #23 ✈️🔍 France 8.15Mbps"
-      - "🇫🇷 #24 ✈️🔍 France 8.12Mbps"
-      - "🇫🇷 #25 ✈️🔍 France 8.09Mbps"
-      - "🇫🇷 #26 ✈️🔍 France 8.08Mbps"
-      - "🇫🇷 #31 ✈️🔍 France 7.82Mbps"
-      - "🇫🇷 #32 ✈️🔍 France 7.8Mbps"
-      - "🇫🇷 #37 ✈️🔍 France 7.65Mbps"
-      - "🇫🇷 #56 ✈️🔍 France 7.1Mbps"
-      - "🇫🇷 #57 ✈️🔍 France 7.01Mbps"
-      - "🇫🇷 #59 ✈️ France 6.94Mbps"
-      - "🇫🇷 #62 ✈️🔍 France 6.91Mbps"
-      - "🇫🇷 #68 ✈️🔍 France 6.86Mbps"
-      - "🇫🇷 #74 ✈️🔍 France 6.79Mbps"
-      - "🇫🇷 #78 ✈️🔍 France 6.7Mbps"
-      - "🇫🇷 #84 ✈️🔍 France 6.51Mbps"
-      - "🇫🇷 #94 ✈️🔍 France 6.28Mbps"
-      - "🇫🇷 #100 ✈️ France 6.17Mbps"
-      - "🇫🇷 #105 ✈️🔍 France 6.05Mbps"
-      - "🇫🇷 #106 ✈️🔍 France 5.96Mbps"
-      - "🇫🇷 #107 ✈️ France 5.92Mbps"
-      - "🇫🇷 #108 ✈️🔍 France 5.9Mbps"
+      - "🇫🇷 #13 ✈️🔍 France 11.63Mbps"
+      - "🇫🇷 #15 ✈️🔍 France 11.34Mbps"
+      - "🇫🇷 #16 ✈️🔍 France 11.31Mbps"
+      - "🇫🇷 #17 ✈️🔍 France 10.98Mbps"
+      - "🇫🇷 #19 ✈️🔍 France 10.93Mbps"
+      - "🇫🇷 #20 ✈️🔍 France 10.82Mbps"
+      - "🇫🇷 #21 ✈️🔍 France 10.73Mbps"
+      - "🇫🇷 #22 ✈️🔍 France 10.73Mbps"
+      - "🇫🇷 #23 ✈️🔍 France 10.69Mbps"
+      - "🇫🇷 #24 ✈️🔍 France 10.68Mbps"
+      - "🇫🇷 #25 ✈️🔍 France 10.63Mbps"
+      - "🇫🇷 #26 ✈️🔍 France 10.56Mbps"
+      - "🇫🇷 #27 ✈️🔍 France 10.54Mbps"
+      - "🇫🇷 #28 ✈️🔍 France 10.49Mbps"
+      - "🇫🇷 #29 ✈️🔍 France 10.45Mbps"
+      - "🇫🇷 #37 ✈️🔍 France 9.97Mbps"
+      - "🇫🇷 #53 ✈️ France 8.98Mbps"
+      - "🇫🇷 #55 ✈️🔍 France 8.7Mbps"
+      - "🇫🇷 #57 ✈️🔍 France 8.68Mbps"
+      - "🇫🇷 #60 ✈️🔍 France 8.57Mbps"
+      - "🇫🇷 #64 ✈️ France 8.37Mbps"
+      - "🇫🇷 #71 🔍 France 8.2Mbps"
+      - "🇫🇷 #82 ✈️ France 7.7Mbps"
+      - "🇫🇷 #83 ✈️🔍 France 7.68Mbps"
+      - "🇫🇷 #89 ✈️🔍 France 7.4Mbps"
+      - "🇫🇷 #90 ✈️🔍 France 7.4Mbps"
+      - "🇫🇷 #99 ✈️🔍 France 7.03Mbps"
+      - "🇫🇷 #100 ✈️🔍 France 6.98Mbps"
+      - "🇫🇷 #101 ✈️🔍 France 6.94Mbps"
+      - "🇫🇷 #114 ✈️🔍 France 5.98Mbps"
+      - "🇫🇷 #139 ✈️🔍 France 0.76Mbps"
+  - name: "📍 United_Kingdom"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇬🇧 #14 ✈️🔍 United_Kingdom 11.45Mbps"
+      - "🇬🇧 #18 ✈️🔍 United_Kingdom 10.93Mbps"
+      - "🇬🇧 #31 ✈️🔍 United_Kingdom 10.24Mbps"
+      - "🇬🇧 #32 ✈️🔍 United_Kingdom 10.22Mbps"
+      - "🇬🇧 #44 ✈️🔍 United_Kingdom 9.66Mbps"
+      - "🇬🇧 #62 ✈️🔍 United_Kingdom 8.51Mbps"
+      - "🇬🇧 #80 ✈️🔍 United_Kingdom 7.77Mbps"
+      - "🇬🇧 #131 ✈️🔍 United_Kingdom 1.59Mbps"
+      - "🇬🇧 #133 ✈️🔍 United_Kingdom 1.22Mbps"
+      - "🇬🇧 #137 ✈️🔍 United_Kingdom 0.85Mbps"
   - name: "📍 The_Netherlands"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇳🇱 #27 ✈️🔍 The_Netherlands 7.93Mbps"
-      - "🇳🇱 #28 ✈️🔍 The_Netherlands 7.91Mbps"
-      - "🇳🇱 #30 ✈️🔍 The_Netherlands 7.85Mbps"
-      - "🇳🇱 #33 ✈️🔍 The_Netherlands 7.8Mbps"
-      - "🇳🇱 #35 ✈️🔍 The_Netherlands 7.77Mbps"
-      - "🇳🇱 #36 ✈️🔍 The_Netherlands 7.68Mbps"
-      - "🇳🇱 #38 ✈️🔍 The_Netherlands 7.61Mbps"
-      - "🇳🇱 #42 ✈️🔍 The_Netherlands 7.45Mbps"
-      - "🇳🇱 #45 ✈️🔍 The_Netherlands 7.4Mbps"
-      - "🇳🇱 #47 ✈️🔍 The_Netherlands 7.32Mbps"
-      - "🇳🇱 #49 ✈️🔍 The_Netherlands 7.26Mbps"
-      - "🇳🇱 #55 ✈️🔍 The_Netherlands 7.11Mbps"
-      - "🇳🇱 #66 ✈️🔍 The_Netherlands 6.86Mbps"
-      - "🇳🇱 #67 ✈️🔍 The_Netherlands 6.86Mbps"
-      - "🇳🇱 #70 ✈️🔍 The_Netherlands 6.83Mbps"
-      - "🇳🇱 #75 ✈️🔍 The_Netherlands 6.79Mbps"
-      - "🇳🇱 #76 ✈️🔍 The_Netherlands 6.79Mbps"
-      - "🇳🇱 #77 ✈️🔍 The_Netherlands 6.78Mbps"
-      - "🇳🇱 #79 ✈️🔍 The_Netherlands 6.65Mbps"
-      - "🇳🇱 #82 ✈️🔍 The_Netherlands 6.58Mbps"
-      - "🇳🇱 #87 ✈️🔍 The_Netherlands 6.48Mbps"
-      - "🇳🇱 #96 ✈️🔍 The_Netherlands 6.24Mbps"
-      - "🇳🇱 #102 ✈️🔍 The_Netherlands 6.15Mbps"
-  - name: "📍 Germany"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇩🇪 #29 ✈️🔍 Germany 7.87Mbps"
-      - "🇩🇪 #44 ✈️ Germany 7.42Mbps"
-      - "🇩🇪 #58 ✈️🔍 Germany 7.0Mbps"
-      - "🇩🇪 #60 🔍 Germany 6.92Mbps"
-      - "🇩🇪 #80 ✈️🔍 Germany 6.63Mbps"
-      - "🇩🇪 #91 ✈️🔍 Germany 6.44Mbps"
-      - "🇩🇪 #93 ✈️🔍 Germany 6.36Mbps"
-      - "🇩🇪 #95 ✈️🔍 Germany 6.26Mbps"
-      - "🇩🇪 #110 ✈️🔍 Germany 5.82Mbps"
-      - "🇩🇪 #118 ✈️🔍 Germany 4.37Mbps"
-      - "🇩🇪 #121 ✈️🔍 Germany 3.19Mbps"
-  - name: "📍 Italy"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇮🇹 #39 ✈️ Italy 7.54Mbps"
-      - "🇮🇹 #50 ✈️ Italy 7.22Mbps"
-      - "🇮🇹 #65 ✈️ Italy 6.88Mbps"
-      - "🇮🇹 #81 ✈️🔍 Italy 6.62Mbps"
-      - "🇮🇹 #85 ✈️🔍 Italy 6.5Mbps"
-      - "🇮🇹 #88 ✈️🔍 Italy 6.47Mbps"
-  - name: "📍 Finland"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇫🇮 #40 ✈️🔍 Finland 7.53Mbps"
-      - "🇫🇮 #63 ✈️🔍 Finland 6.9Mbps"
-      - "🇫🇮 #69 ✈️🔍 Finland 6.84Mbps"
-      - "🇫🇮 #114 🔍 Finland 5.64Mbps"
-  - name: "📍 Austria"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇦🇹 #41 ✈️🔍 Austria 7.49Mbps"
-  - name: "📍 Norway"
-    type: url-test
-    url: "http://gstatic.com/generate_204"
-    interval: 300
-    proxies:
-      - "🇳🇴 #43 ✈️🔍 Norway 7.44Mbps"
-      - "🇳🇴 #48 ✈️🔍 Norway 7.31Mbps"
-      - "🇳🇴 #73 ✈️🔍 Norway 6.81Mbps"
+      - "🇳🇱 #33 ✈️🔍 The_Netherlands 10.19Mbps"
+      - "🇳🇱 #35 ✈️🔍 The_Netherlands 10.05Mbps"
+      - "🇳🇱 #36 ✈️🔍 The_Netherlands 10.04Mbps"
+      - "🇳🇱 #38 ✈️🔍 The_Netherlands 9.9Mbps"
+      - "🇳🇱 #39 ✈️🔍 The_Netherlands 9.79Mbps"
+      - "🇳🇱 #40 ✈️🔍 The_Netherlands 9.68Mbps"
+      - "🇳🇱 #43 ✈️🔍 The_Netherlands 9.67Mbps"
+      - "🇳🇱 #45 ✈️🔍 The_Netherlands 9.61Mbps"
+      - "🇳🇱 #46 ✈️🔍 The_Netherlands 9.61Mbps"
+      - "🇳🇱 #47 ✈️🔍 The_Netherlands 9.49Mbps"
+      - "🇳🇱 #48 ✈️🔍 The_Netherlands 9.42Mbps"
+      - "🇳🇱 #54 ✈️🔍 The_Netherlands 8.93Mbps"
+      - "🇳🇱 #58 ✈️🔍 The_Netherlands 8.66Mbps"
+      - "🇳🇱 #68 ✈️🔍 The_Netherlands 8.3Mbps"
+      - "🇳🇱 #69 ✈️🔍 The_Netherlands 8.23Mbps"
+      - "🇳🇱 #73 ✈️🔍 The_Netherlands 8.1Mbps"
+      - "🇳🇱 #74 ✈️🔍 The_Netherlands 8.05Mbps"
+      - "🇳🇱 #81 ✈️🔍 The_Netherlands 7.7Mbps"
+      - "🇳🇱 #86 ✈️🔍 The_Netherlands 7.59Mbps"
+      - "🇳🇱 #93 ✈️🔍 The_Netherlands 7.27Mbps"
+      - "🇳🇱 #132 ✈️🔍 The_Netherlands 1.58Mbps"
+      - "🇳🇱 #135 ✈️🔍 The_Netherlands 0.91Mbps"
+      - "🇳🇱 #142 ✈️🔍 The_Netherlands 0.52Mbps"
   - name: "📍 Spain"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇪🇸 #46 ✈️🔍 Spain 7.34Mbps"
+      - "🇪🇸 #34 ✈️🔍 Spain 10.11Mbps"
+  - name: "📍 Austria"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇦🇹 #41 ✈️🔍 Austria 9.68Mbps"
+  - name: "📍 Germany"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇩🇪 #42 Germany 9.68Mbps"
+      - "🇩🇪 #51 ✈️🔍 Germany 9.2Mbps"
+      - "🇩🇪 #52 ✈️🔍 Germany 9.08Mbps"
+      - "🇩🇪 #65 ✈️🔍 Germany 8.35Mbps"
+      - "🇩🇪 #76 ✈️🔍 Germany 8.03Mbps"
+      - "🇩🇪 #78 ✈️🔍 Germany 7.93Mbps"
+      - "🇩🇪 #92 ✈️🔍 Germany 7.28Mbps"
+      - "🇩🇪 #95 ✈️ Germany 7.27Mbps"
+      - "🇩🇪 #109 ✈️ Germany 6.58Mbps"
+      - "🇩🇪 #110 ✈️🔍 Germany 6.53Mbps"
+      - "🇩🇪 #116 ✈️🔍 Germany 5.89Mbps"
+      - "🇩🇪 #121 ✈️🔍 Germany 4.76Mbps"
+      - "🇩🇪 #130 🔍 Germany 1.84Mbps"
+      - "🇩🇪 #141 ✈️🔍 Germany-CDN 0.54Mbps"
+      - "🇩🇪 #143 ✈️🔍 Germany-CDN 0.51Mbps"
+  - name: "📍 Italy"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇮🇹 #49 ✈️ Italy 9.36Mbps"
+      - "🇮🇹 #56 ✈️ Italy 8.69Mbps"
+      - "🇮🇹 #59 ✈️ Italy 8.62Mbps"
+      - "🇮🇹 #94 ✈️🔍 Italy 7.27Mbps"
+      - "🇮🇹 #105 ✈️🔍 Italy 6.85Mbps"
+      - "🇮🇹 #108 ✈️🔍 Italy 6.67Mbps"
+  - name: "📍 Norway"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇳🇴 #50 ✈️🔍 Norway 9.29Mbps"
+      - "🇳🇴 #61 ✈️🔍 Norway 8.57Mbps"
+      - "🇳🇴 #70 ✈️🔍 Norway 8.21Mbps"
   - name: "📍 Poland"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇵🇱 #53 ✈️🔍 Poland 7.16Mbps"
-      - "🇵🇱 #64 ✈️🔍 Poland 6.9Mbps"
-      - "🇵🇱 #83 ✈️🔍 Poland 6.54Mbps"
-      - "🇵🇱 #89 ✈️ Poland 6.46Mbps"
-      - "🇵🇱 #90 ✈️🔍 Poland 6.45Mbps"
-      - "🇵🇱 #97 ✈️ Poland 6.24Mbps"
-      - "🇵🇱 #99 ✈️ Poland 6.22Mbps"
-      - "🇵🇱 #111 ✈️🔍 Poland 5.78Mbps"
-      - "🇵🇱 #122 ✈️ Poland 3.16Mbps"
+      - "🇵🇱 #63 ✈️🔍 Poland 8.5Mbps"
+      - "🇵🇱 #75 ✈️ Poland 8.04Mbps"
+      - "🇵🇱 #77 ✈️ Poland 8.02Mbps"
+      - "🇵🇱 #79 ✈️ Poland 7.87Mbps"
+      - "🇵🇱 #84 ✈️ Poland 7.68Mbps"
+      - "🇵🇱 #87 ✈️🔍 Poland 7.54Mbps"
+      - "🇵🇱 #103 ✈️🔍 Poland 6.88Mbps"
+      - "🇵🇱 #107 ✈️🔍 Poland 6.82Mbps"
+      - "🇵🇱 #136 ✈️🔍 Poland 0.88Mbps"
+  - name: "📍 Finland"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇫🇮 #66 ✈️🔍 Finland 8.32Mbps"
+      - "🇫🇮 #85 ✈️🔍 Finland 7.64Mbps"
+      - "🇫🇮 #88 ✈️🔍 Finland 7.42Mbps"
+      - "🇫🇮 #112 ✈️🔍 Finland 6.39Mbps"
+  - name: "📍 Slovakia"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇸🇰 #91 ✈️ Slovakia-CDN 7.29Mbps"
   - name: "📍 Estonia"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇪🇪 #86 ✈️🔍 Estonia 6.49Mbps"
-      - "🇪🇪 #92 ✈️🔍 Estonia 6.42Mbps"
-      - "🇪🇪 #112 ✈️🔍 Estonia 5.71Mbps"
+      - "🇪🇪 #96 ✈️🔍 Estonia 7.27Mbps"
+      - "🇪🇪 #102 ✈️🔍 Estonia 6.88Mbps"
+      - "🇪🇪 #113 ✈️🔍 Estonia 6.32Mbps"
   - name: "📍 Netherlands"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇳🇱 #98 ✈️🔍 Netherlands 6.24Mbps"
-      - "🇳🇱 #124 ✈️🔍 Netherlands 2.99Mbps"
+      - "🇳🇱 #97 ✈️🔍 Netherlands 7.11Mbps"
+      - "🇳🇱 #129 🔍 Netherlands 2.29Mbps"
   - name: "📍 Latvia"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇱🇻 #103 ✈️🔍 Latvia 6.07Mbps"
-      - "🇱🇻 #104 ✈️🔍 Latvia 6.06Mbps"
-      - "🇱🇻 #109 ✈️🔍 Latvia 5.84Mbps"
+      - "🇱🇻 #104 ✈️🔍 Latvia 6.86Mbps"
+      - "🇱🇻 #111 ✈️🔍 Latvia 6.52Mbps"
+      - "🇱🇻 #115 ✈️🔍 Latvia 5.96Mbps"
   - name: "📍 Türkiye"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇹🇷 #115 ✈️🔍 Türkiye 5.63Mbps"
-  - name: "📍 Sweden"
+      - "🇹🇷 #106 ✈️🔍 Türkiye 6.83Mbps"
+  - name: "📍 Serbia"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇸🇪 #116 ✈️🔍 Sweden 5.62Mbps"
+      - "🇷🇸 #117 ✈️🔍 Serbia 5.8Mbps"
+      - "🇷🇸 #124 ✈️🔍 Serbia 4.19Mbps"
+      - "🇷🇸 #125 ✈️🔍 Serbia 3.88Mbps"
   - name: "📍 Moldova"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇲🇩 #117 ✈️🔍 Moldova 5.1Mbps"
-      - "🇲🇩 #119 ✈️🔍 Moldova 3.7Mbps"
+      - "🇲🇩 #118 ✈️🔍 Moldova 5.72Mbps"
+      - "🇲🇩 #119 ✈️🔍 Moldova 5.17Mbps"
+      - "🇲🇩 #120 ✈️🔍 Moldova 5.05Mbps"
+      - "🇲🇩 #126 ✈️🔍 Moldova 3.54Mbps"
+      - "🇲🇩 #127 ✈️🔍 Moldova 3.34Mbps"
   - name: "📍 Bulgaria"
     type: url-test
     url: "http://gstatic.com/generate_204"
     interval: 300
     proxies:
-      - "🇧🇬 #120 ✈️🔍 Bulgaria 3.23Mbps"
-      - "🇧🇬 #123 ✈️🔍 Bulgaria 3.05Mbps"
+      - "🇧🇬 #122 ✈️🔍 Bulgaria 4.58Mbps"
+      - "🇧🇬 #128 ✈️🔍 Bulgaria 2.4Mbps"
+      - "🇧🇬 #138 ✈️🔍 Bulgaria 0.83Mbps"
+      - "🇧🇬 #140 🔍 Bulgaria 0.74Mbps"
+  - name: "📍 Singapore"
+    type: url-test
+    url: "http://gstatic.com/generate_204"
+    interval: 300
+    proxies:
+      - "🇸🇬 #134 🔍 Singapore 0.91Mbps"
 
 rules:
   - DOMAIN-SUFFIX,local,DIRECT
